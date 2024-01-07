@@ -199,20 +199,20 @@ public partial class GridMapTool : EditorTool
 		Vector3 planeNormal;
 		Vector3 planePoint;
 		GroundAxis axis = Axis;
-
+		Log.Info( FloorHeight );
 		switch ( axis )
 		{
 			case GroundAxis.X:
 				planeNormal = Vector3.Forward; // Normal perpendicular to X-axis
-				planePoint = new Vector3( groundHeight, 0, 0 ); // Point on the X-axis plane
+				planePoint = new Vector3( SnapToNearestFloor( groundHeight), 0, 0 ); // Point on the X-axis plane
 				break;
 			case GroundAxis.Y:
 				planeNormal = Vector3.Left; // Normal perpendicular to Y-axis
-				planePoint = new Vector3( 0, groundHeight, 0 ); // Point on the Y-axis plane
+				planePoint = new Vector3( 0, SnapToNearestFloor( groundHeight), 0 ); // Point on the Y-axis plane
 				break;
 			default: // Z-axis
 				planeNormal = Vector3.Up; // Normal perpendicular to Z-axis
-				planePoint = new Vector3( 0, 0, groundHeight ); // Point on the Z-axis plane
+				planePoint = new Vector3( 0, 0, SnapToNearestFloor( groundHeight) ); // Point on the Z-axis plane
 				break;
 		}
 
@@ -247,6 +247,13 @@ public partial class GridMapTool : EditorTool
 		return new SceneTraceResult { Hit = false };
 	}
 
+	private float SnapToNearestFloor( float value)
+	{
+		// Snap to the nearest height value
+		return MathF.Floor( value / FloorHeight ) * FloorHeight;
+	}
+
+
 	private float SnapToGrid( float value )
 	{
 		// Assuming you have a grid spacing value
@@ -274,9 +281,7 @@ public partial class GridMapTool : EditorTool
 		{
 			var gameObject = SceneUtility.Instantiate( SceneUtility.GetPrefabScene( PrefabResourse ), new Transform( Vector3.Up * 100000 ) );
 			gameObject.BreakFromPrefab();
-
-			gameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
-
+			gameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden | GameObjectFlags.Loading;
 			
 			var allObjects = gameObject.GetAllObjects( true );
 
@@ -368,16 +373,18 @@ public partial class GridMapTool : EditorTool
 		// Do gizmos and stuff
 		var cursorRay = Gizmo.CurrentRay;
 
-		var tr = Scene.Trace.Ray( cursorRay, 5000 )
+		var tr = SceneEditorSession.Active.Scene.Trace
+					.Ray( cursorRay, 5000 )
 						.UseRenderMeshes( true )
 						.UsePhysicsWorld( false )
 						.WithoutTags( "gridtile" )
 						.Run();
 
-		var boxtr = Scene.Trace.Ray( cursorRay, 5000 )
-			.UsePhysicsWorld( true )
-			.WithoutTags( "gridtile" )
-			.Run();
+		var boxtr = SceneEditorSession.Active.Scene.Trace
+			.Ray( cursorRay, 5000 )
+				.UsePhysicsWorld( true )
+				.WithoutTags( "gridtile" )
+				.Run();
 
 		if ( !boxtr.Hit )
 		{
