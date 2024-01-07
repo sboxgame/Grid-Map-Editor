@@ -1,4 +1,6 @@
-﻿namespace Editor;
+﻿using Sandbox;
+
+namespace Editor;
 
 public partial class GridMapTool
 {
@@ -85,17 +87,30 @@ public partial class GridMapTool
 	{
 		if ( CursorRay( cursorRay ).Hit )
 		{
-			var go = SceneUtility.Instantiate( CopyObject );
+			var options = new GameObject.SerializeOptions();
+			var selection = CopyObject;
+			var json = selection.Serialize( options );
+			
+			SceneUtility.MakeGameObjectsUnique( json );
+			var go = SceneEditorSession.Active.Scene.CreateObject();
+
+			go.Deserialize( json );
+			go.MakeNameUnique();
 			go.Parent = CurrentGameObjectCollection;
 			go.Transform.Position = GetGizmoPosition( trace, cursorRay );
+			go.Transform.Rotation = GizmoGameObject.Transform.Rotation;
+			//Disable for now, as causes prefabs to break?
+			/*
 			if ( beenRotated )
 			{
-				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+				//go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
 			}
 			else
 			{
-				go.Transform.Rotation = lastRot;
+				//go.Transform.Rotation = lastRot;
 			}
+			*/
+
 			go.Tags.Add( "gridtile" );
 		}
 	}
@@ -104,7 +119,16 @@ public partial class GridMapTool
 	{
 		if ( CursorRay( cursorRay ).Hit )
 		{
-			CopyObject = CursorRay( cursorRay ).GameObject;
+			if( CursorRay( cursorRay ).GameObject.IsPrefabInstance)
+			{
+				var prefab = CursorRay( cursorRay ).GameObject.Root;
+				CopyObject = prefab;
+			}
+			else
+			{
+				CopyObject = CursorRay( cursorRay ).GameObject;
+			}
+
 			Log.Info( $"Copy {CopyObject}" );
 			beenRotated = false;
 		}

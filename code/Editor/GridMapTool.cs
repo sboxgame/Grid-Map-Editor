@@ -65,7 +65,7 @@ public partial class GridMapTool : EditorTool
 	{
 		public string name;
 		public JsonObject jsonObject;
-		public PrefabFile prefabObject;
+		public string prefabObject;
 		public Pixmap icon;
 	}
 
@@ -278,7 +278,7 @@ public partial class GridMapTool : EditorTool
 			gameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 
 			
-			var allObjects = gameObject.GetAllObjects( false );
+			var allObjects = gameObject.GetAllObjects( true );
 
 			bool isFirst = true;
 			GameObject lastFoundObject = null;
@@ -290,8 +290,18 @@ public partial class GridMapTool : EditorTool
 					isFirst = false;
 					continue;
 				}
-
-				if ( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ) != null )
+				/*
+				if(obj.IsPrefabInstance)
+				{
+					tileList.Add( new TileList()
+					{
+						name = obj.Name,
+						prefabObject = obj.PrefabInstanceSource,
+						icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
+					} );
+				}	
+				*/
+				if ( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ) != null  )
 				{
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
@@ -299,7 +309,6 @@ public partial class GridMapTool : EditorTool
 						tileList.Add( new TileList()
 						{
 							name = obj.Name,
-							//prefabObject = obj.GetAsPrefab(),
 							jsonObject = obj.Serialize(),
 							icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 						} );

@@ -113,7 +113,7 @@ public partial class GridMapTool
 				{
 					SelectedJsonObject = data.jsonObject;
 					UpdatePaintObjectGizmo();
-					//Log.Info( "Selected Model: " + SelectedJsonObject );
+					Log.Info( "Selected Model: " + data.prefabObject );
 				}
 			};
 			

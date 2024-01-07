@@ -1,10 +1,12 @@
-﻿using Editor.Widgets;
+﻿using Editor.MapEditor;
+using Editor.Widgets;
 using Sandbox;
 using Sandbox.UI;
 using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.Versioning;
+using System.Text.Json;
 using static Sandbox.HitboxSet;
 
 namespace Editor;
@@ -225,8 +227,14 @@ public partial class GridMapTool
 
 		if ( GizmoGameObject is null )
 		{
+			/*
+			SceneUtility.MakeGameObjectsUnique( CopyObject );
 			//Log.Info( SelectedGameObject.Components.Count );
+			GizmoGameObject = new GameObject();
+			GizmoGameObject.Deserialize(CopyObject);
+			*/
 			GizmoGameObject = SceneUtility.Instantiate( CopyObject );
+			GizmoGameObject.MakeNameUnique();
 			GizmoGameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 			GizmoGameObject.Tags.Add( "isgizmoobject" );
 
@@ -247,7 +255,6 @@ public partial class GridMapTool
 		if(GizmoGameObject is null)
 		{
 
-			
 			//Log.Info( SelectedGameObject.Components.Count );
 			GizmoGameObject = new GameObject( true, "GizmoObject" );
 			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
