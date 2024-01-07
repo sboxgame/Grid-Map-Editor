@@ -31,8 +31,9 @@ public partial class GridMapTool
 			go.Deserialize( SelectedJsonObject );
 			go.Parent = CurrentGameObjectCollection;
 			go.Transform.Position = snappedPosition;
-			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;		
 			go.Tags.Add( "gridtile" );
+
 		}
 	}
 

@@ -229,13 +229,13 @@ public partial class GridMapTool
 			GizmoGameObject = SceneUtility.Instantiate( CopyObject );
 			GizmoGameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 			GizmoGameObject.Tags.Add( "isgizmoobject" );
+
 		}
 
 		if ( GizmoGameObject is not null )
 		{
 			GizmoGameObject.Transform.Position = GetGizmoPosition( trace, cursorRay );
 			GizmoGameObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
-
 			Log.Info( "GizmoGameObject is not null" );
 		}
 	}
@@ -246,14 +246,23 @@ public partial class GridMapTool
 	
 		if(GizmoGameObject is null)
 		{
+
+			
 			//Log.Info( SelectedGameObject.Components.Count );
-			GizmoGameObject = new GameObject();
-			GizmoGameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+			GizmoGameObject = new GameObject( true, "GizmoObject" );
+			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
 			GizmoGameObject.Deserialize( SelectedJsonObject );
+			GizmoGameObject.MakeNameUnique();
+			GizmoGameObject.Tags.RemoveAll();
+			GizmoGameObject.Tags.Add( "isgizmoobject" );
+			GizmoGameObject.Name = "GizmoObject";
+			GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+
 		}
 
 		if ( GizmoGameObject is not null )
 		{
+
 			GizmoGameObject.Transform.Position = GetGizmoPosition( trace, cursorRay );
 			GizmoGameObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation ;
 

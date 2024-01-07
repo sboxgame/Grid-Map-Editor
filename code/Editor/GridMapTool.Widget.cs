@@ -39,20 +39,19 @@ public partial class GridMapTool
 			gridwindowWidget.MaximumWidth = 300;
 			gridwindowWidget.WindowTitle = "Grid Map Tool";
 
-			var rotshort = new Shortcut( SceneOverlay, "Rotate", "p", () => Log.Info( "Buttes" ) );
 			var row = Layout.Column();
+			/*
 			paintmode = row.Add( new SegmentedControl() );
 			paintmode.AddOption( "Place", "brush" );
 			paintmode.AddOption( "Remove", "delete" );
 			paintmode.AddOption( "Move", "open_with" );
 			paintmode.AddOption( "Copy", "content_copy" );
 
-
 			paintmode.OnSelectedChanged += ( s ) =>
 			{
 				CurrentPaintMode = Enum.Parse<PaintMode>( s );
 			};
-
+			*/
 			var collectionrow = Layout.Row();
 
 			var collectionLabel = new Label( "Collection :" );
@@ -114,7 +113,7 @@ public partial class GridMapTool
 				{
 					SelectedJsonObject = data.jsonObject;
 					UpdatePaintObjectGizmo();
-					Log.Info( "Selected Model: " + SelectedJsonObject );
+					//Log.Info( "Selected Model: " + SelectedJsonObject );
 				}
 			};
 			
@@ -149,11 +148,24 @@ public partial class GridMapTool
 	{
 		{
 			var window = new WidgetWindow( SceneOverlay, "Grid Map Controls" );
-			window.MaximumWidth = 300;
+			window.MaximumWidth = 400;
+			window.MinimumWidth = 400;
 
+			var row = Layout.Column();		
+			paintmode = row.Add( new SegmentedControl() );
+			paintmode.AddOption( "Place", "brush" );
+			paintmode.AddOption( "Remove", "delete" );
+			paintmode.AddOption( "Move", "open_with" );
+			paintmode.AddOption( "Copy", "content_copy" );
+			paintmode.OnSelectedChanged += ( s ) =>
+			{
+				CurrentPaintMode = Enum.Parse<PaintMode>( s );
+			};
+			
 			var cs = new ControlSheet();
+
 			cs.AddRow( so.GetProperty( "PrefabResourse" ) );
-			cs.AddRow( so.GetProperty( "CurrentRotationSnap" ) );
+			//cs.AddRow( so.GetProperty( "CurrentRotationSnap" ) );
 
 			var rotationButtons = Layout.Column();
 			var rotButtonX = rotationButtons.Add(Layout.Row());
@@ -197,35 +209,102 @@ public partial class GridMapTool
 			Floorbuttons.Add( new Button( "", "arrow_downward" ) { Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = floorCount.ToString(); }, ButtonType = "clear" } );
 
 			var pop = Layout.Row();
-			pop.Add( new Label( "Current Axis: " ) );
-			currentaxisLabel = new Label( Axis.ToString() );
-			pop.Add( currentaxisLabel );
-			pop.AddStretchCell( 1 );
+
 			var popbutton = pop.Add( new Button( "Options", "more_horiz" ) { Clicked = () => { OpenDropdown( window ); } } );
 			popbutton.ButtonType = "clear";
+			popbutton.OnPaintOverride += () => 
+			{
+				if(popbutton.IsUnderMouse || optionsOpened )
+				{
+					Paint.SetPen( Theme.White.WithAlpha( .75f ) );
+					Paint.SetFont( "Poppins", 8, 450 );
+					Paint.DrawText( popbutton.LocalRect, "Options" );
+					Paint.ClearBrush();
+					Paint.ClearPen();
+					Paint.SetBrush( Theme.ControlBackground.WithAlpha( .4f ) );
+				}
+				
+				Paint.SetPen( Theme.White.WithAlpha( .5f ) );
+				Paint.SetFont( "Poppins", 8, 450 );
+				Paint.DrawText( popbutton.LocalRect, "Options");
+				Paint.ClearBrush();
+				Paint.ClearPen();
+				Paint.SetBrush( Theme.ControlBackground.WithAlpha( .2f ) );
+				Paint.DrawRect( popbutton.LocalRect.Shrink( 2 ) );
 
-			cs.AddLayout( FloorHeightValue );
-			cs.AddLayout( Floorbuttons );
-			cs.AddLayout( rotationButtons );
-			cs.AddLayout( pop );
+				return true;
+			};
+			popbutton.MaximumWidth = 100;
+
+			row.Add( cs );
+			row.Add( pop );
 
 			//cs.Add( new Button( "Clear", "clear" ) { Clicked = ClearAll } );
-			window.Layout = cs;
-	
-			AddOverlay( window, TextFlag.LeftTop, 10 );
+			window.Layout = row;
+			window.OnPaintOverride += () => PaintControlBackground( window );
+			AddOverlay( window, TextFlag.CenterTop, 0 );
 		}
 	}
+
+	bool optionsOpened = false;
+	private WidgetWindow popup;
+
 	void OpenDropdown( Widget window )
 	{
-		var popup = new PopupWidget( window );
-		popup.IsPopup = true;
-		popup.Position = Application.CursorPosition;
+		if ( optionsOpened )
+		{
+			popup.Close();
+			optionsOpened = false;
+			return;
+		}
+		optionsOpened = true;
+		popup = new WidgetWindow( window );
 
+		popup.WindowTitle = "Options";
+
+		popup.MinimumWidth = window.Width;
+		popup.Width = 500;
 		popup.Layout = Layout.Column();
 		popup.Layout.Margin = 16;
-
+		
 		var ps = new PropertySheet( popup );
+		ps.AddSectionHeader( "Floors" );
+		{
+			floorLabel = ps.AddRow( "Current Floor Level:", new Label( floorCount.ToString() ) );
+		}
+		{
+			heightInput = ps.AddRow( "Floor Height:", new LineEdit("Floor Height") );
+			heightInput.Bind( "Value" ).From( () => FloorHeight.ToString(), x => { if ( float.TryParse( x, out var f ) ) FloorHeight = f.FloorToInt(); } );
+			heightInput.Text = "128";
+		}
+		{
+			var x = ps.AddRow("Floor Level:", new TwoButton() );
+			x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
+			x.button1.Icon = "arrow_upward";
+			x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
+			x.button2.Icon = "arrow_downward";
+		}
 
+		ps.AddSectionHeader( "Rotation" );
+		{
+			var x = ps.AddRow( "Rotation X:", new TwoButton() );
+			x.button1.Clicked = () => { DoRotation( true, GroundAxis.X )(); };
+			x.button1.Icon = "arrow_back";
+			x.button2.Clicked = () => { DoRotation( false, GroundAxis.X )(); };
+			x.button2.Icon = "arrow_forward";
+
+			var y = ps.AddRow( "Rotation Y:", new TwoButton() );
+			y.button1.Clicked = () => { DoRotation( true, GroundAxis.Y )(); };
+			y.button1.Icon = "arrow_back";
+			y.button2.Clicked = () => { DoRotation( false, GroundAxis.Y )(); };
+			y.button2.Icon = "arrow_forward";
+
+			var z = ps.AddRow( "Rotation Z:", new TwoButton() );
+			z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };
+			z.button1.Icon = "arrow_back";
+			z.button2.Clicked = () => { DoRotation( false, GroundAxis.Z )(); };
+			z.button2.Icon = "arrow_forward";
+		}
 		ps.AddSectionHeader( "Ground Axis" );
 		{
 			var w = ps.AddRow( "X", new Checkbox( "Key: C" ) );
@@ -236,12 +315,23 @@ public partial class GridMapTool
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.Y, x => { if ( x ) Axis = GroundAxis.Y; currentaxisLabel.Text = Axis.ToString(); } );
 		}
 		{
-			var w = ps.AddRow( "Z", new Checkbox("Key: Z" ) );
+			var w = ps.AddRow( "Z", new Checkbox( "Key: Z" ) );
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
 		}
 
 		popup.Layout.Add( ps );
+		
+		AddOverlay( popup, TextFlag.None, window.Position + new Vector2( 0, window.Size.y ) );
+
 		popup.Show();
+	}
+	private static bool PaintControlBackground( Widget widget )
+	{
+		Paint.ClearPen();
+		Paint.SetBrush( Theme.ControlBackground.WithAlpha( .0f ) );
+		Paint.DrawRect( widget.LocalRect, 12 );
+
+		return true;
 	}
 	private static bool PaintListBackground( Widget widget )
 	{
@@ -279,8 +369,7 @@ public partial class GridMapTool
 
 		Paint.Antialiasing = true;
 		Paint.TextAntialiasing = true;
-
-		
+	
 		if ( brush.jsonObject == SelectedJsonObject )
 		{
 			Paint.ClearPen();
@@ -339,6 +428,19 @@ public partial class GridMapTool
 	}
 }
 
+public class PopUpOptions : WidgetWindow
+{
+	public PopUpOptions( Widget widget )
+	{
+
+	}
+	protected override void OnPaint()
+	{
+
+	}
+
+}
+
 public class NewCollectionObjectWindow : BaseWindow
 {
 
@@ -392,4 +494,33 @@ public class NewCollectionObjectWindow : BaseWindow
 	public string SetButtonIcon = "settings";
 
 	public Button buttonIcon;
+}
+
+public class TwoButton : Widget
+{
+	public Button button1;
+	public Button button2;
+
+	public string Button1Text { get; set; }
+	public string Button2Text { get; set; }
+
+	public TwoButton()
+	{
+		// Create a horizontal layout for the buttons
+		var layout = Layout.Row();
+		layout.Spacing = 4;
+		// Create the fvar irst button
+		button1 = layout.Add( new Button("", Button1Text, this ) );
+		button1.ButtonType = "clear";
+
+		layout.AddSpacingCell( 40 );
+
+		// Create the svar econd button
+		button2 = layout.Add( new Button("", Button2Text, this ) );
+		button2.ButtonType = "clear";
+		button2.Position = new Vector2( 50, 0 );
+		layout.Add( button2 );
+
+		MinimumHeight = 23;
+	}
 }

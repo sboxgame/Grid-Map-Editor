@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Nodes;
+using static Editor.GridMapTool;
 
 namespace Editor;
 
@@ -50,6 +51,8 @@ public partial class GridMapTool : EditorTool
 	//Get and store the gameobjects from the prefab file.
 	GameObject SelectedObject { get; set; }
 	GameObject CopyObject { get; set; }
+
+	[Property]
 	GameObject GizmoGameObject { get; set; }
 	JsonObject SelectedJsonObject { get; set; }
 
@@ -177,7 +180,9 @@ public partial class GridMapTool : EditorTool
 		if ( SelectedJsonObject != null )
 		{
 			var go = new GameObject( true, "GridTile" );
+			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
 			go.Deserialize( SelectedJsonObject );
+			go.MakeNameUnique();
 			go.Parent = CurrentGameObjectCollection;
 			go.Transform.Position = position;
 			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
@@ -266,11 +271,13 @@ public partial class GridMapTool : EditorTool
 	{
 		if ( !finishedLoadedFromScene && !loadscene )
 		{
-			var gameObject = SceneUtility.Instantiate( SceneUtility.GetPrefabScene( PrefabResourse ), new Transform( Vector3.Left * 10000 ) );
+			var gameObject = SceneUtility.Instantiate( SceneUtility.GetPrefabScene( PrefabResourse ), new Transform( Vector3.Up * 100000 ) );
 			gameObject.BreakFromPrefab();
+
 			gameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 
-			var allObjects = gameObject.GetAllObjects( true );
+			
+			var allObjects = gameObject.GetAllObjects( false );
 
 			bool isFirst = true;
 
@@ -344,7 +351,7 @@ public partial class GridMapTool : EditorTool
 			tileList.Clear();
 			UpdateListViewItems();
 		}
-	
+		paintmode.SetContext( "Remove", null);
 		tilelistView.ItemsSelected = SetSelection;
 
 		// Do gizmos and stuff
@@ -431,17 +438,17 @@ public partial class GridMapTool : EditorTool
 			if ( Application.IsKeyDown( KeyCode.Z ) )
 			{
 				Axis = GroundAxis.Z;
-				currentaxisLabel.Text = Axis.ToString();
+				//currentaxisLabel.Text = Axis.ToString();
 			}
 			else if ( Application.IsKeyDown( KeyCode.C ) )
 			{
 				Axis = GroundAxis.X;
-				currentaxisLabel.Text = Axis.ToString();
+				//currentaxisLabel.Text = Axis.ToString();
 			}
 			else if ( Application.IsKeyDown( KeyCode.X ) )
 			{
 				Axis = GroundAxis.Y;
-				currentaxisLabel.Text = Axis.ToString();
+				//currentaxisLabel.Text = Axis.ToString();
 			}
 
 			FloorHeightShortCut();
@@ -500,7 +507,7 @@ public partial class GridMapTool : EditorTool
 			{
 				SelectedObject = null;
 			}
-			
+
 			if ( Gizmo.IsLeftMouseDown && CurrentPaintMode == PaintMode.Move && SelectedObject is not null )
 			{
 				HandleMove( cursorRay );
@@ -510,7 +517,7 @@ public partial class GridMapTool : EditorTool
 			{
 				HandleCopy( cursorRay );
 			}
-			
+
 			if ( Gizmo.WasLeftMousePressed && CurrentPaintMode == PaintMode.Copy && CopyObject != null )
 			{
 				HandleCopyPlace( tr, cursorRay );
