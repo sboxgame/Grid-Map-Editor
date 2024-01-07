@@ -65,6 +65,7 @@ public partial class GridMapTool : EditorTool
 	{
 		public string name;
 		public JsonObject jsonObject;
+		public PrefabFile prefabObject;
 		public Pixmap icon;
 	}
 
@@ -280,7 +281,7 @@ public partial class GridMapTool : EditorTool
 			var allObjects = gameObject.GetAllObjects( false );
 
 			bool isFirst = true;
-
+			GameObject lastFoundObject = null;
 			foreach ( var obj in allObjects )
 			{
 				// Skip the first object
@@ -292,11 +293,13 @@ public partial class GridMapTool : EditorTool
 
 				if ( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ) != null )
 				{
-					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) )
+					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
+						lastFoundObject = obj;
 						tileList.Add( new TileList()
 						{
 							name = obj.Name,
+							//prefabObject = obj.GetAsPrefab(),
 							jsonObject = obj.Serialize(),
 							icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 						} );
@@ -309,7 +312,6 @@ public partial class GridMapTool : EditorTool
 					{
 						Log.Info( obj.Name );
 					}
-					 // Delay for UI update and to avoid freezing
 				}
 			}
 
@@ -351,7 +353,7 @@ public partial class GridMapTool : EditorTool
 			tileList.Clear();
 			UpdateListViewItems();
 		}
-		paintmode.SetContext( "Remove", null);
+
 		tilelistView.ItemsSelected = SetSelection;
 
 		// Do gizmos and stuff
