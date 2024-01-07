@@ -1,0 +1,19 @@
+{
+  "Title": "Grid Map Editor",
+  "Type": "tool",
+  "Org": "local",
+  "Ident": "grid_map_editor",
+  "Tags": null,
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "Resources": null,
+  "MenuResources": "*",
+  "HasCode": true,
+  "CodePath": "code",
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "ProjectTemplate": null
+  }
+}

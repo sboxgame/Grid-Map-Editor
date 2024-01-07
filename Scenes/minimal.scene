@@ -1,0 +1,49 @@
+{
+  "Id": "fd737069-d3b6-4c07-9921-3aebb6402049",
+  "GameObjects": [
+    {
+      "Id": "0bc58a4e-2597-411f-affc-b6af99cdc9b9",
+      "Name": "2D Skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "__enabled": true,
+          "SkyMaterial": "materials/sky/sky_002.vmat",
+          "Tint": "0.20792,0.20792,0.20792,1"
+        }
+      ]
+    },
+    {
+      "Id": "dabad7ab-28ce-4f48-b5d9-a3d2277c27bc",
+      "Name": "Sun",
+      "Position": "285.6799,822.649,643.4822",
+      "Rotation": "0.3464704,0.2151882,-0.7756222,0.4817287",
+      "Tags": "light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "1.90099,1.98218,2,1",
+          "Shadows": true,
+          "SkyColor": "0.18317,0.18317,0.18317,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "minimal",
+  "Description": "",
+  "__references": [
+    "caro.bluecloudysky"
+  ]
+}
