@@ -10,6 +10,11 @@ public partial class GridMapTool
 	private LineEdit heightInput;
 	private WidgetWindow gridwindowWidget;
 	private FloatSlider slider;
+
+	private WidgetWindow popup;
+	private ComboBox rotationSnapBox;
+	private WidgetWindow window;
+	
 	public ComboBox collectionDropDown { get; set; } = new();
 	public ComboBox groupDropDown { get; set; } = new();
 	[Sandbox.Range( 0, 100 )]
@@ -141,6 +146,8 @@ public partial class GridMapTool
 	{
 		gridwindowWidget.FixedHeight = SceneOverlay.Height;
 
+		window.AlignToParent( TextFlag.CenterTop );
+
 		if ( CurrentListStyle == ListStyle.Grid )
 		{
 			tilelistView.ItemSize = slider.Value;
@@ -153,7 +160,7 @@ public partial class GridMapTool
 	void MainWindow(SerializedObject so)
 	{
 		{
-			var window = new WidgetWindow( SceneOverlay, "Grid Map Controls" );
+			window = new WidgetWindow( SceneOverlay, "Grid Map Controls" );
 			window.MaximumWidth = 400;
 			window.MinimumWidth = 400;
 
@@ -252,8 +259,6 @@ public partial class GridMapTool
 	}
 
 	bool optionsOpened = false;
-	private WidgetWindow popup;
-	private ComboBox rotationSnapBox;
 
 	void OpenDropdown( Widget window )
 	{
