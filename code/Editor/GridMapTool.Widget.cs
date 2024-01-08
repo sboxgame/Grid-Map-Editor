@@ -33,8 +33,11 @@ public partial class GridMapTool
 		Grid,
 		List
 	}
+	public float[] RotationSnaps = new float[] { 1.0f, 5.0f, 15.0f, 45.0f, 90.0f };
+
 	void ToolWindow(SerializedObject so)
 	{
+
 		{
 			gridwindowWidget = new WidgetWindow( SceneOverlay );
 			gridwindowWidget.MaximumWidth = 300;
@@ -168,7 +171,6 @@ public partial class GridMapTool
 			var cs = new ControlSheet();
 
 			cs.AddRow( so.GetProperty( "PrefabResourse" ) );
-			//cs.AddRow( so.GetProperty( "CurrentRotationSnap" ) );
 
 			var rotationButtons = Layout.Column();
 			var rotButtonX = rotationButtons.Add(Layout.Row());
@@ -251,6 +253,7 @@ public partial class GridMapTool
 
 	bool optionsOpened = false;
 	private WidgetWindow popup;
+	private ComboBox rotationSnapBox;
 
 	void OpenDropdown( Widget window )
 	{
@@ -291,6 +294,21 @@ public partial class GridMapTool
 		}
 
 		ps.AddSectionHeader( "Rotation" );
+		{
+			rotationSnapBox = ps.AddRow( "Rotation Snap :", new ComboBox());
+			foreach (var rot in RotationSnaps )
+			{
+				rotationSnapBox.AddItem( rot.ToString(), null, () => rotationSnap = rot );
+			}
+			int defaultAngleSnapIndex = Array.IndexOf( RotationSnaps, 90f );
+			if ( defaultAngleSnapIndex != -1 )
+			{
+				rotationSnapBox.CurrentIndex = defaultAngleSnapIndex;
+				rotationSnap = 90f;
+			}
+			var x = ps.AddRow( "Decrease Rotation Snap:", new Label( "Shift + 4" ) );
+			var z = ps.AddRow( "Increase Rotation Snap:", new Label( "Shift + 5" ) );
+		}
 		{
 			var z = ps.AddRow( "Rotation Z:", new TwoButton() );
 			z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };

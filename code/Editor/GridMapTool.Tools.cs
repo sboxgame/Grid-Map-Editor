@@ -212,32 +212,19 @@ public partial class GridMapTool
 
 	public void UpdateRotationSnapWithKeybind()
 	{
-		if ( Gizmo.IsCtrlPressed && Application.IsKeyDown( KeyCode.BraceLeft ) && !_prevlessRotationSnap )
+		if ( Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num4 ) && !_prevlessRotationSnap )
 		{
-			CycleRotationSnap( -1 );
+			if( rotationSnapBox.CurrentIndex != 0)
+			rotationSnapBox.CurrentIndex = rotationSnapBox.CurrentIndex - 1;
 		}
-		else if ( Gizmo.IsCtrlPressed && Application.IsKeyDown( KeyCode.BraceRight ) && !_prevmoreRotationSnap )
+		else if ( Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num5 ) && !_prevmoreRotationSnap )
 		{
-			CycleRotationSnap( 1 );
+			if ( rotationSnapBox.CurrentIndex != rotationSnapBox.Count -1 )
+				rotationSnapBox.CurrentIndex = rotationSnapBox.CurrentIndex + 1;
 			Log.Info( $"Rotation Snap: {rotationSnap}" );
 		}
 
-		_prevlessRotationSnap = Gizmo.IsCtrlPressed && Application.IsKeyDown( KeyCode.BraceLeft );
-		_prevmoreRotationSnap = Gizmo.IsCtrlPressed && Application.IsKeyDown( KeyCode.BraceRight );
-	}
-
-	private void CycleRotationSnap( int direction )
-	{
-		// Get all values of the RotationSnap enum
-		var values = Enum.GetValues( typeof( RotationSnap ) ).Cast<RotationSnap>().ToList();
-
-		// Find the current index of the enum
-		int currentIndex = values.IndexOf( CurrentRotationSnap );
-
-		// Calculate the new index
-		int newIndex = (currentIndex + direction + values.Count) % values.Count;
-
-		// Update the CurrentRotationSnap to the new value
-		CurrentRotationSnap = values[newIndex];
+		_prevlessRotationSnap = Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num4 );
+		_prevmoreRotationSnap = Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num5 );
 	}
 }

@@ -21,15 +21,6 @@ public partial class GridMapTool : EditorTool
 	public int floorCount = 0;
 	public Rotation rotation = Rotation.From( 90, 0, 0 );
 	float rotationSnap = 90.0f;
-	public enum RotationSnap
-	{
-		None = 0,
-		Five = 5,
-		Fifteen = 15,
-		FortyFive = 45,
-		Ninety = 90
-	}
-	public RotationSnap CurrentRotationSnap { get; set; } = RotationSnap.Ninety;
 	public enum PaintMode
 	{
 		Place = 0,
@@ -160,6 +151,7 @@ public partial class GridMapTool : EditorTool
 	private bool isSelecting = false;
 
 	bool _prevFilled = false;
+	bool _prevGridded = false;
 	private void FillSelectionWithTiles( Vector3 start, Vector3 end )
 	{
 		float gridSpacing = Gizmo.Settings.GridSpacing;
@@ -482,6 +474,13 @@ public partial class GridMapTool : EditorTool
 
 			_prevFilled = Application.IsKeyDown( KeyCode.F );
 
+			if ( Application.IsKeyDown( KeyCode.G ) && !_prevGridded )
+			{
+				ShouldSnapToGrid = !ShouldSnapToGrid;
+			}
+
+			_prevGridded = Application.IsKeyDown( KeyCode.G );
+
 			if ( Application.IsKeyDown( KeyCode.R ) )
 			{
 				foreach ( var obj in SelectedGroupObjects )
@@ -526,7 +525,7 @@ public partial class GridMapTool : EditorTool
 				Gizmo.Draw.Color = Color.Blue;
 				Gizmo.Draw.LineBBox( rect );
 			}
-
+			UpdateRotationSnapWithKeybind();
 			return;
 		}
 		else if ( isSelecting )
@@ -542,6 +541,7 @@ public partial class GridMapTool : EditorTool
 			startSelectionPoint = Vector3.Zero;
 			endSelectionPoint = Vector3.Zero;
 		}
+
 
 		if ( !Gizmo.IsCtrlPressed )
 		{
@@ -585,8 +585,6 @@ public partial class GridMapTool : EditorTool
 			}
 		}
 
-		UpdateRotationSnapWithKeybind();
-
 		if ( CurrentGameObjectCollection is not null )
 		{
 			CollectionGroupHighLight();
@@ -609,7 +607,7 @@ public partial class GridMapTool : EditorTool
 	{
 		beenRotated = true;	
 		
-		float rotationIncrement = leftright ? (float)CurrentRotationSnap : -(float)CurrentRotationSnap;
+		float rotationIncrement = leftright ? rotationSnap : -rotationSnap;
 		return () =>
 		{
 
@@ -636,13 +634,13 @@ public partial class GridMapTool : EditorTool
 		switch (axis)
 		{
 			case GroundAxis.X:
-				a.pitch = a.pitch.SnapToGrid( (float)CurrentRotationSnap );
+				a.pitch = a.pitch.SnapToGrid( rotationSnap );
 				break;
 			case GroundAxis.Y:
-				a.yaw = a.yaw.SnapToGrid( (float)CurrentRotationSnap );
+				a.yaw = a.yaw.SnapToGrid( rotationSnap );
 				break;
 			case GroundAxis.Z:
-				a.roll = a.roll.SnapToGrid( (float)CurrentRotationSnap );
+				a.roll = a.roll.SnapToGrid( rotationSnap );
 				break;
 		}
 		rotation = Rotation.From( a );
