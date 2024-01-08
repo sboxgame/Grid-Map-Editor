@@ -10,7 +10,8 @@ public partial class GridMapTool
 	private LineEdit heightInput;
 	private WidgetWindow gridwindowWidget;
 	private FloatSlider slider;
-
+	public ComboBox collectionDropDown { get; set; } = new();
+	public ComboBox groupDropDown { get; set; } = new();
 	[Sandbox.Range( 0, 100 )]
 	public float thumbnailScale { get; set; }
 
@@ -45,6 +46,18 @@ public partial class GridMapTool
 
 			var collectionLabel = new Label( "Collection :" );
 			var collectionCombo = collectionDropDown;
+
+			var grouprow = Layout.Row();
+			var groupLabel = new Label( "Groups :" );
+			var groupCombo = groupDropDown;
+
+			groupCombo.ItemChanged += () =>
+			{
+				UpdateListViewItems();
+			};
+
+			grouprow.Add( groupLabel );
+			grouprow.Add( groupCombo );
 
 			var collectionButton = new Button( "", "add" );
 			collectionButton.ButtonType = "clear";
@@ -102,7 +115,6 @@ public partial class GridMapTool
 				{
 					SelectedJsonObject = data.jsonObject;
 					UpdatePaintObjectGizmo();
-					Log.Info( "Selected Model: " + data.prefabObject );
 				}
 			};
 			
@@ -114,6 +126,8 @@ public partial class GridMapTool
 			
 			row.AddSeparator();
 			row.Add( tilelistView );
+			row.AddSeparator();
+			row.Add( grouprow );
 
 			gridwindowWidget.Layout = row;
 			

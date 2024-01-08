@@ -40,7 +40,6 @@ public partial class GridMapTool : EditorTool
 
 	public GameObject CurrentGameObjectCollection;
 	public List<GameObject> GameObjectCollection { get; set; } = new();
-	public ComboBox collectionDropDown { get; set; } = new();
 
 	TimeSince timeSinceChangedCollection = 0;
 
@@ -58,14 +57,16 @@ public partial class GridMapTool : EditorTool
 
 	//Widget
 	public ListView tilelistView { get; set; } = new();
+
+	public List<string> tileGroups { get; set; } = new();
 	//
 
 	public List<TileList> tileList { get; set; } = new();
 	public struct TileList
 	{
 		public string name;
+		public string group;
 		public JsonObject jsonObject;
-		public string prefabObject;
 		public Pixmap icon;
 	}
 
@@ -103,18 +104,44 @@ public partial class GridMapTool : EditorTool
 		UpdateListViewItems();
 	}
 
-	private void UpdateListViewItems()
+	private void OnGroupChanged()
+	{
+		UpdateListViewItems();
+	}
+
+	private void GroupList()
 	{
 
+		tileGroups.Add( "" );
+		groupDropDown.AddItem( "" );
+	
+		foreach ( var item in tileList )
+		{
+			//Add the groups to the dropdown
+			if ( !tileGroups.Contains( item.group ) && item.group != null)
+			{
+				tileGroups.Add( item.group );
+				groupDropDown.AddItem( item.group );
+			}
+		}
+	}
+	
+	private void UpdateListViewItems()
+	{
+		// Get the currently selected group from the dropdown
+		var selectedGroup = groupDropDown.CurrentText;
+
+		// Filter the tile list based on the search string and the selected group
 		var filteredTileList = tileList
-			.Where( model => model.name.ToLower().Contains( SearchString ) )
+			.Where( model => model.name.ToLower().Contains( SearchString.ToLower() ) &&
+							(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup) )
 			.ToList();
+
 		tilelistView.SetItems( filteredTileList.Cast<object>() );
 		tilelistView.Update(); // Refresh ListView
 
 		oldresource = PrefabResourse;
 	}
-
 
 	public override void OnDisabled()
 	{
@@ -199,7 +226,7 @@ public partial class GridMapTool : EditorTool
 		Vector3 planeNormal;
 		Vector3 planePoint;
 		GroundAxis axis = Axis;
-		Log.Info( FloorHeight );
+
 		switch ( axis )
 		{
 			case GroundAxis.X:
@@ -295,32 +322,36 @@ public partial class GridMapTool : EditorTool
 					isFirst = false;
 					continue;
 				}
-				/*
-				if(obj.IsPrefabInstance)
-				{
-					tileList.Add( new TileList()
-					{
-						name = obj.Name,
-						prefabObject = obj.PrefabInstanceSource,
-						icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
-					} );
-				}	
-				*/
+
 				if ( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ) != null  )
 				{
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
-						lastFoundObject = obj;
-						tileList.Add( new TileList()
+						if ( obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
 						{
-							name = obj.Name,
-							jsonObject = obj.Serialize(),
-							icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
-						} );
+							lastFoundObject = obj;
+							tileList.Add( new TileList()
+							{
+								name = obj.Name,
+								group = obj.Parent.Name,
+								jsonObject = obj.Serialize(),
+								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
+							} ); 
+							Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+						}
+						else if ( !obj.Tags.Has( "group" ) )
+						{
+							lastFoundObject = obj;
+							tileList.Add( new TileList()
+							{
+								name = obj.Name,
+								jsonObject = obj.Serialize(),
+								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
+							} );
 
-						Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
-
-						await Task.Delay( 10 );
+							Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+						}
+						//await Task.Delay( 10 );
 					}
 					else
 					{
@@ -328,7 +359,7 @@ public partial class GridMapTool : EditorTool
 					}
 				}
 			}
-
+			GroupList();
 			UpdateListViewItems();
 			finishedLoadedFromScene = true;
 			gameObject.Destroy();

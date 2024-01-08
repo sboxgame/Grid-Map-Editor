@@ -20,6 +20,7 @@ public partial class GridMapTool
 	public void HandlePlacement( SceneTraceResult tr, Ray cursorRay )
 	{
 		if ( SelectedJsonObject is null ) return;
+		using var scope = SceneEditorSession.Scope();
 		
 		projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
 		
@@ -33,9 +34,11 @@ public partial class GridMapTool
 			go.Deserialize( SelectedJsonObject );
 			go.Parent = CurrentGameObjectCollection;
 			go.Transform.Position = snappedPosition;
-			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;		
+			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+			go.Tags.Remove( "group" );
 			go.Tags.Add( "gridtile" );
 
+			go.EditLog( "Grid Placed", go );
 		}
 	}
 
@@ -87,6 +90,8 @@ public partial class GridMapTool
 	{
 		if ( CursorRay( cursorRay ).Hit )
 		{
+			using var scope = SceneEditorSession.Scope();
+
 			var options = new GameObject.SerializeOptions();
 			var selection = CopyObject;
 			var json = selection.Serialize( options );
