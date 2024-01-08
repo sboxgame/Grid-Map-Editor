@@ -5,6 +5,9 @@ namespace Editor;
 public partial class GridMapTool
 {
 	private Label floorLabel;
+	private Label floorcontrolLabel;
+	private Label rotationLabel;
+	private Label selectedamount;
 	private Label currentaxisLabel;
 
 	private LineEdit heightInput;
@@ -164,7 +167,7 @@ public partial class GridMapTool
 			window.MaximumWidth = 400;
 			window.MinimumWidth = 400;
 
-			var row = Layout.Column();		
+			var row = Layout.Column();
 			paintmode = row.Add( new SegmentedControl() );
 			paintmode.AddOption( "Place", "brush" );
 			paintmode.AddOption( "Remove", "delete" );
@@ -174,71 +177,41 @@ public partial class GridMapTool
 			{
 				CurrentPaintMode = Enum.Parse<PaintMode>( s );
 			};
-			
+
 			var cs = new ControlSheet();
 
 			cs.AddRow( so.GetProperty( "PrefabResourse" ) );
+			
+			var row2 = Layout.Row();
+			row2.AddSpacingCell( 16 );
+			floorcontrolLabel = new Label( $"Floor Level: {floorCount.ToString()}" );
+			row2.Add( floorcontrolLabel );
 
-			var rotationButtons = Layout.Column();
-			var rotButtonX = rotationButtons.Add(Layout.Row());
-			rotButtonX.Spacing = 8;
-			rotButtonX.Add( new Label( "Rotation X: " ) );
-			rotButtonX.AddStretchCell( 1 );
-			rotButtonX.Add( new Button( "", "arrow_back" ) { Clicked = DoRotation( true, GroundAxis.X ), ButtonType = "clear" } );
-			rotButtonX.Add( new Button( "", "arrow_forward" ) { Clicked = DoRotation( false, GroundAxis.X ), ButtonType = "clear" } );
+			rotationLabel = new Label( $"Rotation Snap: {rotationSnap}" );
+			row2.Add( rotationLabel );
 
-			var rotButtonY = rotationButtons.Add( Layout.Row() );
-			rotButtonY.Spacing = 8;
-			rotButtonY.Add( new Label( "Rotation Y: " ) );
-			rotButtonY.AddStretchCell( 1 );
-			rotButtonY.Add( new Button( "", "arrow_back" ) { Clicked = DoRotation( true, GroundAxis.Y ), ButtonType = "clear" } );
-			rotButtonY.Add( new Button( "", "arrow_forward" ) { Clicked = DoRotation( false, GroundAxis.Y ), ButtonType = "clear" } );
-
-			var rotButtonZ = rotationButtons.Add( Layout.Row() );
-			rotButtonZ.Spacing = 8;
-			rotButtonZ.Add( new Label( "Rotation Z: " ) );
-			rotButtonZ.AddStretchCell( 1 );
-			rotButtonZ.Add( new Button( "", "arrow_back" ) { Clicked = DoRotation( true, GroundAxis.Z ), ButtonType = "clear" } );
-			rotButtonZ.Add( new Button( "", "arrow_forward" ) { Clicked = DoRotation( false, GroundAxis.Z ), ButtonType = "clear" } );
-
-			var FloorHeightValue = Layout.Row();
-			FloorHeightValue.Add( new Label( "Floor Height:" ) );
-			FloorHeightValue.AddStretchCell( 1 );
-			heightInput = new LineEdit();
-			FloorHeightValue.Add( heightInput );
-			heightInput.MinimumHeight = Theme.RowHeight;
-			heightInput.Text = "128";
-			heightInput.TextChanged += (x) => FloorHeight = x.ToInt();
-
-			var Floorbuttons = Layout.Row();
-			Floorbuttons.Spacing = 8;
-			Floorbuttons.Add( new Label( "Floor:" ) );
-			Floorbuttons.AddStretchCell( 1 );
-			floorLabel = new Label( floorCount.ToString() );
-			Floorbuttons.Add( floorLabel );
-			Floorbuttons.AddStretchCell( 1 );
-			Floorbuttons.Add( new Button( "", "arrow_upward" ) { Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = floorCount.ToString(); }, ButtonType = "clear" } );
-			Floorbuttons.Add( new Button( "", "arrow_downward" ) { Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = floorCount.ToString(); }, ButtonType = "clear" } );
-
+			selectedamount = new Label( $"Selection: {SelectedGroupObjects.Count}" );
+			row2.Add( selectedamount );
+			
 			var pop = Layout.Row();
 
-			var popbutton = pop.Add( new Button( "Options", "more_horiz" ) { Clicked = () => { OpenDropdown( window ); } } );
+			var popbutton = pop.Add( new Button( "Options...", "more_horiz" ) { Clicked = () => { OpenDropdown( window ); } } );
 			popbutton.ButtonType = "clear";
 			popbutton.OnPaintOverride += () => 
 			{
 				if(popbutton.IsUnderMouse || optionsOpened )
 				{
 					Paint.SetPen( Theme.White.WithAlpha( .75f ) );
-					Paint.SetFont( "Poppins", 8, 450 );
-					Paint.DrawText( popbutton.LocalRect + new Vector2(-160, -5 ), "Options" );
+					Paint.SetDefaultFont( 8, 450 );
+					Paint.DrawText( popbutton.LocalRect + new Vector2(164, -10 ), "Options" );
 					Paint.ClearBrush();
 					Paint.ClearPen();
 					Paint.SetBrush( Theme.ControlBackground.WithAlpha( .4f ) );
 				}
 				
 				Paint.SetPen( Theme.White.WithAlpha( .5f ) );
-				Paint.SetFont( "Poppins", 8, 450 );
-				Paint.DrawText( popbutton.LocalRect + new Vector2(-160,-5), "Options" );
+				Paint.SetDefaultFont( 8, 450 );
+				Paint.DrawText( popbutton.LocalRect + new Vector2(164,-10), "Options" );
 				Paint.ClearBrush();
 				Paint.ClearPen();
 				Paint.SetBrush( Theme.ControlBackground.WithAlpha( .2f ) );
@@ -247,8 +220,10 @@ public partial class GridMapTool
 				return true;
 			};
 			popbutton.MaximumWidth = 500;
+			popbutton.MinimumHeight = 50;
 
 			row.Add( cs );
+			row.Add( row2 );
 			row.Add( pop );
 
 			//cs.Add( new Button( "Clear", "clear" ) { Clicked = ClearAll } );
@@ -290,10 +265,10 @@ public partial class GridMapTool
 		}
 		{
 			var x = ps.AddRow("Floor Level:", new TwoButton() );
-			x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
+			x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
 			x.button1.Icon = "arrow_upward";
 			x.label1.Text = "Shift + E";
-			x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
+			x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
 			x.button2.Icon = "arrow_downward";
 			x.label2.Text = "Shift + Q";
 		}
@@ -303,7 +278,7 @@ public partial class GridMapTool
 			rotationSnapBox = ps.AddRow( "Rotation Snap :", new ComboBox());
 			foreach (var rot in RotationSnaps )
 			{
-				rotationSnapBox.AddItem( rot.ToString(), null, () => rotationSnap = rot );
+				rotationSnapBox.AddItem( rot.ToString(), null, () => rotationSnap = rot, rotationLabel.Text = $"Rotation Snap: {rotationSnap}" );
 			}
 			int defaultAngleSnapIndex = Array.IndexOf( RotationSnaps, 90f );
 			if ( defaultAngleSnapIndex != -1 )

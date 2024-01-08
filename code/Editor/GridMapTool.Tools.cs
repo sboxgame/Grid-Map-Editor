@@ -139,7 +139,11 @@ public partial class GridMapTool
 			so = null;
 			Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
-			floorLabel.Text = floorCount.ToString();
+			if ( floorLabel.IsValid() )
+			{
+				floorLabel.Text = floorCount.ToString();
+			}
+			floorcontrolLabel.Text = $"Floor Level: {floorCount}";
 		}
 		else if ( Application.IsKeyDown( KeyCode.E ) && !_prevmoreFloor )
 		{
@@ -147,8 +151,12 @@ public partial class GridMapTool
 			so.Delete();
 			so = null;
 			Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
-			
-			floorLabel.Text = floorCount.ToString();
+
+			if ( floorLabel.IsValid() )
+			{
+				floorLabel.Text = floorCount.ToString();
+			}
+			floorcontrolLabel.Text = $"Floor Level: {floorCount}";
 		}
 
 		_prevlessFloor = Application.IsKeyDown( KeyCode.Q );
@@ -216,12 +224,13 @@ public partial class GridMapTool
 		{
 			if( rotationSnapBox.CurrentIndex != 0)
 			rotationSnapBox.CurrentIndex = rotationSnapBox.CurrentIndex - 1;
+			rotationLabel.Text = $"Rotation Snap: {rotationSnap}";
 		}
 		else if ( Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num5 ) && !_prevmoreRotationSnap )
 		{
 			if ( rotationSnapBox.CurrentIndex != rotationSnapBox.Count -1 )
 				rotationSnapBox.CurrentIndex = rotationSnapBox.CurrentIndex + 1;
-			Log.Info( $"Rotation Snap: {rotationSnap}" );
+			rotationLabel.Text = $"Rotation Snap: {rotationSnap}";
 		}
 
 		_prevlessRotationSnap = Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Num4 );

@@ -290,11 +290,13 @@ public partial class GridMapTool : EditorTool
 	{
 		foreach ( var obj in Scene.GetAllObjects( false ) )
 		{
-			if ( selectionBox.Contains( obj.Transform.Position ) && obj.Tags.Has( "gridtile" ) )
+			if ( selectionBox.Contains( obj.Transform.Position ) && obj.Tags.Has( "gridtile" ) && !SelectedGroupObjects.Contains(obj) )
 			{
 				SelectedGroupObjects.Add( obj );
 			}
 		}
+
+		selectedamount.Text = $"Selected: {SelectedGroupObjects.Count}";
 	}
 
 	bool finishedLoadedFromScene = false;
@@ -487,21 +489,20 @@ public partial class GridMapTool : EditorTool
 				{
 					obj.Destroy();
 				}
+				SelectedGroupObjects.Clear();
+				selectedamount.Text = $"Selected: {SelectedGroupObjects.Count}";
 			}
 			if ( Application.IsKeyDown( KeyCode.Z ) )
 			{
 				Axis = GroundAxis.Z;
-				//currentaxisLabel.Text = Axis.ToString();
 			}
 			else if ( Application.IsKeyDown( KeyCode.C ) )
 			{
 				Axis = GroundAxis.X;
-				//currentaxisLabel.Text = Axis.ToString();
 			}
 			else if ( Application.IsKeyDown( KeyCode.X ) )
 			{
 				Axis = GroundAxis.Y;
-				//currentaxisLabel.Text = Axis.ToString();
 			}
 
 			FloorHeightShortCut();
@@ -540,6 +541,8 @@ public partial class GridMapTool : EditorTool
 			}
 			startSelectionPoint = Vector3.Zero;
 			endSelectionPoint = Vector3.Zero;
+
+			selectedamount.Text = $"Selected: {SelectedGroupObjects.Count}";
 		}
 
 
