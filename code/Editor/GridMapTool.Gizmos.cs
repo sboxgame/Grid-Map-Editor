@@ -1,14 +1,4 @@
-﻿using Editor.MapEditor;
-using Editor.Widgets;
-using Sandbox;
-using Sandbox.UI;
-using System;
-using System.Diagnostics;
-using System.Drawing;
-using System.Runtime.Versioning;
-using System.Text.Json;
-using static Sandbox.HitboxSet;
-
+﻿
 namespace Editor;
 
 public partial class GridMapTool
@@ -125,11 +115,12 @@ public partial class GridMapTool
 		// Do gizmos and stuff
 		var cursorRay = Gizmo.CurrentRay;
 
-		var boxtr = Scene.Trace.Ray( cursorRay, 5000 )
+		var boxtr = SceneEditorSession.Active.Scene.Trace
+			.Ray( cursorRay, 5000 )
 			.UsePhysicsWorld( true )
 			.WithoutTags( "gridtile" )
 			.Run();
-
+		/*
 		if ( !boxtr.Hit )
 		{
 			Vector3 rayOrigin = cursorRay.Position;
@@ -137,13 +128,10 @@ public partial class GridMapTool
 
 			boxtr = ProjectRayOntoGroundPlane( rayOrigin, rayDirection, 0 );
 		}
-
+		*/
 		if ( CurrentPaintMode == PaintMode.Place )
 		{
-			if ( SelectedJsonObject is not null )
-			{
-				PlaceGameObjectGizmo( tr, cursorRay );
-			}		
+			PlaceGameObjectGizmo( tr, cursorRay );		
 		}
 
 		if ( CurrentPaintMode != PaintMode.Place )
@@ -247,14 +235,12 @@ public partial class GridMapTool
 			Log.Info( "GizmoGameObject is not null" );
 		}
 	}
-
 	void PlaceGameObjectGizmo( SceneTraceResult trace, Ray cursorRay )
 	{
 		if ( SelectedJsonObject is null ) return;
-	
-		if(GizmoGameObject is null)
-		{
 
+		if ( GizmoGameObject is null )
+		{
 			//Log.Info( SelectedGameObject.Components.Count );
 			GizmoGameObject = new GameObject( true, "GizmoObject" );
 			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
@@ -264,15 +250,12 @@ public partial class GridMapTool
 			GizmoGameObject.Tags.Add( "isgizmoobject" );
 			GizmoGameObject.Name = "GizmoObject";
 			GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
-
 		}
 
 		if ( GizmoGameObject is not null )
 		{
-
 			GizmoGameObject.Transform.Position = GetGizmoPosition( trace, cursorRay );
-			GizmoGameObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation ;
-
+			GizmoGameObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
 		}
 	}
 

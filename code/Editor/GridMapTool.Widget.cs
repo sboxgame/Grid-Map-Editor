@@ -40,18 +40,7 @@ public partial class GridMapTool
 			gridwindowWidget.WindowTitle = "Grid Map Tool";
 
 			var row = Layout.Column();
-			/*
-			paintmode = row.Add( new SegmentedControl() );
-			paintmode.AddOption( "Place", "brush" );
-			paintmode.AddOption( "Remove", "delete" );
-			paintmode.AddOption( "Move", "open_with" );
-			paintmode.AddOption( "Copy", "content_copy" );
-
-			paintmode.OnSelectedChanged += ( s ) =>
-			{
-				CurrentPaintMode = Enum.Parse<PaintMode>( s );
-			};
-			*/
+			
 			var collectionrow = Layout.Row();
 
 			var collectionLabel = new Label( "Collection :" );
@@ -218,7 +207,7 @@ public partial class GridMapTool
 				{
 					Paint.SetPen( Theme.White.WithAlpha( .75f ) );
 					Paint.SetFont( "Poppins", 8, 450 );
-					Paint.DrawText( popbutton.LocalRect, "Options" );
+					Paint.DrawText( popbutton.LocalRect + new Vector2(-160, -5 ), "Options" );
 					Paint.ClearBrush();
 					Paint.ClearPen();
 					Paint.SetBrush( Theme.ControlBackground.WithAlpha( .4f ) );
@@ -226,15 +215,15 @@ public partial class GridMapTool
 				
 				Paint.SetPen( Theme.White.WithAlpha( .5f ) );
 				Paint.SetFont( "Poppins", 8, 450 );
-				Paint.DrawText( popbutton.LocalRect, "Options");
+				Paint.DrawText( popbutton.LocalRect + new Vector2(-160,-5), "Options" );
 				Paint.ClearBrush();
 				Paint.ClearPen();
 				Paint.SetBrush( Theme.ControlBackground.WithAlpha( .2f ) );
-				Paint.DrawRect( popbutton.LocalRect.Shrink( 2 ) );
+				//Paint.DrawRect( popbutton.LocalRect );
 
 				return true;
 			};
-			popbutton.MaximumWidth = 100;
+			popbutton.MaximumWidth = 500;
 
 			row.Add( cs );
 			row.Add( pop );
@@ -281,41 +270,49 @@ public partial class GridMapTool
 			var x = ps.AddRow("Floor Level:", new TwoButton() );
 			x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
 			x.button1.Icon = "arrow_upward";
+			x.label1.Text = "Shift + E";
 			x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = floorCount.ToString(); };
 			x.button2.Icon = "arrow_downward";
+			x.label2.Text = "Shift + Q";
 		}
 
 		ps.AddSectionHeader( "Rotation" );
 		{
+			var z = ps.AddRow( "Rotation Z:", new TwoButton() );
+			z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };
+			z.button1.Icon = "arrow_back";
+			z.label1.Text = "Shift + 1";
+			z.button2.Clicked = () => { DoRotation( false, GroundAxis.Z )(); };
+			z.button2.Icon = "arrow_forward";
+			z.label2.Text = "Alt + 1";
+
 			var x = ps.AddRow( "Rotation X:", new TwoButton() );
 			x.button1.Clicked = () => { DoRotation( true, GroundAxis.X )(); };
 			x.button1.Icon = "arrow_back";
+			x.label1.Text = "Shift + 2";
 			x.button2.Clicked = () => { DoRotation( false, GroundAxis.X )(); };
 			x.button2.Icon = "arrow_forward";
+			x.label2.Text = "Alt + 2";
 
 			var y = ps.AddRow( "Rotation Y:", new TwoButton() );
 			y.button1.Clicked = () => { DoRotation( true, GroundAxis.Y )(); };
 			y.button1.Icon = "arrow_back";
+			y.label1.Text = "Shift + 3";
 			y.button2.Clicked = () => { DoRotation( false, GroundAxis.Y )(); };
 			y.button2.Icon = "arrow_forward";
-
-			var z = ps.AddRow( "Rotation Z:", new TwoButton() );
-			z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };
-			z.button1.Icon = "arrow_back";
-			z.button2.Clicked = () => { DoRotation( false, GroundAxis.Z )(); };
-			z.button2.Icon = "arrow_forward";
+			y.label2.Text = "Alt + 3";
 		}
 		ps.AddSectionHeader( "Ground Axis" );
 		{
-			var w = ps.AddRow( "X", new Checkbox( "Key: C" ) );
+			var w = ps.AddRow( "X", new Checkbox( "Shift + C" ) );
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.X, x => { if ( x ) Axis = GroundAxis.X; currentaxisLabel.Text = Axis.ToString(); } );
 		}
 		{
-			var w = ps.AddRow( "Y", new Checkbox( "Key: X" ) );
+			var w = ps.AddRow( "Y", new Checkbox( "Shift + X" ) );
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.Y, x => { if ( x ) Axis = GroundAxis.Y; currentaxisLabel.Text = Axis.ToString(); } );
 		}
 		{
-			var w = ps.AddRow( "Z", new Checkbox( "Key: Z" ) );
+			var w = ps.AddRow( "Z", new Checkbox( "Shift + Z" ) );
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
 		}
 
@@ -331,11 +328,19 @@ public partial class GridMapTool
 		Paint.SetBrush( Theme.ControlBackground.WithAlpha( .0f ) );
 		Paint.DrawRect( widget.LocalRect, 12 );
 
+		Paint.ClearBrush();
+
+		Vector2 iconPosition = new Vector2( widget.LocalRect.Left, widget.LocalRect.Top + 32 );
+		var bgrect = new Rect( iconPosition.x, iconPosition.y, widget.Width, widget.Height / 1.5f );
+
+		Paint.SetBrush( Theme.ControlBackground.WithAlpha( .5f ) );
+		Paint.DrawRect( bgrect, 16 );
+
 		return true;
 	}
 	private static bool PaintListBackground( Widget widget )
 	{
-		
+
 		Paint.ClearPen();
 		Paint.SetBrush( Theme.ControlBackground.WithAlpha( 1f ) );
 		Paint.DrawRect( widget.LocalRect );
@@ -501,8 +506,8 @@ public class TwoButton : Widget
 	public Button button1;
 	public Button button2;
 
-	public string Button1Text { get; set; }
-	public string Button2Text { get; set; }
+	public Label label1;
+	public Label label2;
 
 	public TwoButton()
 	{
@@ -510,16 +515,21 @@ public class TwoButton : Widget
 		var layout = Layout.Row();
 		layout.Spacing = 4;
 		// Create the fvar irst button
-		button1 = layout.Add( new Button("", Button1Text, this ) );
+		button1 = layout.Add( new Button("", this ) );
 		button1.ButtonType = "clear";
 
+		label1 = layout.Add( new Label( "", this ) );
+		label1.Position = new Vector2( 40, 5 );
 		layout.AddSpacingCell( 40 );
 
 		// Create the svar econd button
-		button2 = layout.Add( new Button("", Button2Text, this ) );
+		button2 = layout.Add( new Button("", this ) );
 		button2.ButtonType = "clear";
-		button2.Position = new Vector2( 50, 0 );
+		button2.Position = new Vector2( 100, 0 );
 		layout.Add( button2 );
+
+		label2 = layout.Add( new Label( "", this ) );
+		label2.Position = new Vector2( 140, 5 );
 
 		MinimumHeight = 23;
 	}
