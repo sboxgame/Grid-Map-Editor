@@ -13,6 +13,7 @@ namespace Editor;
 [Order( 5 )]
 public partial class GridMapTool : EditorTool
 {
+	bool ShouldSnapToGrid = true;
 	public PrefabFile PrefabResourse { get; set; }
 	public PrefabFile oldresource { get; set; }
 	public string SearchString { get; set; } = "";
@@ -283,6 +284,10 @@ public partial class GridMapTool : EditorTool
 
 	private float SnapToGrid( float value )
 	{
+		if( !ShouldSnapToGrid )
+		{
+			return value;
+		}
 		// Assuming you have a grid spacing value
 		return MathF.Round( value / Gizmo.Settings.GridSpacing ) * Gizmo.Settings.GridSpacing;
 	}
@@ -372,8 +377,8 @@ public partial class GridMapTool : EditorTool
 		Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
 		UpdateWidgetValues();
-	
-		if( PrefabResourse is not null && tileList is not null)
+
+		if ( PrefabResourse is not null && tileList is not null)
 		{
 			if ( PrefabResourse.ResourceName.Contains( "_tileset" ) )
 			{

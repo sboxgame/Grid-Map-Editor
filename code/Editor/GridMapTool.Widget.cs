@@ -329,6 +329,12 @@ public partial class GridMapTool
 			var w = ps.AddRow( "Z", new Checkbox( "Shift + Z" ) );
 			w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
 		}
+		ps.AddSectionHeader( "Grid" );
+		{
+			var w = ps.AddRow( "Snap to Grid", new Checkbox( "Shift + G" ) );
+			w.Bind( "Value" ).From( () => ShouldSnapToGrid, x => { ShouldSnapToGrid = x; } );
+		}
+		
 
 		popup.Layout.Add( ps );
 		

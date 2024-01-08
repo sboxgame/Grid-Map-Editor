@@ -104,17 +104,6 @@ public partial class GridMapTool
 			go.Parent = CurrentGameObjectCollection;
 			go.Transform.Position = GetGizmoPosition( trace, cursorRay );
 			go.Transform.Rotation = GizmoGameObject.Transform.Rotation;
-			//Disable for now, as causes prefabs to break?
-			/*
-			if ( beenRotated )
-			{
-				//go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
-			}
-			else
-			{
-				//go.Transform.Rotation = lastRot;
-			}
-			*/
 
 			go.Tags.Add( "gridtile" );
 		}
