@@ -510,12 +510,11 @@ public partial class GridMapTool : EditorTool
 
 			if ( Application.IsKeyDown( KeyCode.T ) )
 			{
-				if ( LastPaintMode != PaintMode.Duplicate )
+				if ( CurrentPaintMode != PaintMode.Duplicate )
 				{
 					LastPaintMode = CurrentPaintMode;
-					Log.Info( LastPaintMode );
 				}
-				
+
 				foreach ( var obj in SelectedGroupObjects )
 				{
 					DuplicateObjectCollection.Add( new DuplicatedItems()
