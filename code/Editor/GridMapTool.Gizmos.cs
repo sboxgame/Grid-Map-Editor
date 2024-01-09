@@ -31,11 +31,11 @@ public partial class GridMapTool
 			Gizmo.Draw.Line( Vector3.Up , Vector3.Up * 16384 );
 			Gizmo.Draw.Line( Vector3.Down , Vector3.Down * 16384 );
 
-			Gizmo.Draw.Color = Gizmo.Colors.Pitch.WithAlpha( 0.65f );
+			Gizmo.Draw.Color = Gizmo.Colors.Yaw.WithAlpha( 0.65f );
 			Gizmo.Draw.Line( Vector3.Left, Vector3.Left * 16384 );
 			Gizmo.Draw.Line( Vector3.Right, Vector3.Right * 16384 );
 
-			Gizmo.Draw.Color = Gizmo.Colors.Yaw.WithAlpha( 0.65f );
+			Gizmo.Draw.Color = Gizmo.Colors.Pitch.WithAlpha( 0.65f );
 			Gizmo.Draw.Line( Vector3.Backward, Vector3.Backward * 16384 );
 			Gizmo.Draw.Line( Vector3.Forward, Vector3.Forward * 16384 );
 		}

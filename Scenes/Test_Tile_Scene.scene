@@ -30,6 +30,2986 @@
           "Tint": "0.20792,0.20792,0.20792,1"
         }
       ]
+    },
+    {
+      "Id": "13cf5178-4b38-4818-8d5b-5f4c9db3605c",
+      "Name": "Plane",
+      "Position": "-3584,0,0",
+      "Scale": "100,100,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dev/reflectivity_20b.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "100,100,1",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "9c129edb-7ce1-4233-8cd1-36f3b948b9e1",
+      "Name": "TrimSheet_Models",
+      "Position": "-768,-1024,0",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "0ca7516e-3632-47ed-9f9f-7ea7147eee26",
+          "Name": "bed_frame_01",
+          "Position": "704,-64,-0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/bed_frame/bed_frame_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/bed_frame/bed_frame_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "2a29e0a1-09bd-4e68-9d07-c801757ecacd",
+          "Name": "bench_table_01",
+          "Position": "992,-64,0.5000045",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/bench/bench_table/bench_table_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/bench/bench_table/bench_table_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "008d77d5-15ff-40b1-aca1-bde81fc5c5b2",
+          "Name": "butcher_desk_01",
+          "Position": "1088,-64,0.4999985",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/metal_desk/butcher_desk_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/metal_desk/butcher_desk_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "d9868f2a-2e9c-4129-9c5a-0879c4dd54cd",
+          "Name": "cabinet_a1",
+          "Position": "1088,-384,1.500049",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a1.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "6f17baf8-f526-4010-ac7c-20a7814cbabd",
+          "Name": "cabinet_a2",
+          "Position": "1024,-384,1.499972",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a2.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a2.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "3a94ff8a-9159-4f38-b4be-aca8d85fe52d",
+          "Name": "cabinet_a3",
+          "Position": "960,-384,1.49999",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a3.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/cabinet_a3.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "59a6b32e-0892-453b-a794-d771d988aa97",
+          "Name": "cable_reel_01",
+          "Position": "960,-256,0.5000508",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/cable_reel_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/cable_reel_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "3e5b341e-0e0b-4bbb-bd64-5bfc63a5c640",
+          "Name": "dolly_01",
+          "Position": "1088,-256,-0.000003792861",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/dolly_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/dolly_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "60dc71af-ce78-42c2-9ab0-980203a978fa",
+          "Name": "dolly_02",
+          "Position": "1024,-256,-0.000002979461",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/dolly_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/dolly_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "8a66ee66-78b2-4d43-a684-88625085ef20",
+          "Name": "drying_rack_01",
+          "Position": "896,-64,1.500037",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/laundry/drying_rack_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/laundry/drying_rack_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "ae94489d-0a20-4a6a-9869-310e1f9c3e12",
+          "Name": "filing_cabinet_01",
+          "Position": "896,-384,0.5000165",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "30098711-bb03-4422-9cf3-938211e211de",
+          "Name": "filing_cabinet_02",
+          "Position": "832,-384,0.4999736",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "0ce26e2f-8c0a-4546-973b-519f4fb4b324",
+          "Name": "filing_cabinet_drawer",
+          "Position": "768,-384,0.4999987",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_drawer.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_drawer.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "638cfb2d-614b-4cdf-9e84-2ea2f7083462",
+          "Name": "filing_cabinet_frame",
+          "Position": "704,-384,0.5000317",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_frame.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/cabinets/filing_cabinet_frame.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "1bc476dc-36c9-48ab-b6ba-98799d9be627",
+          "Name": "industrial_ shelving_01",
+          "Position": "1088,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/industrial_ shelving/industrial_ shelving_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/industrial_ shelving/industrial_ shelving_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "7e424c39-2f1c-4dd4-a096-bd7d15f1f235",
+          "Name": "metal_door_01a",
+          "Position": "1088,384,0.5000163",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/metal_doors/metal_door_01a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/metal_doors/metal_door_01a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "c937c2bf-4f2f-4fd8-90b9-e8dc2f6193e5",
+          "Name": "modern_shelving_a1",
+          "Position": "1024,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a1.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "c6826e04-bdb4-4ae6-8aec-09e0c2c81c47",
+          "Name": "modern_shelving_a2",
+          "Position": "960,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a2.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a2.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "bf7fe5a0-8d51-4336-b6ba-cb0a00835ae2",
+          "Name": "modern_shelving_a3",
+          "Position": "896,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a3.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a3.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "388288c0-4e35-48f1-896f-b1c36eedf556",
+          "Name": "modern_shelving_a4",
+          "Position": "832,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a4.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a4.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "af96d53c-210b-4702-8d06-dda895ac4d95",
+          "Name": "modern_shelving_a5",
+          "Position": "768,-576,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a5.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a5.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "f606466f-9599-4949-b8f5-14781c65d346",
+          "Name": "modern_shelving_a6",
+          "Position": "704,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a6.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_a6.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "679c6a3e-84e3-4f3d-b8e0-68fca2cf12cf",
+          "Name": "modern_shelving_b1",
+          "Position": "640,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b1.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "bc912da3-1f1d-408b-bb19-5378b87f091a",
+          "Name": "modern_shelving_b2",
+          "Position": "576,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b2.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b2.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "9e492536-27e6-4afb-b4c4-a9b4684efa8b",
+          "Name": "modern_shelving_b3",
+          "Position": "512,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b3.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_b3.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "c3401bb6-2782-49d6-9cc8-c62eb32574de",
+          "Name": "modern_shelving_wall_a1",
+          "Position": "448,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_wall_a1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_wall_a1.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b9dad0a2-cc92-4f2b-8117-005a3fce6c1e",
+          "Name": "modern_shelving_wall_b1",
+          "Position": "384,-512,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_wall_b1.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/shelving/modern_shelving/modern_shelving_wall_b1.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "eb369dc1-28b0-4730-b65e-6d5a9e2599f0",
+          "Name": "office_screen_01",
+          "Position": "1088,-192,0.5000031",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/partitions/office_screen_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/partitions/office_screen_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "e4ef61b5-542d-46c4-bbf4-6ff2008784a3",
+          "Name": "office_screen_02",
+          "Position": "1024,-192,0.5000113",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/partitions/office_screen_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/partitions/office_screen_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "6bceb533-6f9a-46b6-80dd-f9266baed583",
+          "Name": "planter_01",
+          "Position": "960,-160,0.4999887",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/planter/planter_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/planter/planter_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "d433c1f6-2df5-466d-a168-735860e8e676",
+          "Name": "planter_01",
+          "Position": "1088,64,0.5000112",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/planter/planter_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/planter/planter_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "beecea5a-68fe-43b3-b112-34df22656a20",
+          "Name": "plastic_tray_01",
+          "Position": "1088,128,0.4999855",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/plastic_tray_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/plastic_tray_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "64635c30-e9dd-437b-97c9-c4d676063a9f",
+          "Name": "pot_01a",
+          "Position": "1024,64,0.5000061",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/pots/pot_01a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/pots/pot_01a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "43749e3b-9f52-4d4f-b431-9718e63659cb",
+          "Name": "pot_02a",
+          "Position": "960,64,0.4999863",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/pots/pot_02a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/pots/pot_02a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cb92c496-26b3-4577-8723-b40be15d6ef2",
+          "Name": "pot_03a",
+          "Position": "896,64,1.500004",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/pots/pot_03a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/pots/pot_03a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "d9536953-55b7-4ed3-99af-144502cb3f3d",
+          "Name": "step_ladder_01",
+          "Position": "896,-256,1.499993",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/step_ladder_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/step_ladder_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "4de04bb7-8879-4bdf-b3e4-a046b1f91995",
+          "Name": "step_ladder_02",
+          "Position": "832,-256,0.5000036",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/step_ladder_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/step_ladder_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "9c8feb13-e049-467e-8856-ae0e053d6538",
+          "Name": "storage_box_01",
+          "Position": "1024,128,0.4999999",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "60cde9ef-329f-414f-8653-9d9aaf3b0828",
+          "Name": "storage_box_01_base",
+          "Position": "960,128,0.5000228",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01_base.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_01_base.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "98ab4fb3-c27e-4850-962d-f65f7fe93818",
+          "Name": "storage_box_01_lid",
+          "Position": "896,128,1.500007",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_01_lid.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_01_lid.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "55ef112a-b3cc-4073-8a13-103b037f8b25",
+          "Name": "storage_box_02",
+          "Position": "832,128,0.5000212",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "7b89ad0f-cdd5-4fa5-9b13-4fd065069f63",
+          "Name": "storage_box_02_base",
+          "Position": "768,128,0.5000223",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_02_base.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_02_base.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b784ed96-9bb0-4904-af22-a81cab0c7121",
+          "Name": "storage_box_02_lid",
+          "Position": "704,128,1.50002",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_box_02_lid.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_box_02_lid.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "e4d153ec-9ece-4abb-a7d5-b7c35bc37b44",
+          "Name": "storage_plastic_box_01",
+          "Position": "640,128,0.5000229",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "1d01ef9d-d238-4bbc-9978-9280b3c786b6",
+          "Name": "storage_plastic_box_01_base",
+          "Position": "576,128,0.5000226",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01_base.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01_base.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "7a7114bd-84a2-4282-a42a-5c939bd6dcd1",
+          "Name": "storage_plastic_box_01_lid",
+          "Position": "512,128,1.500005",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01_lid.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_plastic_box_01_lid.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "439f5591-0a2a-4e07-9cef-badfc4c88d25",
+          "Name": "storage_tray_01",
+          "Position": "448,128,0.5000204",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_tray_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_tray_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "8040d261-a2d4-47c6-ae36-f8a094bc28aa",
+          "Name": "storage_tray_03",
+          "Position": "320,128,0.5000112",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_tray_03.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_tray_03.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "dc76215b-1ad7-421b-9d18-3e199aa71834",
+          "Name": "storage_tray_02",
+          "Position": "384,128,0.5000086",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/storage_tray_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/storage_tray_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "ed5e0d65-2c9d-4995-b952-a84ad2c691ba",
+          "Name": "trolley_01",
+          "Position": "1088,256,1.499991",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/trolley_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/trolley_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "eb8d19b4-20b2-4181-8c7b-e8db48fe4b5e",
+          "Name": "trolley_02",
+          "Position": "960,256,1.500023",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/utility/trolley_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/utility/trolley_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "bda608f5-5f34-4ca6-a589-87a89199bac9",
+          "Name": "water_drum_01",
+          "Position": "768,-256,0.5000196",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/water_drum_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/water_drum_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "e9ce6c52-d1e9-4643-bb97-9b94e79b8737",
+          "Name": "water_drum_01_base",
+          "Position": "704,-256,0.4999784",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/water_drum_01_base.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/water_drum_01_base.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "90a62364-88f2-490d-b102-a12b6fee823c",
+          "Name": "water_drum_01_lid",
+          "Position": "640,-256,1.500002",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/storage/water_drum_01_lid.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/storage/water_drum_01_lid.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "c3cb3bd7-e455-4abf-b4a3-82602faf2837",
+          "Name": "wooden_crate_01",
+          "Position": "1088,192,1.499996",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/crate/wooden_crate/wooden_crate_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/crate/wooden_crate/wooden_crate_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b4613dec-1202-41d4-9e8f-2fe23986aceb",
+          "Name": "wooden_crate_02",
+          "Position": "1024,192,0.5000016",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/crate/wooden_crate/wooden_crate_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/crate/wooden_crate/wooden_crate_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "c95e285e-97d3-4cd9-8995-4e492041b62e",
+          "Name": "wooden_desk_01",
+          "Position": "640,-384,0.5000088",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_01.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "97681bbc-6228-4ea7-ae16-807690203573",
+          "Name": "wooden_desk_02",
+          "Position": "576,-384,0.5000173",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "1d3230ba-7174-4397-b6d1-7ba9548f5457",
+          "Name": "wooden_desk_drawer_large_02",
+          "Position": "512,-384,6.499956",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_large_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_large_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "bbee29f5-c9b3-4f1c-99e8-78f55ad065f8",
+          "Name": "wooden_desk_drawer_long_02",
+          "Position": "448,-384,2.499986",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_long_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_long_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b013b399-a4e2-41b3-8e76-b0cc9551ab16",
+          "Name": "wooden_desk_drawer_small_02",
+          "Position": "384,-384,3.499978",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_small_02.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/desk/wooden_desk/wooden_desk_drawer_small_02.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cf1a3df6-c702-43f9-908a-613228407a42",
+          "Name": "wooden_door_01a",
+          "Position": "1024,384,0.4999968",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b01271ba-4c61-4569-940b-ed40d33e3f1b",
+          "Name": "wooden_door_01b",
+          "Position": "960,384,0.4999925",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01b.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01b.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "07b7341e-6025-4097-8eb3-e691a20bb973",
+          "Name": "wooden_door_01c",
+          "Position": "896,384,0.4999973",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01c.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01c.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cea99537-80d5-422a-bf0b-353cc66fafbd",
+          "Name": "wooden_door_01d",
+          "Position": "832,384,0.4999963",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01d.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01d.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "43c3119a-6447-4664-a42c-3462fe546dcb",
+          "Name": "wooden_door_01e",
+          "Position": "768,384,0.4999771",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01e.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_doors/wooden_door_01e.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "db125c5c-2275-4020-8f08-5901b0925a5e",
+          "Name": "wooden_door_frame_double_01a",
+          "Position": "1088,512,0.500015",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_01a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_01a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "8c6af8e0-6ef3-4b96-9a68-8bb8ae66cdf5",
+          "Name": "wooden_door_frame_double_01b",
+          "Position": "1024,512,0.5000089",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_01b.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_01b.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "5d4d6010-16ab-4a56-bd9a-e33d492af7d9",
+          "Name": "wooden_door_frame_double_02a",
+          "Position": "960,512,0.4999781",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "24d60b00-eebc-4a41-869a-10bc091f70f8",
+          "Name": "wooden_door_frame_double_02b",
+          "Position": "896,512,0.4999775",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02b.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02b.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "b38adfbf-2fe9-4f52-98d2-4dd8f7a04698",
+          "Name": "wooden_door_frame_single_01a",
+          "Position": "832,512,0.4999921",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_01a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_01a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "4f8008eb-f258-41a6-821b-dd4109000e13",
+          "Name": "wooden_door_frame_single_01b",
+          "Position": "768,512,0.4999972",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_01b.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_01b.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "e10efc8d-a21d-4fae-854e-24269f009c4e",
+          "Name": "wooden_door_frame_single_02a",
+          "Position": "704,512,0.5000216",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_02a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_02a.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "5e6ae95b-434b-4be8-9e9e-70fc0bcb9ace",
+          "Name": "wooden_door_frame_single_02b",
+          "Position": "640,512,0.5000098",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_02b.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_single_02b.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "27fe455a-4799-41e8-90aa-b03e1d89d88d",
+          "Name": "Label",
+          "Position": "1184,-0.00002049242,32",
+          "Rotation": "-0.7071072,-0.0000004523774,0.7071064,-0.0000004523768",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "TextRenderer",
+              "__enabled": true,
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 32,
+              "Scale": 1,
+              "Text": "Trimsheet Models"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "106f5a47-eda2-47e5-a200-3aac7b670753",
+      "Name": "Weapons_Models",
+      "Position": "192,-2048,0.00001031204",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "18d4e374-9da0-447d-8cf9-c4fae32bf270",
+          "Name": "12g_shell",
+          "Position": "144,-112,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 1,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_ammo/12g_shell/12g_shell.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "161163f0-5c4b-4eeb-a345-7f2ea971c934",
+          "Name": "9mm_bullet",
+          "Position": "128,-112,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 1,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_ammo/9mm_bullet/9mm_bullet.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_ammo/9mm_bullet/9mm_bullet.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "cb7e9fc8-b546-4b37-9ac0-d5690b3fec10",
+          "Name": "v_crowbar",
+          "Position": "144,-96,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_melee_crowbar/v_crowbar.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "ecf406b9-80a2-43b1-91a3-7bafb8a2de7d",
+          "Name": "v_mp5",
+          "Position": "144,-48,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 11,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_smg_mp5/v_mp5.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "95c72d8a-1e2c-4485-aec4-a79a4f13c9b3",
+          "Name": "v_rmr",
+          "Position": "144,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/reddot_rmr/v_rmr.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "3bd846ae-73c3-4320-849b-aae442d0f0f3",
+          "Name": "v_rmr_raised",
+          "Position": "128,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/reddot_rmr/v_rmr_raised.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "7b3392b8-35ae-47e7-8bdf-295ecb829899",
+          "Name": "v_silencer_9mm",
+          "Position": "112,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/silencer_9mm/v_silencer_9mm.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_attachments/silencer_9mm/v_silencer_9mm.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "180e2571-3d4f-4d0c-bc16-786cb5740168",
+          "Name": "v_spaghellim4",
+          "Position": "144,-16,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 3,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_shotgun_spaghellim4/v_spaghellim4.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "059aa014-be60-45e3-8950-59e915fa85d7",
+          "Name": "v_toolgun",
+          "Position": "144,96,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_toolgun/v_toolgun.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "43b05225-4e6e-4f3b-bcc2-97db07abfbed",
+          "Name": "v_trenchknife",
+          "Position": "128,-96,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_melee_trenchknife/v_trenchknife.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "1f8873bc-d2f3-468b-b440-2ce4b764da1c",
+          "Name": "v_usp",
+          "Position": "144,16,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 17685,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "1bb11a55-937e-4bd0-9137-792dc5dcf5d7",
+          "Name": "w_mp5",
+          "Position": "112,-48,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 3,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_smg_mp5/w_mp5.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_smg_mp5/w_mp5.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "5a73087e-b8d3-4868-a0ee-bf3480af1e87",
+          "Name": "w_rmr",
+          "Position": "96,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/reddot_rmr/w_rmr.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "a7fcba8f-d84c-4a5f-a40e-6a04549c8a49",
+          "Name": "w_rmr_raised",
+          "Position": "80,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/reddot_rmr/w_rmr_raised.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "bdac8122-dae1-45c9-aebe-535df279b610",
+          "Name": "w_silencer_9mm",
+          "Position": "64,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_attachments/silencer_9mm/w_silencer_9mm.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_attachments/silencer_9mm/w_silencer_9mm.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "6c74cce8-4bef-4bc4-a90b-a8b71594c19e",
+          "Name": "w_spaghellim4",
+          "Position": "96,-16,16",
+          "Rotation": "0,0,0.707107,0.7071065",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 3,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_shotgun_spaghellim4/w_spaghellim4.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "465b6674-9732-4da3-be94-f35a8b2cfe17",
+          "Name": "w_trenchknife",
+          "Position": "96,-112,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_melee_trenchknife/w_trenchknife.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "51d6ac7f-675d-405c-bff9-c3c87b3aa72a",
+          "Name": "w_usp",
+          "Position": "112,16,32",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 17685,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "f15893f4-823d-4fd6-91a7-00cb4718d23e",
+          "Name": "w_usp_match",
+          "Position": "48,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp_match.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp_match.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "f8a6ce76-6d72-4b01-a7ab-5f9b2369c471",
+          "Name": "w_usp_raised_sights",
+          "Position": "32,-80,16",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp_raised_sights.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/weapons/sbox_pistol_usp/w_usp_raised_sights.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
+        },
+        {
+          "Id": "27ac0ccd-e7eb-4951-ac03-7944d575d123",
+          "Name": "Label",
+          "Position": "208,0,16",
+          "Rotation": "-0.7071072,-0.0000004523774,0.7071064,-0.0000004523768",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "TextRenderer",
+              "__enabled": true,
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 32,
+              "Scale": 1,
+              "Text": "Weapon Models"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "ad8ebf8f-76a1-4b05-940a-3333da814cb0",
+      "Name": "Models",
+      "Enabled": true
+    },
+    {
+      "Id": "5520411f-723a-4325-b58e-81243e5d0cae",
+      "Name": "access_button",
+      "Position": "288,-192,0.4999807",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/props/access_button/access_button.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/props/access_button/access_button.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "4e01dacc-1d31-4970-a6df-9401ea24af0b",
+      "Name": "advertising_board",
+      "Position": "288,-128,0.5000082",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/advertising_board/advertising_board.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/advertising_board/advertising_board.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "33c9b44b-ce4b-499c-94e3-922228800b9e",
+      "Name": "aerial_socket",
+      "Position": "320,-352,1.500007",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/electrical/aerial_socket.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/electrical/aerial_socket.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "49925673-e218-4dbe-b6a3-7c9f302a131a",
+      "Name": "aircon",
+      "Position": "288,224,1.500011",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon/aircon.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon/aircon.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "95fd20af-aec5-4ffb-8878-efb234b05a2c",
+      "Name": "aircon_mount",
+      "Position": "256,224,2.499992",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon/aircon_mount.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon/aircon_mount.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "c65c669c-52c6-42b2-8f5a-42185ff34125",
+      "Name": "aircon_single_mount",
+      "Position": "224,224,2.499989",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon/aircon_single_mount.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon/aircon_single_mount.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "bc2ac985-3b1e-47dc-8441-2d582c5232ad",
+      "Name": "aircon_unit_large_128x64_a",
+      "Position": "128,224,1.499989",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_128x64_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_128x64_a.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "266698a5-03fe-4c7d-b268-3ec8d9143b85",
+      "Name": "aircon_unit_large_128x64_b",
+      "Position": "-32,224,1.499989",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_128x64_b.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_128x64_b.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "0544c8b5-1804-4b94-b2b5-c1d84c0a8d36",
+      "Name": "aircon_unit_large_64x64_a",
+      "Position": "-160,224,1.499993",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_64x64_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_64x64_a.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "5fb15b3a-dbee-4d79-beb0-d58e38f4848d",
+      "Name": "aircon_unit_large_64x64_b",
+      "Position": "-256,224,1.500001",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_64x64_b.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/aircon_unit_large/aircon_unit_large_64x64_b.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "eb1687ed-48b0-4c6d-b18e-0e3288186743",
+      "Name": "airduct_a_joint_a_16",
+      "Position": "288,320,0.5000103",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_a_16.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_a_16.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "b1b6912e-1c9a-4b73-ab6b-d1d480cbfa2b",
+      "Name": "airduct_a_joint_a_32",
+      "Position": "256,320,0.5000114",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_a_32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_a_32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "c86c7c17-6e48-4f61-9f4f-c690c66f1650",
+      "Name": "airduct_a_joint_b_16",
+      "Position": "192,320,0.500011",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_b_16.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_b_16.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "19a7e8f2-607a-4696-a5d1-61f3dd43e2fb",
+      "Name": "airduct_a_joint_b_32",
+      "Position": "160,320,0.4999886",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_b_32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_joint_b_32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "873bc478-2588-4ecd-a03a-b94f5d8e1410",
+      "Name": "airduct_a_panel_16x16",
+      "Position": "96,320,0.4999957",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_16x16.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_16x16.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "efc4d8df-37d6-41d0-b679-ecf8fd6d7b8d",
+      "Name": "airduct_a_panel_16x32",
+      "Position": "64,320,0.4999974",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_16x32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_16x32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "b16fca43-3bb1-4aef-93e4-2412a95c1a0b",
+      "Name": "airduct_a_panel_32x32",
+      "Position": "0.0000003576276,320,0.4999997",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_32x32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_32x32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "a6d0142e-3dd5-47c4-bf1a-8f41355eb12f",
+      "Name": "airduct_a_panel_48x16",
+      "Position": "-64,320,0.5000039",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_48x16.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "a882fbf3-7aae-417b-9396-d4857d7adae5",
+      "Name": "airduct_a_panel_48x32",
+      "Position": "-96,320,0.4999886",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_48x32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_48x32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "13c4275e-8dab-4245-b4f1-546df7e76b5a",
+      "Name": "airduct_a_panel_64x16",
+      "Position": "-160,320,0.500011",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_64x16.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_64x16.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "0fdff948-7157-4c53-8703-d670f9c6be25",
+      "Name": "airduct_a_panel_64x32",
+      "Position": "-192,320,0.4999931",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_64x32.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/sbox_props/airducts/airduct_a_panel_64x32.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
     }
   ],
   "SceneProperties": {
