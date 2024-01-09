@@ -82,6 +82,7 @@ public partial class GridMapTool : EditorTool
 		}
 
 		MainWindow( so );
+		ThreeDGizmo( so );
 
 		UpdateListViewItems();
 
@@ -371,6 +372,10 @@ public partial class GridMapTool : EditorTool
 		Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
 		UpdateWidgetValues();
+
+		gizmowidg.CameraRotation = Gizmo.Camera.Rotation.RotateAroundAxis( Vector3.Backward, 90 ).Inverse;
+
+		gizmowidg.Update();
 
 		if ( PrefabResourse is not null && tileList is not null)
 		{

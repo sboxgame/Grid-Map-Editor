@@ -17,7 +17,7 @@ public partial class GridMapTool
 	private WidgetWindow popup;
 	private ComboBox rotationSnapBox;
 	private WidgetWindow window;
-	
+
 	public ComboBox collectionDropDown { get; set; } = new();
 	public ComboBox groupDropDown { get; set; } = new();
 	[Sandbox.Range( 0, 100 )]
@@ -31,7 +31,7 @@ public partial class GridMapTool
 		Y,
 		Z
 	}
-	
+
 	ListStyle CurrentListStyle = ListStyle.Grid;
 	private SegmentedControl paintmode;
 	private SerializedProperty resourceso;
@@ -43,7 +43,7 @@ public partial class GridMapTool
 	}
 	public float[] RotationSnaps = new float[] { 1.0f, 5.0f, 15.0f, 45.0f, 90.0f };
 
-	void ToolWindow(SerializedObject so)
+	void ToolWindow( SerializedObject so )
 	{
 
 		{
@@ -52,7 +52,7 @@ public partial class GridMapTool
 			gridwindowWidget.WindowTitle = "Grid Map Tool";
 
 			var row = Layout.Column();
-			
+
 			var collectionrow = Layout.Row();
 
 			var collectionLabel = new Label( "Collection :" );
@@ -92,8 +92,8 @@ public partial class GridMapTool
 			search.PlaceholderText = "Search...";
 			search.TextEdited += OnSearchTextChanged;
 			iconrow.Add( search );
-			
-			slider = iconrow.Add(new FloatSlider( gridwindowWidget ));
+
+			slider = iconrow.Add( new FloatSlider( gridwindowWidget ) );
 			slider.Minimum = 48;
 			slider.Maximum = 128;
 			slider.MinimumWidth = 150;
@@ -128,20 +128,20 @@ public partial class GridMapTool
 					UpdatePaintObjectGizmo();
 				}
 			};
-			
+
 			tilelistView.OnPaintOverride += () => PaintListBackground( tilelistView );
 			tilelistView.ItemPaint = PaintBrushItem;
 
 			row.Add( collectionrow );
 			row.Add( iconrow );
-			
+
 			row.AddSeparator();
 			row.Add( tilelistView );
 			row.AddSeparator();
 			row.Add( grouprow );
 
 			gridwindowWidget.Layout = row;
-			
+
 			AddOverlay( gridwindowWidget, TextFlag.RightBottom, 0 );
 		}
 	}
@@ -160,7 +160,7 @@ public partial class GridMapTool
 			tilelistView.ItemSize = new Vector2( 275, slider.Value );
 		}
 	}
-	void MainWindow(SerializedObject so)
+	void MainWindow( SerializedObject so )
 	{
 		{
 			window = new WidgetWindow( SceneOverlay, "Grid Map Controls" );
@@ -181,7 +181,7 @@ public partial class GridMapTool
 			var cs = new ControlSheet();
 
 			cs.AddRow( so.GetProperty( "PrefabResourse" ) );
-			
+
 			var row2 = Layout.Row();
 			row2.AddSpacingCell( 16 );
 			floorcontrolLabel = new Label( $"Floor Level: {floorCount.ToString()}" );
@@ -192,26 +192,26 @@ public partial class GridMapTool
 
 			selectedamount = new Label( $"Selection: {SelectedGroupObjects.Count}" );
 			row2.Add( selectedamount );
-			
+
 			var pop = Layout.Row();
 
 			var popbutton = pop.Add( new Button( "Options...", "more_horiz" ) { Clicked = () => { OpenDropdown( window ); } } );
 			popbutton.ButtonType = "clear";
-			popbutton.OnPaintOverride += () => 
+			popbutton.OnPaintOverride += () =>
 			{
-				if(popbutton.IsUnderMouse || optionsOpened )
+				if ( popbutton.IsUnderMouse || optionsOpened )
 				{
 					Paint.SetPen( Theme.White.WithAlpha( .75f ) );
 					Paint.SetDefaultFont( 8, 450 );
-					Paint.DrawText( popbutton.LocalRect + new Vector2(164, -10 ), "Options" );
+					Paint.DrawText( popbutton.LocalRect + new Vector2( 164, -10 ), "Options" );
 					Paint.ClearBrush();
 					Paint.ClearPen();
 					Paint.SetBrush( Theme.ControlBackground.WithAlpha( .4f ) );
 				}
-				
+
 				Paint.SetPen( Theme.White.WithAlpha( .5f ) );
 				Paint.SetDefaultFont( 8, 450 );
-				Paint.DrawText( popbutton.LocalRect + new Vector2(164,-10), "Options" );
+				Paint.DrawText( popbutton.LocalRect + new Vector2( 164, -10 ), "Options" );
 				Paint.ClearBrush();
 				Paint.ClearPen();
 				Paint.SetBrush( Theme.ControlBackground.WithAlpha( .2f ) );
@@ -233,7 +233,26 @@ public partial class GridMapTool
 		}
 	}
 
+	void ThreeDGizmo( SerializedObject so )
+	{
+		{ 
+			var wind = new WidgetWindow( SceneOverlay, "3D Gizmo" );
+
+
+			var row = Layout.Column();
+
+			gizmowidg = row.Add( new SceneGizmoControl( wind ) );
+			row.Add( gizmowidg );
+			
+			wind.OnPaintOverride += () => PaintGizmoBackground( wind );
+
+			wind.Layout = row;
+			AddOverlay( wind, TextFlag.LeftTop, new Vector2( 40 ,10) );
+		}
+	}
+
 	bool optionsOpened = false;
+	private SceneGizmoControl gizmowidg;
 
 	void OpenDropdown( Widget window )
 	{
@@ -340,6 +359,16 @@ public partial class GridMapTool
 
 		popup.Show();
 	}
+
+	private static bool PaintGizmoBackground( Widget widget )
+	{
+		Paint.ClearPen();
+		Paint.ClearBrush();
+		Paint.SetBrush( Theme.ControlBackground.WithAlpha( 0f ) );
+		Paint.DrawRect( widget.LocalRect );
+
+		return true;
+	}
 	private static bool PaintControlBackground( Widget widget )
 	{
 		Paint.ClearPen();
@@ -358,7 +387,6 @@ public partial class GridMapTool
 	}
 	private static bool PaintListBackground( Widget widget )
 	{
-
 		Paint.ClearPen();
 		Paint.SetBrush( Theme.ControlBackground.WithAlpha( 1f ) );
 		Paint.DrawRect( widget.LocalRect );
@@ -550,5 +578,152 @@ public class TwoButton : Widget
 		label2.Position = new Vector2( 140, 5 );
 
 		MinimumHeight = 23;
+	}
+}
+public class SceneGizmoControl : Widget
+{
+	public Rotation CameraRotation;
+
+	private Button xAxisButton;
+	private Button yAxisButton;
+	private Button zAxisButton;
+
+
+	private const float AxisRadius = 32;
+	public SceneGizmoControl( Widget parent = null )
+	{
+		MaximumWidth = 100;
+		MinimumWidth = 100;
+		MaximumHeight = 100;
+		MinimumHeight = 100;
+
+		xAxisButton = new Button( "X", this );
+		yAxisButton = new Button( "Y", this );
+		zAxisButton = new Button( "Z", this );
+
+		SetupButton( xAxisButton, Color.Red );
+		SetupButton( yAxisButton, Color.Green );
+		SetupButton( zAxisButton, Color.Blue );
+	}
+
+	private void SetupButton( Button button, Color color )
+	{
+		button.Size = 20;
+
+		button.Clicked += () => OnAxisButtonClicked( button.Text );
+	}
+
+	private void OnAxisButtonClicked( string axis )
+	{
+			if ( axis == "X" )
+			{
+				SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 180 );
+			}
+			else if ( axis == "Y" )
+			{
+				SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 90 );
+			}
+			else if ( axis == "Z" )
+			{
+				SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( 90 );
+			}	
+	}
+
+	protected override void OnPaint()
+	{
+		base.OnPaint();
+
+		Paint.ClearPen();
+		Paint.ClearBrush();
+		Paint.SetBrush( Theme.Grey.WithAlpha(0.25f) );
+		Paint.DrawRect( LocalRect, 100 );
+
+		Paint.ClearBrush();
+		Paint.ClearPen();
+
+		var center = new Vector2(50, 50);
+
+		var transformedUp = TransformDirection(Vector3.Up, CameraRotation); // Z Axis (Up)
+		var transformedForward = TransformDirection(Vector3.Forward, CameraRotation); // X Axis (Forward)
+		var transformedLeft = TransformDirection(Vector3.Left, CameraRotation); // Y Axis (Left)
+
+		DrawAxisCircle(center, 32, Gizmo.Colors.Pitch.WithAlpha(0.15f), ProjectTo2D(-transformedForward)); // Back Axis
+		DrawAxisCircle(center, 32, Gizmo.Colors.Yaw.WithAlpha( 0.15f ), ProjectTo2D(-transformedLeft)); // Right Axis
+		DrawAxisCircle(center, 32, Gizmo.Colors.Roll.WithAlpha( 0.15f ), ProjectTo2D(-transformedUp)); // Down Axis
+		DrawAxisCircle( center, 32, Gizmo.Colors.Pitch, ProjectTo2D( transformedForward ) ); // Forward Axis
+		DrawAxisCircle( center, 32, Gizmo.Colors.Yaw, ProjectTo2D( transformedLeft ) ); // Left Axis
+		DrawAxisCircle( center, 32, Gizmo.Colors.Roll, ProjectTo2D( transformedUp ) ); // Up Axis
+
+		UpdateButtonPosition( xAxisButton, Gizmo.Colors.Pitch, ProjectTo2D( transformedForward ) );
+		UpdateButtonPosition( yAxisButton, Gizmo.Colors.Yaw ,ProjectTo2D( transformedLeft ) );
+		UpdateButtonPosition( zAxisButton, Gizmo.Colors.Roll, ProjectTo2D( transformedUp ) );
+
+	}
+
+	private Vector2 ProjectTo2D( Vector3 vector3D )
+	{
+		// Orthographic projection onto 2D plane
+		return new Vector2( vector3D.x, vector3D.y );
+	}
+
+	private void UpdateButtonPosition( Button button,Color color, Vector2 direction )
+	{
+		var endPoint = new Vector2( 50, 50 ) + direction * AxisRadius;
+		button.Position = endPoint - new Vector2( button.Width / 2, button.Height / 2 );
+
+		button.OnPaintOverride = () =>
+		{
+			DrawButtonAxisCircle( button, 16, color, direction );
+			return true;
+		};
+	}
+
+	private Vector3 TransformDirection( Vector3 direction, Rotation cameraRotation )
+	{
+		Rotation combinedRotation = cameraRotation;
+
+		return direction * combinedRotation * Rotation.FromAxis(Vector3.Right,90);
+	}
+	private Vector2 Normalize( Vector2 vector )
+	{
+		return new Vector2( vector.x, vector.y );
+	}
+	
+	private void DrawButtonAxisCircle( Button center, float radius, Color color, Vector2 direction )
+	{
+		if ( center.IsUnderMouse )
+		{
+			Paint.ClearPen();
+			Paint.SetPen( color );
+			Paint.SetBrush( color );
+			Paint.DrawCircle( center.Size / 2, radius * 1.25f );
+		}
+
+		Paint.ClearPen();
+		Paint.SetPen( Theme.Black , 2.0f );
+		Paint.DrawText( center.LocalRect, center.Text);
+
+		Paint.ClearBrush();
+		Paint.SetBrush( color.WithAlpha( 0.75f ) );
+
+		Paint.DrawCircle( 32 , 16 );
+	}
+
+	private void DrawAxisCircle( Vector2 center, float radius, Color color, Vector2 direction )
+	{
+		direction = Normalize( direction );
+
+		var endPoint = center + direction * radius;
+		
+		// Draw the axis line
+		Paint.ClearPen();
+		Paint.SetBrush( color.Saturate( 0.75f ) );
+		Paint.SetPen( color, 2.0f );
+		Paint.DrawLine( center, endPoint );
+
+		Paint.ClearBrush();
+		Paint.SetBrush( color.WithAlpha( 0.75f ) );
+	
+		Paint.DrawCircle( endPoint, 16 );
 	}
 }

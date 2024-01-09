@@ -4,8 +4,8 @@
     {
       "Id": "dc9a01e4-ce43-4a8b-b035-acd383f15262",
       "Name": "Sun",
-      "Position": "0,0,81.97829",
-      "Rotation": "-0.08400832,0.347949,0.4149211,0.8364894",
+      "Position": "285.6799,822.649,643.4822",
+      "Rotation": "0.3464704,0.2151882,-0.7756222,0.4817287",
       "Tags": "light",
       "Enabled": true,
       "Components": [
@@ -21,8 +21,6 @@
     {
       "Id": "5e7b0aae-efce-40a5-b486-51d5b519a6ef",
       "Name": "2D Skybox",
-      "Position": "0,0,81.97829",
-      "Rotation": "-0.00000001630742,0.00000004134057,0.6152065,0.7883664",
       "Enabled": true,
       "Components": [
         {
