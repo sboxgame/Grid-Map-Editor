@@ -140,6 +140,7 @@ public partial class GridMapTool : EditorTool
 							(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup) )
 			.ToList();
 
+		tilelistView.FocusMode = FocusMode.None;
 		tilelistView.SetItems( filteredTileList.Cast<object>() );
 		tilelistView.Update(); // Refresh ListView
 
@@ -149,7 +150,7 @@ public partial class GridMapTool : EditorTool
 	public override void OnDisabled()
 	{
 		base.OnDisabled();
-	
+
 		so.Delete();
 
 		Gizmo.Settings.ShowGrid = gridActiveState;
