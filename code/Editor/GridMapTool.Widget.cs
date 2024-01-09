@@ -1,4 +1,6 @@
 ﻿using Sandbox.UI;
+using System.Drawing;
+using static Sandbox.Gizmo;
 
 namespace Editor;
 
@@ -238,7 +240,6 @@ public partial class GridMapTool
 		{ 
 			var wind = new WidgetWindow( SceneOverlay, "3D Gizmo" );
 
-
 			var row = Layout.Column();
 
 			gizmowidg = row.Add( new SceneGizmoControl( wind ) );
@@ -247,7 +248,7 @@ public partial class GridMapTool
 			wind.OnPaintOverride += () => PaintGizmoBackground( wind );
 
 			wind.Layout = row;
-			AddOverlay( wind, TextFlag.LeftTop, new Vector2( 40 ,10) );
+			AddOverlay( wind, TextFlag.RightTop, new Vector2( 320 ,0) );
 		}
 	}
 
@@ -584,10 +585,15 @@ public class SceneGizmoControl : Widget
 {
 	public Rotation CameraRotation;
 
+	private Button freeRotation;
+
 	private Button xAxisButton;
 	private Button yAxisButton;
 	private Button zAxisButton;
 
+	private Button minxAxisButton;
+	private Button minyAxisButton;
+	private Button minzAxisButton;
 
 	private const float AxisRadius = 32;
 	public SceneGizmoControl( Widget parent = null )
@@ -597,9 +603,19 @@ public class SceneGizmoControl : Widget
 		MaximumHeight = 100;
 		MinimumHeight = 100;
 
+		freeRotation = new Button( "Free", this );
+
 		xAxisButton = new Button( "X", this );
 		yAxisButton = new Button( "Y", this );
 		zAxisButton = new Button( "Z", this );
+
+		minxAxisButton = new Button( "-X", this );
+		minyAxisButton = new Button( "-Y", this );
+		minzAxisButton = new Button( "-Z", this );
+
+		SetupButton( minxAxisButton, Color.Red );
+		SetupButton( minyAxisButton, Color.Green );
+		SetupButton( minzAxisButton, Color.Blue );
 
 		SetupButton( xAxisButton, Color.Red );
 		SetupButton( yAxisButton, Color.Green );
@@ -615,28 +631,35 @@ public class SceneGizmoControl : Widget
 
 	private void OnAxisButtonClicked( string axis )
 	{
-			if ( axis == "X" )
-			{
-				SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 180 );
-			}
-			else if ( axis == "Y" )
-			{
-				SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 90 );
-			}
-			else if ( axis == "Z" )
-			{
-				SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( 90 );
-			}	
+		if ( axis == "X" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 180 );
+		}
+		else if ( axis == "Y" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( 90 );
+		}
+		else if ( axis == "Z" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( 90 );
+		}
+		else if ( axis == "-X" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( -180 );
+		}
+		else if ( axis == "-Y" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromYaw( -90 );
+		}
+		else if ( axis == "-Z" )
+		{
+			SceneEditorSession.Active.CameraRotation = Rotation.FromPitch( -90 );
+		}
 	}
 
 	protected override void OnPaint()
 	{
 		base.OnPaint();
-
-		Paint.ClearPen();
-		Paint.ClearBrush();
-		Paint.SetBrush( Theme.Grey.WithAlpha(0.25f) );
-		Paint.DrawRect( LocalRect, 100 );
 
 		Paint.ClearBrush();
 		Paint.ClearPen();
@@ -647,17 +670,22 @@ public class SceneGizmoControl : Widget
 		var transformedForward = TransformDirection(Vector3.Forward, CameraRotation); // X Axis (Forward)
 		var transformedLeft = TransformDirection(Vector3.Left, CameraRotation); // Y Axis (Left)
 
-		DrawAxisCircle(center, 32, Gizmo.Colors.Pitch.WithAlpha(0.15f), ProjectTo2D(-transformedForward)); // Back Axis
-		DrawAxisCircle(center, 32, Gizmo.Colors.Yaw.WithAlpha( 0.15f ), ProjectTo2D(-transformedLeft)); // Right Axis
-		DrawAxisCircle(center, 32, Gizmo.Colors.Roll.WithAlpha( 0.15f ), ProjectTo2D(-transformedUp)); // Down Axis
+		DrawMinAxisCircle( center, 32, Gizmo.Colors.Pitch, ProjectTo2D(-transformedForward)); // Back Axis
+		DrawMinAxisCircle( center, 32, Gizmo.Colors.Yaw, ProjectTo2D(-transformedLeft)); // Right Axis
+		DrawMinAxisCircle( center, 32, Gizmo.Colors.Roll, ProjectTo2D(-transformedUp)); // Down Axis
 		DrawAxisCircle( center, 32, Gizmo.Colors.Pitch, ProjectTo2D( transformedForward ) ); // Forward Axis
 		DrawAxisCircle( center, 32, Gizmo.Colors.Yaw, ProjectTo2D( transformedLeft ) ); // Left Axis
 		DrawAxisCircle( center, 32, Gizmo.Colors.Roll, ProjectTo2D( transformedUp ) ); // Up Axis
+
+		UpdateButtonPosition( minxAxisButton, Gizmo.Colors.Pitch.WithAlpha( 0.5f ), ProjectTo2D( -transformedForward ) ); ;
+		UpdateButtonPosition( minyAxisButton, Gizmo.Colors.Yaw.WithAlpha( 0.5f ), ProjectTo2D( -transformedLeft ) );
+		UpdateButtonPosition( minzAxisButton, Gizmo.Colors.Roll.WithAlpha( 0.5f ), ProjectTo2D( -transformedUp ) );
 
 		UpdateButtonPosition( xAxisButton, Gizmo.Colors.Pitch, ProjectTo2D( transformedForward ) );
 		UpdateButtonPosition( yAxisButton, Gizmo.Colors.Yaw ,ProjectTo2D( transformedLeft ) );
 		UpdateButtonPosition( zAxisButton, Gizmo.Colors.Roll, ProjectTo2D( transformedUp ) );
 
+		DrawButtonRotationCircle( freeRotation );
 	}
 
 	private Vector2 ProjectTo2D( Vector3 vector3D )
@@ -673,9 +701,44 @@ public class SceneGizmoControl : Widget
 
 		button.OnPaintOverride = () =>
 		{
-			DrawButtonAxisCircle( button, 16, color, direction );
+			var minsbutt = false;
+			if ( button.Text.Contains( "-" ) ) 
+			{
+				minsbutt = true;
+			}; 
+			DrawButtonAxisCircle( button, 16, color, direction, minsbutt );
 			return true;
 		};
+
+
+		if ( freeRotation.IsPressed )
+		{
+			freeRotation.Cursor = CursorShape.Blank;
+
+			var delta = Application.CursorDelta * 0.1f;
+			var angles = SceneEditorSession.Active.CameraRotation.Angles();
+
+			var orbitPosition = SceneEditorSession.Active.CameraPosition + SceneEditorSession.Active.CameraRotation.Forward * 100;
+
+			angles.roll = 0;
+			angles.yaw -= delta.x;
+			angles.pitch += delta.y;
+			angles = angles.Normal;
+			angles.pitch = angles.pitch.Clamp( -89, 89 );
+
+			// Apply the rotations to the camera
+			SceneEditorSession.Active.CameraRotation = angles.ToRotation();
+			
+			// Calculate the new camera position based on orbit distance and rotation
+			var cameraDirection = SceneEditorSession.Active.CameraRotation.Forward;
+
+			Application.CursorPosition = freeRotation.ScreenPosition + freeRotation.LocalRect.Center;
+		}
+		else
+		{
+			freeRotation.Cursor = CursorShape.None;
+		}
+
 	}
 
 	private Vector3 TransformDirection( Vector3 direction, Rotation cameraRotation )
@@ -688,29 +751,55 @@ public class SceneGizmoControl : Widget
 	{
 		return new Vector2( vector.x, vector.y );
 	}
-	
-	private void DrawButtonAxisCircle( Button center, float radius, Color color, Vector2 direction )
+	private void DrawButtonRotationCircle( Button center )
 	{
+		freeRotation.Size = 100;
+		freeRotation.OnPaintOverride = () =>
+		{
+			Paint.ClearPen();
+			Paint.ClearBrush();
+			Paint.SetBrush( freeRotation.IsUnderMouse ? Theme.Grey.WithAlpha( 0.35f ) : Theme.Grey.WithAlpha( 0.015f ) );
+			Paint.DrawRect( LocalRect, 100 );
+			return true;
+		};
+	}
+	private void DrawButtonAxisCircle( Button center, float radius, Color color, Vector2 direction, bool mins )
+	{
+		Paint.TextAntialiasing = true;
+		Paint.Antialiasing = true;
 		if ( center.IsUnderMouse )
 		{
 			Paint.ClearPen();
-			Paint.SetPen( color );
+			Paint.SetPen( Theme.White );
 			Paint.SetBrush( color );
+			Paint.ClearPen();
 			Paint.DrawCircle( center.Size / 2, radius * 1.25f );
-		}
 
-		Paint.ClearPen();
-		Paint.SetPen( Theme.Black , 2.0f );
-		Paint.DrawText( center.LocalRect, center.Text);
+			if(mins)
+			{
+				Paint.SetDefaultFont( 8 , 600 );
+				Paint.SetPen( Theme.White );
+				Paint.DrawText( center.LocalRect, center.Text );
+			}
+		}
+		if( !mins )
+		{
+			Paint.ClearPen();
+			Paint.SetPen( center.IsUnderMouse ? Theme.White : Theme.Black );
+			Paint.SetDefaultFont( 8, 600 );
+			Paint.DrawText( center.LocalRect, center.Text );
+		}
 
 		Paint.ClearBrush();
 		Paint.SetBrush( color.WithAlpha( 0.75f ) );
-
 		Paint.DrawCircle( 32 , 16 );
 	}
-
+	
 	private void DrawAxisCircle( Vector2 center, float radius, Color color, Vector2 direction )
 	{
+		Paint.TextAntialiasing = true;
+		Paint.Antialiasing = true;
+		
 		direction = Normalize( direction );
 
 		var endPoint = center + direction * radius;
@@ -719,11 +808,32 @@ public class SceneGizmoControl : Widget
 		Paint.ClearPen();
 		Paint.SetBrush( color.Saturate( 0.75f ) );
 		Paint.SetPen( color, 2.0f );
-		Paint.DrawLine( center, endPoint );
+		Paint.DrawLine( center, endPoint - direction * 10 );
 
 		Paint.ClearBrush();
 		Paint.SetBrush( color.WithAlpha( 0.75f ) );
 	
+		Paint.DrawCircle( endPoint, 16 );
+	}
+
+	private void DrawMinAxisCircle( Vector2 center, float radius, Color color, Vector2 direction )
+	{
+		Paint.TextAntialiasing = true;
+		Paint.Antialiasing = true;
+		
+		direction = Normalize( direction );
+
+		var endPoint = center + direction * radius;
+		// Draw the axis line
+		Paint.ClearPen();
+		Paint.SetBrush( color );
+		Paint.SetPen( color.WithAlpha(0.2f), 2.0f );
+		Paint.DrawLine( center, endPoint - direction * 10 );
+
+		Paint.ClearBrush();
+		Paint.ClearPen();
+		Paint.SetBrush( color.WithAlpha( 0.2f ) );
+		Paint.SetPen( color.WithAlpha( 0.5f ), 2.0f );
 		Paint.DrawCircle( endPoint, 16 );
 	}
 }
