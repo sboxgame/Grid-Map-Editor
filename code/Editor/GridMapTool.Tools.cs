@@ -1,4 +1,5 @@
 ﻿using Sandbox;
+using System.Diagnostics;
 
 namespace Editor;
 
@@ -40,6 +41,38 @@ public partial class GridMapTool
 
 			go.EditLog( "Grid Placed", go );
 		}
+	}
+
+	public void HandlePlaceDuplicatedGroup( SceneTraceResult tr, Ray cursorRay )
+	{
+		projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
+
+		foreach ( var obj in GizmoDuplicateObject.Children )
+		{
+
+			obj.Flags = GameObjectFlags.None;
+			obj.Tags.Remove( "isgizmoobject" );
+
+			using var scope = SceneEditorSession.Scope();
+			
+			var options = new GameObject.SerializeOptions();
+			var selection = obj;
+			var json = selection.Serialize( options );
+
+			SceneUtility.MakeGameObjectsUnique( json );
+			var go = SceneEditorSession.Active.Scene.CreateObject();
+		
+			go.Deserialize( json );
+			go.MakeNameUnique();
+			go.Parent = CurrentGameObjectCollection;
+			go.Transform.Position = obj.Transform.Position;
+			go.Transform.Rotation = obj.Transform.Rotation;
+
+			go.Tags.Add( "gridtile" );
+
+			Log.Info( $"Duplicated:{obj.Name}" );
+		}
+		
 	}
 
 	public void HandleRemove( Ray cursorRay )

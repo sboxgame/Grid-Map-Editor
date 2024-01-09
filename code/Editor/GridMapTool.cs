@@ -27,11 +27,21 @@ public partial class GridMapTool : EditorTool
 		Remove = 1,
 		Move = 2,
 		Copy = 3,
+		Duplicate = 4,
 	}
 	public PaintMode CurrentPaintMode { get; set; } = PaintMode.Place;
+	public PaintMode LastPaintMode { get; set; } = PaintMode.Place;
 
 	public GameObject CurrentGameObjectCollection;
 	public List<GameObject> GameObjectCollection { get; set; } = new();
+	public List<DuplicatedItems> DuplicateObjectCollection { get; set; } = new();
+
+	public struct DuplicatedItems
+	{
+		public GameObject gameObject;
+		public Vector3 position;
+		public Rotation rotation;
+	}
 
 	TimeSince timeSinceChangedCollection = 0;
 
@@ -438,12 +448,12 @@ public partial class GridMapTool : EditorTool
 		if ( Gizmo.IsShiftPressed && SelectedObject is null )
 		{
 			projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
-			if ( Gizmo.WasLeftMousePressed )
+			if ( Gizmo.WasLeftMousePressed && CurrentPaintMode != PaintMode.Duplicate )
 			{
 				var snappedPosition = projectedPoint.EndPosition;
-				
+
 				startSelectionPoint = snappedPosition;
-				
+
 				isSelecting = true;
 			}
 			else if ( isSelecting )
@@ -451,7 +461,7 @@ public partial class GridMapTool : EditorTool
 				var snappedPosition = projectedPoint.EndPosition;
 
 				endSelectionPoint = snappedPosition;
-				
+
 				switch ( Axis )
 				{
 					case GroundAxis.X:
@@ -497,6 +507,39 @@ public partial class GridMapTool : EditorTool
 				SelectedGroupObjects.Clear();
 				selectedamount.Text = $"Selected: {SelectedGroupObjects.Count}";
 			}
+
+			if ( Application.IsKeyDown( KeyCode.T ) )
+			{
+				if ( LastPaintMode != PaintMode.Duplicate )
+				{
+					LastPaintMode = CurrentPaintMode;
+					Log.Info( LastPaintMode );
+				}
+				
+				foreach ( var obj in SelectedGroupObjects )
+				{
+					DuplicateObjectCollection.Add( new DuplicatedItems()
+					{
+						gameObject = obj,
+						position = obj.Transform.Position,
+						rotation = obj.Transform.Rotation
+					} );
+				}
+				
+				EndGameObjectGizmo();
+
+				CurrentPaintMode = PaintMode.Duplicate;
+			}
+			if ( CurrentPaintMode == PaintMode.Duplicate && DuplicateObjectCollection != null )
+			{
+				HandleDuplicate(tr ,cursorRay );
+			}
+			
+			if( Gizmo.WasLeftMousePressed && CurrentPaintMode == PaintMode.Duplicate )
+			{
+				HandlePlaceDuplicatedGroup(  tr, cursorRay );
+			}
+
 			if ( Application.IsKeyDown( KeyCode.Z ) )
 			{
 				Axis = GroundAxis.Z;
@@ -548,8 +591,16 @@ public partial class GridMapTool : EditorTool
 			endSelectionPoint = Vector3.Zero;
 
 			selectedamount.Text = $"Selected: {SelectedGroupObjects.Count}";
+			
+			EndDuplicateGizmo();
 		}
 
+		if ( !Gizmo.IsShiftPressed && CurrentPaintMode == PaintMode.Duplicate )
+		{
+			//Log.Info( LastPaintMode );
+
+			CurrentPaintMode = LastPaintMode;
+		}
 
 		if ( !Gizmo.IsCtrlPressed )
 		{

@@ -1,4 +1,6 @@
 ﻿
+using System.Diagnostics;
+
 namespace Editor;
 
 public partial class GridMapTool
@@ -115,11 +117,6 @@ public partial class GridMapTool
 		// Do gizmos and stuff
 		var cursorRay = Gizmo.CurrentRay;
 
-		var boxtr = SceneEditorSession.Active.Scene.Trace
-			.Ray( cursorRay, 5000 )
-			.UsePhysicsWorld( true )
-			.WithoutTags( "gridtile" )
-			.Run();
 		/*
 		if ( !boxtr.Hit )
 		{
@@ -235,6 +232,67 @@ public partial class GridMapTool
 			Log.Info( "GizmoGameObject is not null" );
 		}
 	}
+	List<DuplicatedItems> gizmoDuplicate = new List<DuplicatedItems>();
+	GameObject GizmoDuplicateObject { get; set; }
+	public void HandleDuplicate( SceneTraceResult trace, Ray cursorRay )
+	{
+		projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
+
+		if ( GizmoDuplicateObject is null )
+		{
+			GizmoDuplicateObject = new GameObject();
+			GizmoDuplicateObject.MakeNameUnique();
+			GizmoDuplicateObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+			GizmoDuplicateObject.Tags.Add( "isgizmoobject" );
+			GizmoDuplicateObject.Transform.Position = projectedPoint.EndPosition;
+		}
+		
+		foreach ( var obj in DuplicateObjectCollection )
+		{
+			if ( !gizmoDuplicate.Contains(obj) )
+			{
+				var dobj = SceneUtility.Instantiate( obj.gameObject );
+				dobj.Parent = GizmoDuplicateObject;
+				dobj.Transform.Position = obj.position;
+				dobj.Transform.Rotation = obj.rotation;
+				dobj.MakeNameUnique();
+				dobj.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+				dobj.Tags.Add( "isgizmoobject" );
+				
+				gizmoDuplicate.Add( obj ); 
+				Log.Info( $"Duplicated:{obj.gameObject.Name}" );
+			}
+		}
+		
+		if ( GizmoDuplicateObject is not null )
+		{
+			GizmoDuplicateObject.Transform.Position = GetGizmoPosition( trace, cursorRay );
+			GizmoDuplicateObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+
+			using ( Gizmo.Scope( "selection_box" ) )
+			{
+				var rect = GizmoDuplicateObject.GetBounds();
+				Gizmo.Draw.Color = Color.Blue.WithAlpha( 0.25f );
+				Gizmo.Draw.SolidBox( rect );
+				Gizmo.Draw.Color = Color.Blue;
+				Gizmo.Draw.LineBBox( rect );
+			}
+		}
+	}
+
+	void EndDuplicateGizmo()
+	{
+		if ( GizmoDuplicateObject is not null && DuplicateObjectCollection is not null )
+		{
+			GizmoDuplicateObject.Destroy();
+			GizmoDuplicateObject = null;
+			gizmoDuplicate.Clear();
+			DuplicateObjectCollection.Clear();
+
+			Log.Info( "End Duplicate" );
+		}
+	}
+	
 	void PlaceGameObjectGizmo( SceneTraceResult trace, Ray cursorRay )
 	{
 		if ( SelectedJsonObject is null ) return;
@@ -281,4 +339,5 @@ public partial class GridMapTool
 
 		return Vector3.Zero;
 	}
+
 }
