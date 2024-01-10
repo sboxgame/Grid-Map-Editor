@@ -437,13 +437,22 @@ public partial class GridMapTool
 		Paint.Antialiasing = true;
 		Paint.TextAntialiasing = true;
 	
-		if ( brush.jsonObject == SelectedJsonObject )
+		if ( brush.jsonObject == SelectedJsonObject && !brush.isRandom )
 		{
 			Paint.ClearPen();
 			Paint.SetBrush( Theme.Green.WithAlpha( 0.10f ) );
 			Paint.SetPen( Theme.Green.WithAlpha( 0.50f ) );
 			Paint.DrawRect( widget.Rect.Grow( 0 ), 3 );
 		}
+
+		if ( brush.jsonObject == SelectedJsonObject && brush.isRandom )
+		{
+			Paint.ClearPen();
+			Paint.SetBrush( Theme.Green.WithAlpha( 0.10f ) );
+			Paint.SetPen( Theme.Green.WithAlpha( 0.50f ) );
+			Paint.DrawRect( widget.Rect.Grow( 0 ), 3 );
+		}
+
 
 
 		Paint.ClearPen();
