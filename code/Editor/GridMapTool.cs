@@ -326,7 +326,7 @@ public partial class GridMapTool : EditorTool
 	{
 		if ( !finishedLoadedFromScene && !loadscene )
 		{
-			var gameObject = SceneUtility.Instantiate( SceneUtility.GetPrefabScene( PrefabResourse ), new Transform( Vector3.Up * 100000 ) );
+			var gameObject = SceneUtility.GetPrefabScene( PrefabResourse ).Clone( new Transform( Vector3.Up * 100000 ) );
 			gameObject.BreakFromPrefab();
 			gameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden | GameObjectFlags.Loading;
 			

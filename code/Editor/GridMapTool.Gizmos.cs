@@ -217,7 +217,7 @@ public partial class GridMapTool
 			GizmoGameObject = new GameObject();
 			GizmoGameObject.Deserialize(CopyObject);
 			*/
-			GizmoGameObject = SceneUtility.Instantiate( CopyObject );
+			GizmoGameObject = CopyObject.Clone();
 			GizmoGameObject.MakeNameUnique();
 			GizmoGameObject.Flags = GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 			GizmoGameObject.Tags.Add( "isgizmoobject" );
@@ -250,7 +250,7 @@ public partial class GridMapTool
 		{
 			if ( !gizmoDuplicate.Contains(obj) )
 			{
-				var dobj = SceneUtility.Instantiate( obj.gameObject );
+				var dobj = obj.gameObject.Clone();
 				dobj.Parent = GizmoDuplicateObject;
 				dobj.Transform.Position = obj.position;
 				dobj.Transform.Rotation = obj.rotation;
