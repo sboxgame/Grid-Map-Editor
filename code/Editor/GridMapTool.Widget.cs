@@ -126,7 +126,22 @@ public partial class GridMapTool
 			{
 				if ( item is TileList data )
 				{
-					SelectedJsonObject = data.jsonObject;
+					if ( data.isRandom )
+					{
+						SelectedJsonObject = null;
+						SelectedRandomJsonObject = new( data.ranomObjectList);
+					}
+					else
+					{
+						if ( SelectedRandomJsonObject is not null )
+						{
+							SelectedRandomJsonObject.Clear();
+							SelectedRandomJsonObject = null;
+							Log.Info( "Clearing Random Object" );
+						}
+					
+						SelectedJsonObject = data.jsonObject;
+					}
 					UpdatePaintObjectGizmo();
 				}
 			};
@@ -429,7 +444,8 @@ public partial class GridMapTool
 			Paint.SetPen( Theme.Green.WithAlpha( 0.50f ) );
 			Paint.DrawRect( widget.Rect.Grow( 0 ), 3 );
 		}
-		
+
+
 		Paint.ClearPen();
 		Paint.SetBrush( Theme.White.WithAlpha( 0.01f ) );
 		Paint.SetPen( Theme.White.WithAlpha( 0.05f ) );

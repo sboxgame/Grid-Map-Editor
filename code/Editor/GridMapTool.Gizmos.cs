@@ -148,7 +148,6 @@ public partial class GridMapTool
 
 				if ( tr2.Hit )
 				{
-
 					Gizmo.Draw.Color = Color.Red.WithAlpha( 0.5f );
 					Gizmo.Draw.LineBBox( tr2.GameObject.GetBounds() );
 					Gizmo.Draw.SolidBox( tr2.GameObject.GetBounds() );
@@ -295,19 +294,47 @@ public partial class GridMapTool
 	
 	void PlaceGameObjectGizmo( SceneTraceResult trace, Ray cursorRay )
 	{
-		if ( SelectedJsonObject is null ) return;
 
-		if ( GizmoGameObject is null )
+		if ( SelectedJsonObject is not null )
 		{
-			//Log.Info( SelectedGameObject.Components.Count );
-			GizmoGameObject = new GameObject( true, "GizmoObject" );
-			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
-			GizmoGameObject.Deserialize( SelectedJsonObject );
-			GizmoGameObject.MakeNameUnique();
-			GizmoGameObject.Tags.RemoveAll();
-			GizmoGameObject.Tags.Add( "isgizmoobject" );
-			GizmoGameObject.Name = "GizmoObject";
-			GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+			if ( GizmoGameObject is null )
+			{
+
+					//Log.Info( SelectedGameObject.Components.Count );
+					GizmoGameObject = new GameObject( true, "GizmoObject" );
+					PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
+					GizmoGameObject.Deserialize( SelectedJsonObject );
+					GizmoGameObject.MakeNameUnique();
+					GizmoGameObject.Tags.RemoveAll();
+					GizmoGameObject.Tags.Add( "isgizmoobject" );
+					GizmoGameObject.Name = "GizmoObject";
+					GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+
+					Log.Info( "GizmoGameObject is null" );
+			
+			}
+		}
+		
+		if(SelectedRandomJsonObject is not null)
+		{
+			if ( GizmoGameObject is null )
+			{
+				if ( SelectedRandomJsonObject.Count != 0 )
+				{
+
+					//Log.Info( SelectedGameObject.Components.Count );
+					GizmoGameObject = new GameObject( true, "GizmoObject" );
+					PrefabUtility.MakeGameObjectsUnique( SelectedRandomJsonObject.FirstOrDefault() );
+					GizmoGameObject.Deserialize( SelectedRandomJsonObject.FirstOrDefault() );
+					GizmoGameObject.MakeNameUnique();
+					GizmoGameObject.Tags.RemoveAll();
+					GizmoGameObject.Tags.Add( "isgizmoobject" );
+					GizmoGameObject.Name = "GizmoObject";
+					GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+
+					Log.Info( "GizmoGameObject is not null" );
+				}
+			}
 		}
 
 		if ( GizmoGameObject is not null )
@@ -315,6 +342,8 @@ public partial class GridMapTool
 			GizmoGameObject.Transform.Position = GetGizmoPosition( trace, cursorRay );
 			GizmoGameObject.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
 		}
+
+		//Log.Info( SelectedRandomJsonObject.Count );
 	}
 
 	void EndGameObjectGizmo()

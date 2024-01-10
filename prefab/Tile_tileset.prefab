@@ -12,6 +12,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -22,6 +23,7 @@
             "Tint": "1,1,1,1"
           },
           {
+            "__version": 0,
             "__type": "BoxCollider",
             "__enabled": true,
             "Center": "0,0,0",
@@ -41,6 +43,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "DirectionalLight",
             "__enabled": true,
             "LightColor": "0.91373,0.98039,1,1",
@@ -64,6 +67,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -74,6 +78,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -91,6 +96,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -101,6 +107,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -118,6 +125,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -128,6 +136,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -145,6 +154,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -155,6 +165,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -172,6 +183,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -182,6 +194,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -199,6 +212,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -209,6 +223,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -226,6 +241,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -236,6 +252,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -253,6 +270,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -263,6 +281,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -280,6 +299,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -290,6 +310,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -307,6 +328,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -317,6 +339,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -334,6 +357,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -344,6 +368,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -361,6 +386,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -371,6 +397,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -388,6 +415,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -398,6 +426,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -415,6 +444,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -425,6 +455,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -442,6 +473,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -452,6 +484,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -469,6 +502,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -479,6 +513,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -496,6 +531,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -506,6 +542,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -523,6 +560,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -533,6 +571,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -550,6 +589,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -560,6 +600,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -577,6 +618,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -587,6 +629,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -604,6 +647,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -614,6 +658,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -631,6 +676,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -641,6 +687,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -658,6 +705,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -668,6 +716,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -685,6 +734,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -695,6 +745,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -712,6 +763,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -722,6 +774,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -739,6 +792,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -749,6 +803,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -766,6 +821,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -776,6 +832,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -793,6 +850,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -803,6 +861,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -820,6 +879,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -830,6 +890,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -847,6 +908,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -857,6 +919,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -874,6 +937,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -884,6 +948,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -901,6 +966,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -911,6 +977,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -928,6 +995,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -938,6 +1006,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -955,6 +1024,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -965,6 +1035,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -982,6 +1053,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -992,6 +1064,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1009,6 +1082,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1019,6 +1093,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1036,6 +1111,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1046,6 +1122,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1063,6 +1140,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1073,6 +1151,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1090,6 +1169,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1100,6 +1180,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1117,6 +1198,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1127,6 +1209,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1144,6 +1227,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1154,6 +1238,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1171,6 +1256,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1181,6 +1267,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1198,6 +1285,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1208,6 +1296,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1225,6 +1314,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1235,6 +1325,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1252,6 +1343,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1262,6 +1354,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1279,6 +1372,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1289,6 +1383,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1306,6 +1401,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1316,6 +1412,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1333,6 +1430,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1343,6 +1441,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1360,6 +1459,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1370,6 +1470,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1387,6 +1488,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1397,6 +1499,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1414,6 +1517,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1424,6 +1528,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1441,6 +1546,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1451,6 +1557,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1468,6 +1575,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1478,6 +1586,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1495,6 +1604,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1505,6 +1615,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1522,6 +1633,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1532,6 +1644,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1549,6 +1662,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1559,6 +1673,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1576,6 +1691,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1586,6 +1702,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1603,6 +1720,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1613,6 +1731,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1630,6 +1749,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1640,6 +1760,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1657,6 +1778,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1667,6 +1789,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1684,6 +1807,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1694,6 +1818,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1711,6 +1836,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1721,6 +1847,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1738,6 +1865,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1748,6 +1876,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1783,6 +1912,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1801,6 +1931,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1819,6 +1950,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1837,6 +1969,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1855,6 +1988,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1873,6 +2007,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "TextRenderer",
                 "__enabled": true,
                 "Color": "1,1,1,1",
@@ -1894,6 +2029,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -1920,6 +2056,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1930,6 +2067,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1947,6 +2085,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1957,6 +2096,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -1974,6 +2114,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -1984,6 +2125,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2001,6 +2143,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2011,6 +2154,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2028,6 +2172,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2038,6 +2183,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2055,6 +2201,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2065,6 +2212,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2082,6 +2230,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2092,6 +2241,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2109,6 +2259,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2119,6 +2270,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2136,6 +2288,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2146,6 +2299,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2163,6 +2317,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2173,6 +2328,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2190,6 +2346,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2200,6 +2357,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2217,6 +2375,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2227,6 +2386,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2244,6 +2404,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2254,6 +2415,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2271,6 +2433,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2281,6 +2444,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2298,6 +2462,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2308,6 +2473,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2325,6 +2491,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2335,6 +2502,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2352,6 +2520,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2362,6 +2531,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2379,6 +2549,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2389,6 +2560,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2406,6 +2578,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2416,6 +2589,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2433,6 +2607,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2443,6 +2618,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2460,6 +2636,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2470,6 +2647,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2487,6 +2665,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2497,6 +2676,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2514,6 +2694,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2524,6 +2705,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2541,6 +2723,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2551,6 +2734,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2568,6 +2752,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2578,6 +2763,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2595,6 +2781,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2605,6 +2792,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2622,6 +2810,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2632,6 +2821,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2649,6 +2839,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2659,6 +2850,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2676,6 +2868,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2686,6 +2879,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2703,6 +2897,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2713,6 +2908,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2730,6 +2926,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2740,6 +2937,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2757,6 +2955,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2767,6 +2966,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2784,6 +2984,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2794,6 +2995,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2811,6 +3013,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2821,6 +3024,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2838,6 +3042,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2848,6 +3053,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2865,6 +3071,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2875,6 +3082,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2892,6 +3100,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2902,6 +3111,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2919,6 +3129,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2929,6 +3140,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2946,6 +3158,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2956,6 +3169,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -2973,6 +3187,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -2983,6 +3198,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3000,6 +3216,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3010,6 +3227,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3027,6 +3245,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3037,6 +3256,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3054,6 +3274,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3064,6 +3285,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3081,6 +3303,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3091,6 +3314,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3108,6 +3332,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3118,6 +3343,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3135,6 +3361,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3145,6 +3372,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3162,6 +3390,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3172,6 +3401,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3189,6 +3419,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3199,6 +3430,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3216,6 +3448,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3226,6 +3459,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3243,6 +3477,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3253,6 +3488,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3270,6 +3506,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3280,6 +3517,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3297,6 +3535,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3307,6 +3546,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3324,6 +3564,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3334,6 +3575,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3351,6 +3593,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3361,6 +3604,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3378,6 +3622,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3388,6 +3633,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3405,6 +3651,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3415,6 +3662,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3432,6 +3680,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3442,6 +3691,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3459,6 +3709,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3469,6 +3720,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3496,6 +3748,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3506,6 +3759,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3524,6 +3778,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3534,6 +3789,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3552,6 +3808,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3562,6 +3819,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3580,6 +3838,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3590,6 +3849,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3602,32 +3862,6 @@
         ]
       },
       {
-        "Id": "5859a41b-6d4c-4e6f-8751-997686011e32",
-        "Name": "oldoven",
-        "Position": "-1536,896,0",
-        "Enabled": true,
-        "Components": [
-          {
-            "__type": "ModelRenderer",
-            "__enabled": true,
-            "BodyGroups": 18446744073709551615,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/citizen_props/oldoven.vmdl",
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
-          },
-          {
-            "__type": "ModelCollider",
-            "__enabled": true,
-            "IsTrigger": false,
-            "Model": "models/citizen_props/oldoven.vmdl",
-            "Static": false,
-            "Surface": null
-          }
-        ]
-      },
-      {
         "Id": "09e2e0ad-d338-4dd6-b71c-968e86a5e087",
         "Name": "icecreamcone01",
         "Position": "-1536,768,0",
@@ -3635,6 +3869,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -3645,6 +3880,7 @@
             "Tint": "1,1,1,1"
           },
           {
+            "__version": 0,
             "__type": "ModelCollider",
             "__enabled": true,
             "IsTrigger": false,
@@ -3661,6 +3897,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -3671,6 +3908,7 @@
             "Tint": "1,1,1,1"
           },
           {
+            "__version": 0,
             "__type": "ModelCollider",
             "__enabled": true,
             "IsTrigger": false,
@@ -3687,6 +3925,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -3697,6 +3936,7 @@
             "Tint": "1,1,1,1"
           },
           {
+            "__version": 0,
             "__type": "ModelCollider",
             "__enabled": true,
             "IsTrigger": false,
@@ -3713,6 +3953,7 @@
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "ModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
@@ -3723,6 +3964,7 @@
             "Tint": "1,1,1,1"
           },
           {
+            "__version": 0,
             "__type": "ModelCollider",
             "__enabled": true,
             "IsTrigger": false,
@@ -3747,6 +3989,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3757,6 +4000,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3774,6 +4018,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3784,6 +4029,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3801,6 +4047,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3811,6 +4058,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3828,6 +4076,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3838,6 +4087,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3855,6 +4105,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3865,6 +4116,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3882,6 +4134,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3892,6 +4145,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3909,6 +4163,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3919,6 +4174,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3936,6 +4192,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3946,6 +4203,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3963,6 +4221,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -3973,6 +4232,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -3990,6 +4250,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4000,6 +4261,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4017,6 +4279,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4027,6 +4290,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4044,6 +4308,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4054,6 +4319,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4071,6 +4337,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4081,6 +4348,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4098,6 +4366,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4108,6 +4377,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4125,6 +4395,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4135,6 +4406,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4152,6 +4424,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4162,6 +4435,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4179,6 +4453,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4189,6 +4464,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4206,6 +4482,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4216,6 +4493,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4233,6 +4511,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4243,6 +4522,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4260,6 +4540,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4270,6 +4551,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4287,6 +4569,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4297,6 +4580,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4314,6 +4598,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4324,6 +4609,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4341,6 +4627,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4351,6 +4638,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4368,6 +4656,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4378,6 +4667,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4395,6 +4685,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4405,6 +4696,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4422,6 +4714,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4432,6 +4725,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4449,6 +4743,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4459,6 +4754,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4476,6 +4772,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4486,6 +4783,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4503,6 +4801,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4513,6 +4812,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4530,6 +4830,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4540,6 +4841,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4557,6 +4859,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4567,6 +4870,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4584,6 +4888,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4594,6 +4899,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4611,6 +4917,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4621,6 +4928,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4638,6 +4946,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4648,6 +4957,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4665,6 +4975,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4675,6 +4986,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4692,6 +5004,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4702,6 +5015,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4719,6 +5033,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4729,6 +5044,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4746,6 +5062,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4756,6 +5073,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4773,6 +5091,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4783,6 +5102,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4800,6 +5120,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4810,6 +5131,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4827,6 +5149,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4837,6 +5160,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4854,6 +5178,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4864,6 +5189,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4881,6 +5207,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4891,6 +5218,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4908,6 +5236,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4918,6 +5247,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4935,6 +5265,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4945,6 +5276,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4962,6 +5294,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4972,6 +5305,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -4989,6 +5323,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -4999,6 +5334,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5016,6 +5352,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5026,6 +5363,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5043,6 +5381,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5053,6 +5392,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5070,6 +5410,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5080,6 +5421,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5097,6 +5439,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5107,6 +5450,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5124,6 +5468,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5134,6 +5479,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5151,6 +5497,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5161,6 +5508,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5178,6 +5526,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5188,6 +5537,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5205,6 +5555,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5215,6 +5566,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5232,6 +5584,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5242,6 +5595,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5259,6 +5613,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5269,6 +5624,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5286,6 +5642,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5296,6 +5653,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5313,6 +5671,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5323,6 +5682,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5340,6 +5700,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5350,6 +5711,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5367,6 +5729,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5377,6 +5740,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5394,6 +5758,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5404,6 +5769,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5421,6 +5787,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5431,6 +5798,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5448,6 +5816,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5458,6 +5827,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5475,6 +5845,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5485,6 +5856,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5502,6 +5874,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5512,6 +5885,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5529,6 +5903,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5539,6 +5914,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5556,6 +5932,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5566,6 +5943,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5583,6 +5961,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5593,6 +5972,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5610,6 +5990,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5620,6 +6001,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5637,6 +6019,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5647,6 +6030,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5664,6 +6048,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5674,6 +6059,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5691,6 +6077,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5701,6 +6088,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5718,6 +6106,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5728,6 +6117,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5745,6 +6135,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5755,6 +6146,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5772,6 +6164,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5782,6 +6175,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5799,6 +6193,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5809,6 +6204,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5826,6 +6222,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5836,6 +6233,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5853,6 +6251,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5863,6 +6262,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5880,6 +6280,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5890,6 +6291,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5907,6 +6309,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5917,6 +6320,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5934,6 +6338,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5944,6 +6349,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5961,6 +6367,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5971,6 +6378,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -5988,6 +6396,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -5998,6 +6407,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6015,6 +6425,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6025,6 +6436,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6042,6 +6454,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6052,6 +6465,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6069,6 +6483,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6079,6 +6494,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6096,6 +6512,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6106,6 +6523,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6123,6 +6541,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6133,6 +6552,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6150,6 +6570,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6160,6 +6581,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6177,6 +6599,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6187,6 +6610,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6204,6 +6628,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6214,6 +6639,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6231,6 +6657,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6241,6 +6668,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6258,6 +6686,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6268,6 +6697,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6285,6 +6715,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6295,6 +6726,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6312,6 +6744,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6322,6 +6755,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6339,6 +6773,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6349,6 +6784,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6366,6 +6802,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6376,6 +6813,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6393,6 +6831,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6403,6 +6842,7 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
@@ -6420,6 +6860,7 @@
             "Enabled": true,
             "Components": [
               {
+                "__version": 0,
                 "__type": "ModelRenderer",
                 "__enabled": true,
                 "BodyGroups": 18446744073709551615,
@@ -6430,10 +6871,168 @@
                 "Tint": "1,1,1,1"
               },
               {
+                "__version": 0,
                 "__type": "ModelCollider",
                 "__enabled": true,
                 "IsTrigger": false,
                 "Model": "models/ken3/windowwide_typec.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "4f57fd25-ad20-4057-b55d-7d4768277371",
+        "Name": "OvenRandom",
+        "Position": "-1408,896,0.000004400305",
+        "Tags": "random",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "5859a41b-6d4c-4e6f-8751-997686011e32",
+            "Name": "oldoven",
+            "Position": "-128,0,-0.000004400305",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "ee2ce6c0-2ac4-4ab1-b0f0-9291fdcf9c36",
+            "Name": "oldoven2",
+            "Position": "-256,0,-0.000004400305",
+            "Scale": "1,1,2.329084",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "RenderType": "On",
+                "Tint": "0.95,0,1,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "f79fdd85-49f7-4262-92c7-e0125f7cfb4a",
+            "Name": "oldoven3",
+            "Position": "-384,0,-0.000004400305",
+            "Scale": "1,1,0.4040087",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "RenderType": "On",
+                "Tint": "1,0,0,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "ad9c283c-d6ab-4409-99e8-e3128a2adb03",
+            "Name": "trashcan01 (1)",
+            "Position": "-512,0,0.4999316",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/citizen_props/trashcan01.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/trashcan01.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "0e79af50-12a3-492b-b02d-4673b4d1c5af",
+            "Name": "trashcan01 (1)",
+            "Position": "-640,0,0.4999316",
+            "Scale": "1,1,2.42284",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/citizen_props/trashcan01.vmdl",
+                "RenderType": "On",
+                "Tint": "0.30256,0.87907,0.4563,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/trashcan01.vmdl",
                 "Static": false,
                 "Surface": null
               }

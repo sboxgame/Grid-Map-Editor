@@ -20,7 +20,7 @@ public partial class GridMapTool
 	}
 	public void HandlePlacement( SceneTraceResult tr, Ray cursorRay )
 	{
-		if ( SelectedJsonObject is null ) return;
+		//if ( SelectedJsonObject is null ) return;
 		using var scope = SceneEditorSession.Scope();
 		
 		projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
@@ -30,16 +30,45 @@ public partial class GridMapTool
 			// Snap the projected point to the grid and adjust for floor height
 			var snappedPosition = projectedPoint.EndPosition;
 
-			var go = new GameObject( true, "GridTile" );
-			PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
-			go.Deserialize( SelectedJsonObject );
-			go.Parent = CurrentGameObjectCollection;
-			go.Transform.Position = snappedPosition;
-			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
-			go.Tags.Remove( "group" );
-			go.Tags.Add( "gridtile" );
+			if ( SelectedRandomJsonObject is not null && SelectedRandomJsonObject.Count != 0 )
+			{
+				// Create an instance of the Random class
+				Random random = new Random();
 
-			go.EditLog( "Grid Placed", go );
+				// Get a random index
+				int randomIndex = random.Next( SelectedRandomJsonObject.Count );
+
+				// Select a random tile from the list
+				var randomTileJson = SelectedRandomJsonObject[randomIndex];
+
+				// Instantiate the game object
+				var go = new GameObject( true, "GridTile" );
+				PrefabUtility.MakeGameObjectsUnique( randomTileJson );
+				go.Deserialize( randomTileJson );
+				go.Parent = CurrentGameObjectCollection;
+				go.Transform.Position = snappedPosition;
+				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+				go.Tags.Remove( "group" );
+				go.Tags.Add( "gridtile" );
+
+				go.EditLog( "Grid Placed", go );
+			}
+
+			if ( SelectedJsonObject is not null )
+			{
+				var go = new GameObject( true, "GridTile" );
+				PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
+				go.Deserialize( SelectedJsonObject );
+				go.Parent = CurrentGameObjectCollection;
+				go.Transform.Position = snappedPosition;
+				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+				go.Tags.Remove( "group" );
+				go.Tags.Add( "gridtile" );
+
+				go.EditLog( "Grid Placed", go );
+			}
+
+
 		}
 	}
 

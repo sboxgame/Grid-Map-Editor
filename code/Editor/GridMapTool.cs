@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Nodes;
+﻿using System;
+using System.Text.Json.Nodes;
 using static Editor.GridMapTool;
 
 namespace Editor;
@@ -56,6 +57,7 @@ public partial class GridMapTool : EditorTool
 	[Property]
 	GameObject GizmoGameObject { get; set; }
 	JsonObject SelectedJsonObject { get; set; }
+	List<JsonObject> SelectedRandomJsonObject { get; set; } = new();
 
 	//Widget
 	public ListView tilelistView { get; set; } = new();
@@ -70,6 +72,8 @@ public partial class GridMapTool : EditorTool
 		public string group;
 		public JsonObject jsonObject;
 		public Pixmap icon;
+		public List<JsonObject> ranomObjectList;
+		public bool isRandom;
 	}
 
 	public override void OnEnabled()
@@ -128,7 +132,7 @@ public partial class GridMapTool : EditorTool
 			}
 		}
 	}
-	
+
 	private void UpdateListViewItems()
 	{
 		// Get the currently selected group from the dropdown
@@ -136,16 +140,21 @@ public partial class GridMapTool : EditorTool
 
 		// Filter the tile list based on the search string and the selected group
 		var filteredTileList = tileList
-			.Where( model => model.name.ToLower().Contains( SearchString.ToLower() ) &&
-							(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup) )
+			.Where( model =>
+				model.name.ToLower().Contains( SearchString.ToLower() ) &&
+				(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup ) )
+	
 			.ToList();
 
 		tilelistView.FocusMode = FocusMode.None;
+
+		// Assuming that tilelistView.SetItems can accept an anonymous object
 		tilelistView.SetItems( filteredTileList.Cast<object>() );
 		tilelistView.Update(); // Refresh ListView
 
 		oldresource = PrefabResourse;
 	}
+
 
 	public override void OnDisabled()
 	{
@@ -338,7 +347,7 @@ public partial class GridMapTool : EditorTool
 				{
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
-						if ( obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
+						if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
 						{
 							lastFoundObject = obj;
 							tileList.Add( new TileList()
@@ -348,9 +357,9 @@ public partial class GridMapTool : EditorTool
 								jsonObject = obj.Serialize(),
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 							} ); 
-							Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
 						}
-						else if ( !obj.Tags.Has( "group" ) )
+						else if ( !obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) )
 						{
 							lastFoundObject = obj;
 							tileList.Add( new TileList()
@@ -360,13 +369,37 @@ public partial class GridMapTool : EditorTool
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 							} );
 
-							Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+						}
+						else if ( obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) )
+						{
+							lastFoundObject = obj;
+
+							var randList = new List<JsonObject>();
+
+							foreach ( var randobj in obj.Children )
+							{
+								randList.Add( randobj.Serialize() );
+								Log.Info( randobj.Name );
+							}
+
+							tileList.Add (new TileList()
+							{
+								name = obj.Name,
+								//group = obj.Parent.Name,
+								//jsonObject = obj.Serialize(),
+								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb(),
+								isRandom = true,
+								ranomObjectList = randList
+							});
+
+							//Log.Info( randList.FirstOrDefault().ToString() );
 						}
 						//await Task.Delay( 10 );
 					}
 					else
 					{
-						Log.Info( obj.Name );
+						//Log.Info( obj.Name );
 					}
 				}
 			}
@@ -414,7 +447,7 @@ public partial class GridMapTool : EditorTool
 			UpdateListViewItems();
 		}
 
-		tilelistView.ItemsSelected = SetSelection;
+		//tilelistView.ItemsSelected = SetSelection;
 
 		// Do gizmos and stuff
 		var cursorRay = Gizmo.CurrentRay;
@@ -640,6 +673,8 @@ public partial class GridMapTool : EditorTool
 			{
 				CopyObject = null;
 				SelectedJsonObject = null;
+				//SelectedRandomJsonObject.Clear();
+				SelectedRandomJsonObject = null;
 				EndGameObjectGizmo();
 			}
 		}
@@ -654,7 +689,7 @@ public partial class GridMapTool : EditorTool
 	}
 
 	void SetSelection( object o )
-	{
+	{	
 		if ( o is JsonObject s )
 		{
 			SelectedJsonObject = s;
