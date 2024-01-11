@@ -219,6 +219,29 @@ public partial class GridMapTool : EditorTool
 
 	private void PlaceTileAtPosition( Vector3 position )
 	{
+
+		if ( SelectedRandomJsonObject is not null && SelectedRandomJsonObject.Count != 0 )
+		{
+			// Create an instance of the Random class
+			Random random = new Random();
+			Log.Info( "Random object count: " + SelectedRandomJsonObject.Count );
+			// Get a random index
+			int randomIndex = random.Next( SelectedRandomJsonObject.Count );
+
+			// Select a random tile from the list
+			var randomTileJson = SelectedRandomJsonObject[randomIndex];
+
+			// Instantiate the game object
+			var go = new GameObject( true, "GridTile" );
+			PrefabUtility.MakeGameObjectsUnique( randomTileJson );
+			go.Deserialize( randomTileJson );
+			go.Parent = CurrentGameObjectCollection;
+			go.Transform.Position = position;
+			go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+			go.Tags.Add( "gridtile" );
+
+			_prevFilled = false;
+		}
 		if ( SelectedJsonObject != null )
 		{
 			var go = new GameObject( true, "GridTile" );
@@ -390,7 +413,7 @@ public partial class GridMapTool : EditorTool
 								//jsonObject = obj.Serialize(),
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb(),
 								isRandom = true,
-								ranomObjectList = randList
+								ranomObjectList = new (randList)
 							});
 
 							//Log.Info( randList.FirstOrDefault().ToString() );

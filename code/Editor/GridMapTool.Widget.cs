@@ -129,7 +129,7 @@ public partial class GridMapTool
 					if ( data.isRandom )
 					{
 						SelectedJsonObject = null;
-						SelectedRandomJsonObject = new( data.ranomObjectList);
+						SelectedRandomJsonObject = data.ranomObjectList;
 					}
 					else
 					{
@@ -247,6 +247,7 @@ public partial class GridMapTool
 			window.Layout = row;
 			window.OnPaintOverride += () => PaintControlBackground( window );
 			AddOverlay( window, TextFlag.CenterTop, 0 );
+
 		}
 	}
 
@@ -445,7 +446,7 @@ public partial class GridMapTool
 			Paint.DrawRect( widget.Rect.Grow( 0 ), 3 );
 		}
 
-		if ( brush.jsonObject == SelectedJsonObject && brush.isRandom )
+		if ( brush.ranomObjectList == SelectedRandomJsonObject && brush.isRandom )
 		{
 			Paint.ClearPen();
 			Paint.SetBrush( Theme.Green.WithAlpha( 0.10f ) );
