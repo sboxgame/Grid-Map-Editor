@@ -1,5 +1,6 @@
 ﻿using Sandbox.UI;
 using System.Drawing;
+using System.Net.WebSockets;
 using static Sandbox.Gizmo;
 
 namespace Editor;
@@ -371,7 +372,11 @@ public partial class GridMapTool
 			var w = ps.AddRow( "Snap to Grid", new Checkbox( "Shift + G" ) );
 			w.Bind( "Value" ).From( () => ShouldSnapToGrid, x => { ShouldSnapToGrid = x; } );
 		}
-		
+		ps.AddSectionHeader( "Decal" );
+		{
+			var w = ps.AddRow("Tri Planar", new Checkbox( ) );
+			w.Bind( "Value" ).From( () => DecalTriPlanar, x => { DecalTriPlanar = x; } );
+		}
 
 		popup.Layout.Add( ps );
 		

@@ -91,6 +91,7 @@ public partial class GridMapTool
 				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
 				go.Tags.Remove( "group" );
 				go.Tags.Add( "gridtile" );
+				go.Components.Get<DecalRenderer>().TriPlanar = DecalTriPlanar;
 
 				go.EditLog( "Grid Placed", go );
 			}
@@ -214,11 +215,50 @@ public partial class GridMapTool
 			beenRotated = false;
 		}
 	}
+
+	bool _decalX = false;
+	bool _decalY = false;
+	bool _decalZ = false;
+	bool _decalMinZ = false;
+
+
+	public void DecalScale()
+	{
+		if ( CurrentPaintMode != PaintMode.Decal ) return;
+
+		if ( Application.IsKeyDown( KeyCode.Q ) && !_decalX )
+		{
+			decalX--;
+			Log.Info( $"Decal X: {decalX}" );
+		}
+		else if ( Application.IsKeyDown( KeyCode.E ) && !_decalY )
+		{
+			decalY++;
+			Log.Info( $"Decal Y: {decalY}" );
+		}
+		else if ( Application.IsKeyDown( KeyCode.W ) && !_decalZ )
+		{
+			decalZ++;
+			Log.Info( $"Decal Z: {decalZ}" );
+		}
+		else if ( Application.IsKeyDown( KeyCode.S ) && !_decalMinZ )
+		{
+			decalZ++;
+			Log.Info( $"Decal Z: {decalZ}" );
+		}
+
+		_decalX = Application.IsKeyDown( KeyCode.Q );
+		_decalY = Application.IsKeyDown( KeyCode.E );
+		_decalZ = Application.IsKeyDown( KeyCode.W );
+		_decalMinZ = Application.IsKeyDown( KeyCode.S );
+	}
 	
 	bool _prevlessFloor = false;
 	bool _prevmoreFloor = false;
 	public void FloorHeightShortCut()
 	{
+		if ( CurrentPaintMode == PaintMode.Decal ) return;
+
 		if ( Application.IsKeyDown( KeyCode.Q ) && !_prevlessFloor )
 		{
 			DoFloors( -FloorHeight )();

@@ -78,6 +78,12 @@ public partial class GridMapTool : EditorTool
 		public bool isDecal;
 	}
 
+	float decalX = 32.0f;
+	float decalY = 32.0f;
+	float decalZ = 32.0f;
+
+	bool DecalTriPlanar = false;
+
 	public override void OnEnabled()
 	{
 		gridActiveState = Gizmo.Settings.ShowGrid;
@@ -626,6 +632,7 @@ public partial class GridMapTool : EditorTool
 			}
 
 			FloorHeightShortCut();
+			DecalScale();
 
 			if ( SelectedGroupObjects is not null )
 			{

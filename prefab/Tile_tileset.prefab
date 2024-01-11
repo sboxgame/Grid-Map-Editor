@@ -1,11 +1,11 @@
 {
   "RootObject": {
-    "Id": "616f4d7b-ee56-44c7-b3c1-0bcca8dcd5d9",
+    "Id": "a52bfccd-8f17-4008-a017-9115d2a4420c",
     "Name": "tile_tileset",
     "Enabled": true,
     "Children": [
       {
-        "Id": "3bfbab33-008a-4975-9d8a-d7d369455e7a",
+        "Id": "bf46b1fb-7fd3-49e3-95ae-993d567fca91",
         "Name": "DontAddMe",
         "Scale": "100,100,100",
         "Tags": "ignore",
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "Id": "a4b82a0e-bef6-4268-83b2-089973840273",
+        "Id": "885e7663-ac16-424c-b59b-480a4317c236",
         "Name": "Sun",
         "Position": "-607.2877,460.301,663.1797",
         "Rotation": "0.06178085,0.3960948,0.1411857,0.9051853",
@@ -53,14 +53,14 @@
         ]
       },
       {
-        "Id": "0184b59f-5dc5-4a17-bef9-c17e5c23f2ee",
+        "Id": "4bcd46f1-ffd4-4f2d-ad87-6e9dc1369f23",
         "Name": "GolfCourse",
         "Position": "-2013.365,478.9391,1446.41",
         "Tags": "group",
         "Enabled": true,
         "Children": [
           {
-            "Id": "262cf16c-1beb-4371-bae0-7d13b65577c8",
+            "Id": "9c731855-a2bd-4ead-987e-9544703f46f1",
             "Name": "block",
             "Position": "2269.365,-478.9391,-1445.91",
             "Tags": "group",
@@ -89,7 +89,7 @@
             ]
           },
           {
-            "Id": "1c1ad6b3-ed57-4f2c-b61d-6cd60166f91c",
+            "Id": "087c2283-6e16-4774-a4a9-c06265125381",
             "Name": "bump",
             "Position": "2269.365,-606.9391,-1445.91",
             "Tags": "group",
@@ -118,7 +118,7 @@
             ]
           },
           {
-            "Id": "84cd8809-76f0-49e4-8fd3-bb62ecd5d673",
+            "Id": "bf55d5ae-eac0-4c48-8702-37f0e380972d",
             "Name": "bump-down",
             "Position": "2269.365,-734.9391,-1445.91",
             "Tags": "group",
@@ -147,7 +147,7 @@
             ]
           },
           {
-            "Id": "a45b1ce6-359d-4dc5-a755-02ee14198eef",
+            "Id": "f21a3c99-61cb-4d66-b958-c69519ef8f8a",
             "Name": "bump-down-walls",
             "Position": "2269.365,-862.9391,-1445.91",
             "Tags": "group",
@@ -176,7 +176,7 @@
             ]
           },
           {
-            "Id": "b73a44a1-7e07-47d6-ad5f-5a0d4b4c236e",
+            "Id": "2f3ebc20-92ff-44ae-ab62-3f6b98bb710f",
             "Name": "bump-walls",
             "Position": "2269.365,-990.9391,-1445.91",
             "Tags": "group",
@@ -205,7 +205,7 @@
             ]
           },
           {
-            "Id": "6cdc00b2-d3cc-4d58-bf63-fe53c962575d",
+            "Id": "b8677ab0-7d9d-4795-8452-cec0c2b1d2dc",
             "Name": "castle",
             "Position": "2269.365,-1118.939,-1445.91",
             "Tags": "group",
@@ -234,7 +234,7 @@
             ]
           },
           {
-            "Id": "72741c23-5b71-4bb4-aad7-b2c0ac2ee938",
+            "Id": "bba1ecd8-e003-4db6-ba90-1f4685e79f95",
             "Name": "corner",
             "Position": "2269.365,-1246.939,-1445.91",
             "Tags": "group",
@@ -263,7 +263,7 @@
             ]
           },
           {
-            "Id": "9530ea86-2408-4234-8609-eda8e12b1a39",
+            "Id": "5b582a72-8ca9-4ab0-8125-6068a55d68b8",
             "Name": "crest",
             "Position": "2269.365,-1374.939,-1445.91",
             "Tags": "group",
@@ -292,7 +292,7 @@
             ]
           },
           {
-            "Id": "89310086-3a70-441b-baf8-e5fa72ef789b",
+            "Id": "0b55a68c-e555-4805-b198-a5bb28258b07",
             "Name": "end",
             "Position": "2269.365,-350.9391,-1445.91",
             "Tags": "group",
@@ -321,7 +321,7 @@
             ]
           },
           {
-            "Id": "f7ec7449-5f7a-4e3c-b5cf-d8e98edc5f91",
+            "Id": "97e860f8-1275-4419-b68f-cd2cf078139c",
             "Name": "gap",
             "Position": "2269.365,-222.9391,-1445.91",
             "Tags": "group",
@@ -350,7 +350,7 @@
             ]
           },
           {
-            "Id": "dd5dc785-ccf2-489d-98af-a2c2cd18fa9f",
+            "Id": "b7a07c24-d1a9-4abc-b4df-183bd8195c58",
             "Name": "hill-corner",
             "Position": "2269.365,-94.93906,-1445.91",
             "Tags": "group",
@@ -379,7 +379,7 @@
             ]
           },
           {
-            "Id": "9cc3ea8f-4919-4a5e-a41b-ae700060a5e6",
+            "Id": "cfd177b6-ec9b-444f-bb6a-1a2a7d9ed700",
             "Name": "hill-round",
             "Position": "2269.365,33.06094,-1445.91",
             "Tags": "group",
@@ -408,7 +408,7 @@
             ]
           },
           {
-            "Id": "7b796a25-464c-4599-ae81-b3de486b076b",
+            "Id": "42d0c843-490f-483d-977f-0f42a23b2dfb",
             "Name": "hill-square",
             "Position": "2013.365,33.06094,-1445.91",
             "Tags": "group",
@@ -437,7 +437,7 @@
             ]
           },
           {
-            "Id": "ae36a4ba-7e4e-4bfd-af14-127f63191b69",
+            "Id": "522fa8c1-1669-49ee-9404-950418d174c0",
             "Name": "hill-square",
             "Position": "2013.365,-94.93906,-1445.91",
             "Tags": "group",
@@ -466,7 +466,7 @@
             ]
           },
           {
-            "Id": "33cd8eee-ab84-4976-aa2b-78eb4acd6f66",
+            "Id": "1ff8bcac-7520-4483-99af-a908dcaa36f2",
             "Name": "hole-open",
             "Position": "2013.365,-222.9391,-1445.91",
             "Tags": "group",
@@ -495,7 +495,7 @@
             ]
           },
           {
-            "Id": "e2a767c3-47f1-4e24-8886-c6e208c142c4",
+            "Id": "4073d184-1f8f-421a-881b-a8e0a7bd6b9f",
             "Name": "hole-round",
             "Position": "2013.365,-350.9391,-1445.91",
             "Tags": "group",
@@ -524,7 +524,7 @@
             ]
           },
           {
-            "Id": "3027ca10-0ecf-4034-abcd-2581cfb7e421",
+            "Id": "9be517d3-fdfe-4b35-b7b9-84ecc3af88cc",
             "Name": "hole-square",
             "Position": "2013.365,-478.9391,-1445.91",
             "Tags": "group",
@@ -553,7 +553,7 @@
             ]
           },
           {
-            "Id": "1999b01b-640e-44b1-95ba-86509c58e6e4",
+            "Id": "6d9a255e-0cca-4af5-b57e-7e5b98cfa534",
             "Name": "inner-corner",
             "Position": "2013.365,-606.9391,-1445.91",
             "Tags": "group",
@@ -582,7 +582,7 @@
             ]
           },
           {
-            "Id": "e216331e-3f65-4674-9b59-f93ab45f62fc",
+            "Id": "6b0a3986-aa50-49f7-8537-5c6d0f973d33",
             "Name": "narrow-block",
             "Position": "2013.365,-734.9391,-1445.91",
             "Tags": "group",
@@ -611,7 +611,7 @@
             ]
           },
           {
-            "Id": "c70da4d7-a091-41d8-b2bf-044a20e2e85e",
+            "Id": "8c8372ec-68c5-40fd-b1b9-3a19dd837974",
             "Name": "narrow-round",
             "Position": "2013.365,-862.9391,-1445.91",
             "Tags": "group",
@@ -640,7 +640,7 @@
             ]
           },
           {
-            "Id": "548d23f0-42f3-46e0-9185-4bb1b1b9f997",
+            "Id": "79a5fe5c-c4d3-4893-9585-21673227e728",
             "Name": "narrow-square",
             "Position": "2013.365,-990.9391,-1445.91",
             "Tags": "group",
@@ -669,7 +669,7 @@
             ]
           },
           {
-            "Id": "e961b979-96a2-4f1f-b76c-50da9a491582",
+            "Id": "00d76452-6201-45ce-ad0a-93bdbcb5a528",
             "Name": "obstacle-block",
             "Position": "2013.365,-1118.939,-1445.91",
             "Tags": "group",
@@ -698,7 +698,7 @@
             ]
           },
           {
-            "Id": "9b6233c8-6880-4b75-b4da-ad2adb2a96c5",
+            "Id": "d43202f3-90c0-45c7-ac89-a580b349e7af",
             "Name": "obstacle-diamond",
             "Position": "2013.365,-1246.939,-1445.91",
             "Tags": "group",
@@ -727,7 +727,7 @@
             ]
           },
           {
-            "Id": "b0bfa14b-12e6-4e08-80d4-6a9892c5772f",
+            "Id": "ef157e43-4dc7-41b2-aafb-4bfffc25987e",
             "Name": "obstacle-triangle",
             "Position": "2013.365,-1374.939,-1445.91",
             "Tags": "group",
@@ -756,7 +756,7 @@
             ]
           },
           {
-            "Id": "b5267ad1-cd04-41de-8ab7-98d192ecfa42",
+            "Id": "632a46b0-a3a8-4328-b40d-38d860074eb1",
             "Name": "open",
             "Position": "1757.365,33.06094,-1445.91",
             "Tags": "group",
@@ -785,7 +785,7 @@
             ]
           },
           {
-            "Id": "e8c0d5dd-be49-43a7-99de-badcde2e0a41",
+            "Id": "9e0e6e2f-74df-4bfe-9f82-211aab4728a2",
             "Name": "ramp",
             "Position": "1757.365,-94.93906,-1445.91",
             "Tags": "group",
@@ -814,7 +814,7 @@
             ]
           },
           {
-            "Id": "f9e165ef-7e0e-4126-888b-e5bcf71aac18",
+            "Id": "6437b3db-da4d-4b79-8aa2-b5959478106f",
             "Name": "ramp-a",
             "Position": "1757.365,-222.9391,-1445.91",
             "Tags": "group",
@@ -843,7 +843,7 @@
             ]
           },
           {
-            "Id": "8d88d8f4-389a-401d-b4cb-991f6abc3514",
+            "Id": "9ec87770-286e-47ff-9393-5fcee04fb4a7",
             "Name": "ramp-b",
             "Position": "1757.365,-350.9391,-1445.91",
             "Tags": "group",
@@ -872,7 +872,7 @@
             ]
           },
           {
-            "Id": "8eb3b89d-28cf-467f-a646-82a4f0b59602",
+            "Id": "32f3df31-e499-4604-97c2-789383699521",
             "Name": "ramp-c",
             "Position": "1757.365,-478.9391,-1445.91",
             "Tags": "group",
@@ -901,7 +901,7 @@
             ]
           },
           {
-            "Id": "a8b38cda-b092-48b2-9bf7-8a3b2e1b059d",
+            "Id": "f891bec8-8a66-4e20-8f9a-1899c6249555",
             "Name": "ramp-d",
             "Position": "1757.365,-606.9391,-1445.91",
             "Tags": "group",
@@ -930,7 +930,7 @@
             ]
           },
           {
-            "Id": "e502a932-7b29-4f19-8a56-7d2868c9cd83",
+            "Id": "7baa2460-2778-4f05-afdf-b144d759edde",
             "Name": "ramp-large",
             "Position": "1757.365,-734.9391,-1445.91",
             "Tags": "group",
@@ -959,7 +959,7 @@
             ]
           },
           {
-            "Id": "4329f12c-c1d6-48e6-899c-29f5f6d5c1ea",
+            "Id": "c7399224-6d66-4fb7-abc2-59652ae3279c",
             "Name": "ramp-large-side",
             "Position": "1757.365,-862.9391,-1445.91",
             "Tags": "group",
@@ -988,7 +988,7 @@
             ]
           },
           {
-            "Id": "44c74bcc-571e-4f30-8534-2b0528f0a4ea",
+            "Id": "6dc56328-d2d1-4089-a44c-ce1aac7ca6e1",
             "Name": "ramp-sharp",
             "Position": "1757.365,-990.9391,-1445.91",
             "Tags": "group",
@@ -1017,7 +1017,7 @@
             ]
           },
           {
-            "Id": "b8b5566e-29b6-4905-b979-dc5d4ebb63b7",
+            "Id": "aebeb1e7-9f4d-44fa-9d83-03e823d961e7",
             "Name": "ramp-side",
             "Position": "1757.365,-1118.939,-1445.91",
             "Tags": "group",
@@ -1046,7 +1046,7 @@
             ]
           },
           {
-            "Id": "088d4488-9536-4009-8c4b-458c91b9013d",
+            "Id": "c00098dd-e9d5-442a-9030-3b191ffd5f7c",
             "Name": "ramp-square",
             "Position": "1757.365,-1246.939,-1445.91",
             "Tags": "group",
@@ -1075,7 +1075,7 @@
             ]
           },
           {
-            "Id": "85b52e84-9349-4068-b4f2-1896eb1f2d59",
+            "Id": "a9b39b3b-0227-4966-a49d-0203b689543c",
             "Name": "round-corner-a",
             "Position": "1757.365,-1374.939,-1445.91",
             "Tags": "group",
@@ -1104,7 +1104,7 @@
             ]
           },
           {
-            "Id": "43b07a3e-031c-49b5-8a95-65b51b0ce81f",
+            "Id": "87f5bff5-4fe0-4ca4-a447-c89389a938db",
             "Name": "round-corner-b",
             "Position": "1501.365,33.06094,-1445.91",
             "Tags": "group",
@@ -1133,7 +1133,7 @@
             ]
           },
           {
-            "Id": "6297bf50-5234-47c7-ac5f-253bdd2c0bfa",
+            "Id": "27b8db68-0940-4f93-8434-95db2d7380e8",
             "Name": "round-corner-c",
             "Position": "1501.365,-94.93906,-1445.91",
             "Tags": "group",
@@ -1162,7 +1162,7 @@
             ]
           },
           {
-            "Id": "66644d3f-d6b4-41d1-ba33-cc9c4b60feb9",
+            "Id": "71990365-fee3-4d93-ac53-80d869caa5ef",
             "Name": "round-corner-c",
             "Position": "1501.365,-222.9391,-1445.91",
             "Tags": "group",
@@ -1191,7 +1191,7 @@
             ]
           },
           {
-            "Id": "60bea57e-c703-4c50-b0a8-842d9f16a045",
+            "Id": "5f36726d-4ccf-497c-8e0e-79282987716a",
             "Name": "round-large-corner",
             "Position": "1629.365,289.0609,-1445.91",
             "Tags": "group",
@@ -1220,7 +1220,7 @@
             ]
           },
           {
-            "Id": "de450011-978c-49d4-94d8-46e7cf868f4e",
+            "Id": "026b18c5-7e06-4567-95ce-1caaee3f9623",
             "Name": "round-large-corner-open",
             "Position": "2013.365,289.0609,-1445.91",
             "Tags": "group",
@@ -1249,7 +1249,7 @@
             ]
           },
           {
-            "Id": "40104353-4c64-434d-8432-c9c5296e0f2c",
+            "Id": "bcfd8b0f-7d06-4465-991c-f158777305f2",
             "Name": "side",
             "Position": "1501.365,-350.9391,-1445.91",
             "Tags": "group",
@@ -1278,7 +1278,7 @@
             ]
           },
           {
-            "Id": "fa6416bc-b0ba-422c-ade6-d894db49e757",
+            "Id": "3a51f454-cce6-4abb-bbca-73f878103a9b",
             "Name": "skew-corner",
             "Position": "1501.365,-478.9391,-1445.91",
             "Tags": "group",
@@ -1307,7 +1307,7 @@
             ]
           },
           {
-            "Id": "03c8029b-c50b-4340-9147-9bd13474eeb8",
+            "Id": "daa9cd64-ab72-4c46-9acb-08a461d08410",
             "Name": "skew-large-corner",
             "Position": "1629.365,545.0609,-1445.91",
             "Tags": "group",
@@ -1336,7 +1336,7 @@
             ]
           },
           {
-            "Id": "bfd0fbf1-680d-494c-be8e-d19c5dec8653",
+            "Id": "1fdf646b-b7b6-42c6-8504-d5faabbcc674",
             "Name": "skew-large-corner-open",
             "Position": "2013.365,545.0609,-1445.91",
             "Tags": "group",
@@ -1365,7 +1365,7 @@
             ]
           },
           {
-            "Id": "ec3c7d79-6459-4dc1-a901-1a40fcd247ba",
+            "Id": "9be7758f-d369-4c34-afaa-43922f7f2dbe",
             "Name": "split",
             "Position": "1501.365,-606.9391,-1445.91",
             "Tags": "group",
@@ -1394,7 +1394,7 @@
             ]
           },
           {
-            "Id": "3520e1e1-a71c-4146-8a1b-8488c9a22567",
+            "Id": "9644bfc9-334e-4696-b340-cdccf45f6c72",
             "Name": "split-start",
             "Position": "1501.365,-734.9391,-1445.91",
             "Tags": "group",
@@ -1423,7 +1423,7 @@
             ]
           },
           {
-            "Id": "8607ca09-7ad6-415b-a36e-3ef6254c2320",
+            "Id": "748f36f8-44e2-4ebe-bac4-490c03cd3bc0",
             "Name": "split-t",
             "Position": "1501.365,-862.9391,-1445.91",
             "Tags": "group",
@@ -1452,7 +1452,7 @@
             ]
           },
           {
-            "Id": "a3a69817-fe3e-411c-a38a-e8a06a4f637b",
+            "Id": "bd330255-136d-492b-b163-db34e6ba1105",
             "Name": "split-walls-to-open",
             "Position": "1501.365,-990.9391,-1445.91",
             "Tags": "group",
@@ -1481,7 +1481,7 @@
             ]
           },
           {
-            "Id": "ef08527d-f95c-448b-a700-22276146a574",
+            "Id": "05ba2907-41ca-4dca-8452-b2d4f6ecfcc1",
             "Name": "square-corner-a",
             "Position": "1501.365,-1118.939,-1445.91",
             "Tags": "group",
@@ -1510,7 +1510,7 @@
             ]
           },
           {
-            "Id": "8320404b-9516-44c7-9f3f-63c8f373a175",
+            "Id": "d3bcfd3b-e568-4fd0-85c4-7ba202a336ba",
             "Name": "start",
             "Position": "1501.365,-1246.939,-1445.91",
             "Tags": "group",
@@ -1539,7 +1539,7 @@
             ]
           },
           {
-            "Id": "83f6ad68-ee03-4100-b387-b03492308441",
+            "Id": "1eb45919-e0c8-4393-8fa9-fc207e46a198",
             "Name": "straight",
             "Position": "1501.365,-1374.939,-1445.91",
             "Tags": "group",
@@ -1568,7 +1568,7 @@
             ]
           },
           {
-            "Id": "b69767b0-742b-4145-be0c-1504c89ab9e3",
+            "Id": "8f291404-9db5-4183-96a0-747e72b33d6e",
             "Name": "support",
             "Position": "1245.365,33.06094,-1445.91",
             "Tags": "group",
@@ -1597,7 +1597,7 @@
             ]
           },
           {
-            "Id": "e5c0157e-2d65-4e55-8fbc-ff0d4637dda5",
+            "Id": "fb2be919-5b91-4762-8641-5e9104e12fc4",
             "Name": "support-bottom",
             "Position": "1245.365,-94.93906,-1445.91",
             "Tags": "group",
@@ -1626,7 +1626,7 @@
             ]
           },
           {
-            "Id": "239f0a55-8368-444d-8514-f378cac0ceaa",
+            "Id": "df7475aa-10cd-4c6a-9d75-e7c5a3c46ec0",
             "Name": "supports",
             "Position": "1245.365,161.0609,-1445.91",
             "Tags": "group",
@@ -1655,7 +1655,7 @@
             ]
           },
           {
-            "Id": "ce72af1c-f2e9-402a-8faf-419d9041bbe2",
+            "Id": "a9cd1c21-d3fb-4a37-bc8e-80d7d68b9e73",
             "Name": "supports-bottom",
             "Position": "1245.365,289.0609,-1445.91",
             "Tags": "group",
@@ -1684,7 +1684,7 @@
             ]
           },
           {
-            "Id": "caf89190-e32e-4a30-86b6-548a71da8ea5",
+            "Id": "e4e279f0-61e1-4973-9e5d-f8711804e857",
             "Name": "tunnel-double",
             "Position": "1245.365,-222.9391,-1445.91",
             "Tags": "group",
@@ -1713,7 +1713,7 @@
             ]
           },
           {
-            "Id": "8ec91872-5dd1-4625-bcee-401cb563e9cf",
+            "Id": "c8a31b9f-8e9b-4216-959d-3fad43f37a28",
             "Name": "tunnel-narrow",
             "Position": "1245.365,-350.9391,-1445.91",
             "Tags": "group",
@@ -1742,7 +1742,7 @@
             ]
           },
           {
-            "Id": "5fd24f78-f819-46d5-8c1b-f46e34fb2f9b",
+            "Id": "9d4f535e-7d90-4a60-bb69-41a920f6e21b",
             "Name": "tunnel-wide",
             "Position": "1245.365,-478.9391,-1445.91",
             "Tags": "group",
@@ -1771,7 +1771,7 @@
             ]
           },
           {
-            "Id": "ff84581a-9589-45d7-bd66-407ea7484902",
+            "Id": "4f657f4c-e429-4133-a1e8-f8eb325ea456",
             "Name": "wall-left",
             "Position": "1245.365,-606.9391,-1445.91",
             "Tags": "group",
@@ -1800,7 +1800,7 @@
             ]
           },
           {
-            "Id": "f7d794fd-db93-4c30-bb0e-92a8256667a5",
+            "Id": "9f2ef81a-3d22-4b12-9a23-db834f130d15",
             "Name": "wall-right",
             "Position": "1245.365,-734.9391,-1445.91",
             "Tags": "group",
@@ -1829,7 +1829,7 @@
             ]
           },
           {
-            "Id": "c30fcf32-b372-4dbf-b5e3-0a201797df59",
+            "Id": "ab269913-112e-432d-9275-502165a67496",
             "Name": "walls-to-open",
             "Position": "1245.365,-862.9391,-1445.91",
             "Tags": "group",
@@ -1858,7 +1858,7 @@
             ]
           },
           {
-            "Id": "e4b8d0c4-9dca-47d7-896c-906d5704bef8",
+            "Id": "6e8d62c4-4f9c-48ee-99af-4b13f4d98a03",
             "Name": "windmill",
             "Position": "1245.365,-990.9391,-1445.91",
             "Tags": "group",
@@ -1887,7 +1887,7 @@
             ]
           },
           {
-            "Id": "9c0343bf-e815-4b14-bae8-a9389a30c8fb",
+            "Id": "aced3570-9457-4e3c-8754-78053a9c0547",
             "Name": "TestFab",
             "Position": "1117.365,-1214.939,-1445.91",
             "Tags": "group",
@@ -1897,7 +1897,7 @@
         ]
       },
       {
-        "Id": "3ed09eb9-b809-4056-a029-70601ea89d8c",
+        "Id": "06f3cd64-1a3c-461c-8acd-453cc8db886d",
         "Name": "Help",
         "Position": "-1408,0,82.09428",
         "Rotation": "0,0.707107,0,0.7071065",
@@ -1905,7 +1905,7 @@
         "Enabled": true,
         "Children": [
           {
-            "Id": "53fb39af-d2c6-40de-8705-f1cf72d90468",
+            "Id": "c0d52ea5-9ada-4ffa-875e-92695b2933a6",
             "Name": "Object",
             "Position": "-0.00004462426,0,71.76221",
             "Tags": "ignore",
@@ -1924,7 +1924,7 @@
             ]
           },
           {
-            "Id": "88afc701-bc36-4a31-a37b-8bd3287407a9",
+            "Id": "5dbe17dd-e666-4090-a5c0-3795f0f92510",
             "Name": "Object",
             "Position": "-0.0002154735,0,175.9318",
             "Tags": "ignore",
@@ -1943,7 +1943,7 @@
             ]
           },
           {
-            "Id": "1f47cbe7-2b8d-4dd3-bb1b-4d8dce95195f",
+            "Id": "b45b6a58-8897-4ee5-ade0-1292b1a93749",
             "Name": "Object (1)",
             "Position": "0.00003189161,-0.00003051758,-1.646606",
             "Tags": "ignore",
@@ -1962,7 +1962,7 @@
             ]
           },
           {
-            "Id": "89768fff-1f50-4c9e-acdf-365c56524287",
+            "Id": "ca73b16c-8565-44ed-9edd-3af6e9e901dd",
             "Name": "Object (1)",
             "Position": "0.0001361398,-0.00003051758,-71.71765",
             "Tags": "ignore",
@@ -1981,7 +1981,7 @@
             ]
           },
           {
-            "Id": "c2b6d798-2f33-4df1-9974-df01069c4176",
+            "Id": "19ddb5d0-cb8b-436d-8b7e-e36e6362f1da",
             "Name": "Object (1)",
             "Position": "0.0002334215,-0.00003051758,-234.0116",
             "Tags": "ignore",
@@ -2000,7 +2000,7 @@
             ]
           },
           {
-            "Id": "457f66e8-37cf-4567-8f0f-5cc11f9d26fa",
+            "Id": "3318a55a-1bdf-4f3d-9961-182e7f4ae2a4",
             "Name": "Object (1)",
             "Position": "0.0003604722,-0.00003051758,-313.1228",
             "Tags": "ignore",
@@ -2021,7 +2021,7 @@
         ]
       },
       {
-        "Id": "661a40df-8d99-49eb-84b5-5979e939020b",
+        "Id": "46972568-c272-429a-9b67-3075d194ff7d",
         "Name": "Cube",
         "Position": "-1492.567,0,38.35523",
         "Scale": "15.15112,22.93335,1",
@@ -2042,14 +2042,14 @@
         ]
       },
       {
-        "Id": "14f04add-3587-4199-9f2c-f68fee6e9673",
+        "Id": "b7c3d680-da10-431c-9657-936be1dae701",
         "Name": "Factory",
         "Position": "256,-1408,0",
         "Tags": "group",
         "Enabled": true,
         "Children": [
           {
-            "Id": "f68f6656-1fc5-48ab-9f77-d7c49706b021",
+            "Id": "2a6e264b-263b-48db-b4b6-609eb2ade4cb",
             "Name": "top-large",
             "Position": "-1984,-640,0.5000217",
             "Tags": "group",
@@ -2078,7 +2078,7 @@
             ]
           },
           {
-            "Id": "e9bbba40-0fb4-4a12-b3cd-67494602ea7a",
+            "Id": "b1c2183d-8645-4e67-b48c-df1d3ab1f3a0",
             "Name": "top",
             "Position": "-1728,-576,0.4999775",
             "Tags": "group",
@@ -2107,7 +2107,7 @@
             ]
           },
           {
-            "Id": "6c97f4d8-405b-4126-8b7b-2c7f75b1f948",
+            "Id": "55bdd624-be44-4b86-9064-c54edd7725b5",
             "Name": "structure-yellow-tall",
             "Position": "-1920,-448,0.5000048",
             "Tags": "group",
@@ -2136,7 +2136,7 @@
             ]
           },
           {
-            "Id": "3742b530-9849-4863-93ee-6b147b2c6dba",
+            "Id": "90a1e176-bcdb-4ef5-b3ec-1a98f555ee2a",
             "Name": "structure-yellow-short",
             "Position": "-1920,-384,0.5000215",
             "Tags": "group",
@@ -2165,7 +2165,7 @@
             ]
           },
           {
-            "Id": "a36c45ee-280f-45e6-8eaa-0965662a0e8f",
+            "Id": "3ebdd9e4-5d8e-4eca-9e30-645521490675",
             "Name": "structure-yellow-medium",
             "Position": "-1728,-448,0.4999802",
             "Tags": "group",
@@ -2194,7 +2194,7 @@
             ]
           },
           {
-            "Id": "d09cfdf8-5683-4824-bac9-597e3400f099",
+            "Id": "fbc87b7c-c431-457e-931d-7a0f25d46254",
             "Name": "structure-yellow-high",
             "Position": "-1728,-384,0.4999916",
             "Tags": "group",
@@ -2223,7 +2223,7 @@
             ]
           },
           {
-            "Id": "2bbf457e-13c7-4e7f-bc43-fe57d8213164",
+            "Id": "7f8038db-04b6-4587-b7df-edd2f0ed0a53",
             "Name": "structure-window-wide",
             "Position": "-1856,-192,0.5000225",
             "Tags": "group",
@@ -2252,7 +2252,7 @@
             ]
           },
           {
-            "Id": "2126de2b-21f8-4098-90ff-f45690fe7720",
+            "Id": "7c6492cb-90f3-402e-94be-2540886cf115",
             "Name": "structure-window",
             "Position": "-1856,64,0.4999913",
             "Tags": "group",
@@ -2281,7 +2281,7 @@
             ]
           },
           {
-            "Id": "167402ff-2e68-4269-be64-70f3261aa46b",
+            "Id": "088e2708-9a4f-443d-a140-1b19344112ee",
             "Name": "structure-wall",
             "Position": "-1856,256,0.5000157",
             "Tags": "group",
@@ -2310,7 +2310,7 @@
             ]
           },
           {
-            "Id": "019f7cc1-6774-443a-ae22-ebed427a1624",
+            "Id": "19872af8-1a6f-425a-8500-2f4ec8bd9160",
             "Name": "structure-tall",
             "Position": "-1600,-960,0.4999813",
             "Tags": "group",
@@ -2339,7 +2339,7 @@
             ]
           },
           {
-            "Id": "60b563f2-65bc-4409-8133-4afb47ea4e6a",
+            "Id": "22bfa025-4ba3-46f8-9b5a-84bcab75f62e",
             "Name": "structure-short",
             "Position": "-1600,-832,0.5000206",
             "Tags": "group",
@@ -2368,7 +2368,7 @@
             ]
           },
           {
-            "Id": "a37338fd-7153-4263-992c-fa4b3cb3622a",
+            "Id": "3b1cedd9-4f66-4096-8aa2-9c279db14c0a",
             "Name": "structure-medium",
             "Position": "-1408,-960,0.4999813",
             "Tags": "group",
@@ -2397,7 +2397,7 @@
             ]
           },
           {
-            "Id": "cc6f45be-c89e-4a39-abb3-cfcd3b485e29",
+            "Id": "a8859354-6560-4380-9c6a-335457d9f80b",
             "Name": "structure-high",
             "Position": "-1408,-832,0.4999942",
             "Tags": "group",
@@ -2426,7 +2426,7 @@
             ]
           },
           {
-            "Id": "ac9964f9-be8f-436c-bc3a-3dec4fe0035b",
+            "Id": "e132a020-08d5-4c28-89c7-d877fe4c9360",
             "Name": "structure-doorway-wide",
             "Position": "-1536,-640,0.5000221",
             "Tags": "group",
@@ -2455,7 +2455,7 @@
             ]
           },
           {
-            "Id": "e0962760-c60d-40c2-9ee5-143cca978f1a",
+            "Id": "859a0f4e-7b89-4668-a95b-6a465607383e",
             "Name": "structure-doorway",
             "Position": "-1536,-384,0.499978",
             "Tags": "group",
@@ -2484,7 +2484,7 @@
             ]
           },
           {
-            "Id": "6a243340-a224-4ba8-8c39-2093a30e44a3",
+            "Id": "39503812-2769-4d54-bc55-4d4771e4e95c",
             "Name": "structure-corner-outer",
             "Position": "-1536,-192,0.5000031",
             "Tags": "group",
@@ -2513,7 +2513,7 @@
             ]
           },
           {
-            "Id": "86884454-1fc6-43c3-93c6-92e40015bf7a",
+            "Id": "f1649f5a-9031-4b2d-9c54-e3ee23e2110c",
             "Name": "structure-corner-inner",
             "Position": "-1536,128,0.5000222",
             "Tags": "group",
@@ -2542,7 +2542,7 @@
             ]
           },
           {
-            "Id": "4c4e55ad-1a62-45a9-80c0-154179cd6016",
+            "Id": "aa14a1c3-5b15-456a-b943-4a93820d7d4e",
             "Name": "scanner-low",
             "Position": "-1152,128,0.5000188",
             "Tags": "group",
@@ -2571,7 +2571,7 @@
             ]
           },
           {
-            "Id": "5dfa26b5-b0c2-44f3-abcb-5d0ea0331cce",
+            "Id": "2bf482d1-315a-4e31-9c9e-b3da3bf5c4be",
             "Name": "scanner-high",
             "Position": "-1152,0,0.5000225",
             "Tags": "group",
@@ -2600,7 +2600,7 @@
             ]
           },
           {
-            "Id": "3183f7b3-8d22-46d4-9c32-1011958ad071",
+            "Id": "e6a087cf-360a-40e9-8d48-3ff72cf80548",
             "Name": "robot-arm-b",
             "Position": "-1088,-128,0.4999783",
             "Tags": "group",
@@ -2629,7 +2629,7 @@
             ]
           },
           {
-            "Id": "26620492-8327-4a2f-8d24-7e5f21b30082",
+            "Id": "8aed48d3-8918-441d-8e1d-bd61e32239b9",
             "Name": "robot-arm-a",
             "Position": "-1088,-320,0.4999787",
             "Tags": "group",
@@ -2658,7 +2658,7 @@
             ]
           },
           {
-            "Id": "ffaf11d5-6cef-4854-884f-875ffa8ab7dd",
+            "Id": "e1f67b96-b1b1-44c8-aef7-0ecb055f9fbf",
             "Name": "floor-large",
             "Position": "-1152,-576,0.49998",
             "Tags": "group",
@@ -2687,7 +2687,7 @@
             ]
           },
           {
-            "Id": "531c5006-cb3a-442a-b39d-e8a4e03bd767",
+            "Id": "9fd637cc-b636-4af4-976c-9f56e2b1022c",
             "Name": "floor",
             "Position": "-1088,-832,0.4999976",
             "Tags": "group",
@@ -2716,7 +2716,7 @@
             ]
           },
           {
-            "Id": "1343a5c5-8cf6-4a8e-bb69-db0953fd7f6a",
+            "Id": "37ce6c7c-ed9d-48d0-ba0e-7f2427787866",
             "Name": "door-wide-open",
             "Position": "-1216,-1024,116.3318",
             "Tags": "group",
@@ -2745,7 +2745,7 @@
             ]
           },
           {
-            "Id": "e99e16e7-5cef-49e0-b4f5-8efbf0ccf5fa",
+            "Id": "f423b5d3-3c7a-4caa-a78f-d34a7b84444c",
             "Name": "door-wide-half",
             "Position": "-1088,-1024,68.51469",
             "Tags": "group",
@@ -2774,7 +2774,7 @@
             ]
           },
           {
-            "Id": "2ea803ee-6fd7-4559-b6aa-a3d2db99fcc7",
+            "Id": "c1a0990c-008f-4264-b0a9-d20ccdb39e5c",
             "Name": "door-wide-closed",
             "Position": "-959.9999,-1024,51.49998",
             "Tags": "group",
@@ -2803,7 +2803,7 @@
             ]
           },
           {
-            "Id": "2f998dc0-15f1-4f86-b94b-fd3425240d5f",
+            "Id": "4efa9b5b-0351-4319-b712-5eb99b731a07",
             "Name": "door",
             "Position": "-896,-832,0.4999788",
             "Tags": "group",
@@ -2832,7 +2832,7 @@
             ]
           },
           {
-            "Id": "d285dfe6-59e5-4295-a9d2-0110f7e56cbc",
+            "Id": "e6d1e07b-dc45-4ac8-aec1-e5b5528374bc",
             "Name": "cover-top",
             "Position": "-896,-640,0.4999773",
             "Tags": "group",
@@ -2861,7 +2861,7 @@
             ]
           },
           {
-            "Id": "0a227f57-ae22-45e7-a7e8-bf7d2b4345a3",
+            "Id": "ad0fb7a5-e86d-4244-aed6-b4888ed452a9",
             "Name": "cover-stripe-window",
             "Position": "-896,-448,0.5000064",
             "Tags": "group",
@@ -2890,7 +2890,7 @@
             ]
           },
           {
-            "Id": "1bfb722f-3ecc-424e-8f24-f22823cc3778",
+            "Id": "c3178cfa-2059-44a0-a8bd-252a9d712123",
             "Name": "cover-stripe-top",
             "Position": "-896,-256,0.4999786",
             "Tags": "group",
@@ -2919,7 +2919,7 @@
             ]
           },
           {
-            "Id": "7a814867-2b75-42a9-b32f-400a5026f34c",
+            "Id": "e053d648-b55b-444c-b292-8e13559054fd",
             "Name": "cover-stripe-hopper",
             "Position": "-896,-64,0.5000219",
             "Tags": "group",
@@ -2948,7 +2948,7 @@
             ]
           },
           {
-            "Id": "2515c577-b184-4ee2-a1f9-d8d980cce722",
+            "Id": "64e10931-cadd-4f2f-9587-b7476c253d9f",
             "Name": "cover-stripe-bar",
             "Position": "-896,128,0.4999986",
             "Tags": "group",
@@ -2977,7 +2977,7 @@
             ]
           },
           {
-            "Id": "7e031f00-b50e-4357-88d1-913d4a47cf7c",
+            "Id": "440396c1-080d-4bfe-b27e-5c6fc5a0c44e",
             "Name": "cover-stripe",
             "Position": "-640,64,0.5000226",
             "Tags": "group",
@@ -3006,7 +3006,7 @@
             ]
           },
           {
-            "Id": "70682ca0-ef39-4aef-bd9f-c5236909da42",
+            "Id": "96cc44ac-730e-47c0-9e80-ff50ce3fcaec",
             "Name": "cover-hopper",
             "Position": "-640,-128,0.4999779",
             "Tags": "group",
@@ -3035,7 +3035,7 @@
             ]
           },
           {
-            "Id": "8516f581-1760-4455-a8b0-c5db8b150d8c",
+            "Id": "cfebe009-a639-4054-80ff-c7381a4d1713",
             "Name": "cover-corner",
             "Position": "-640,-320,0.500012",
             "Tags": "group",
@@ -3064,7 +3064,7 @@
             ]
           },
           {
-            "Id": "4d709bf0-1b6a-4a2b-b40c-98560cccfb2a",
+            "Id": "80ba7621-3adb-46b3-a0c0-fd7273f38188",
             "Name": "cover-bar",
             "Position": "-640,-512,0.5000103",
             "Tags": "group",
@@ -3093,7 +3093,7 @@
             ]
           },
           {
-            "Id": "687e1203-4283-47f8-a616-ca0d4b0de5e9",
+            "Id": "775f7caa-0949-4bbf-bb0b-b570c56f371c",
             "Name": "cover",
             "Position": "-640,-768,0.4999847",
             "Tags": "group",
@@ -3122,7 +3122,7 @@
             ]
           },
           {
-            "Id": "284be4f7-d472-4a6e-a132-b0f9bace050e",
+            "Id": "9eec71da-18d1-4455-814a-230495023cbf",
             "Name": "conveyor-stripe-sides",
             "Position": "-640,-1024,0.5000455",
             "Tags": "group",
@@ -3151,7 +3151,7 @@
             ]
           },
           {
-            "Id": "c987a8f1-f0fe-480b-b406-ca625cefcdec",
+            "Id": "5371767c-6ef8-49e5-8a46-af33b1cb8321",
             "Name": "conveyor-stripe",
             "Position": "-448,-960,0.4999257",
             "Tags": "group",
@@ -3180,7 +3180,7 @@
             ]
           },
           {
-            "Id": "b9d75b96-367c-46f8-8591-b3e285c91b72",
+            "Id": "953439bd-7407-49b9-9ebc-0b5cff709e33",
             "Name": "conveyor-sides",
             "Position": "-448,-768,0.4999813",
             "Tags": "group",
@@ -3209,7 +3209,7 @@
             ]
           },
           {
-            "Id": "3ff51266-aa36-4e49-8685-ef8afbf8b44b",
+            "Id": "2b9921c2-9aec-4066-9a0d-66638f30ce48",
             "Name": "conveyor-long-stripe-sides",
             "Position": "-448,-512,0.5000494",
             "Tags": "group",
@@ -3238,7 +3238,7 @@
             ]
           },
           {
-            "Id": "7b7ac5a6-50dd-4fab-895d-1f9de759a064",
+            "Id": "2e776e56-49c5-4fcf-b3a0-cf2dbfaddd40",
             "Name": "conveyor-long-stripe",
             "Position": "-448,-192,0.5000499",
             "Tags": "group",
@@ -3267,7 +3267,7 @@
             ]
           },
           {
-            "Id": "507f0e3a-2bd7-4fa6-871e-a559432cc95d",
+            "Id": "fb026045-0f52-4c2e-bcad-3a26a5190b92",
             "Name": "conveyor-long-sides",
             "Position": "-448,128,0.5000134",
             "Tags": "group",
@@ -3296,7 +3296,7 @@
             ]
           },
           {
-            "Id": "17d653c0-e4b4-46ea-a60f-8debe54bf5f2",
+            "Id": "4b3b82dc-3590-4e8c-a745-817bf6f5f350",
             "Name": "conveyor-long",
             "Position": "-256,128,0.4999412",
             "Tags": "group",
@@ -3325,7 +3325,7 @@
             ]
           },
           {
-            "Id": "2ec9810d-c5bd-4f4e-a484-1a6798b397a6",
+            "Id": "8da50d5d-427f-4f49-8e06-9f7d6377b31f",
             "Name": "conveyor-bars-stripe-high",
             "Position": "-256,-128,0.4999959",
             "Tags": "group",
@@ -3354,7 +3354,7 @@
             ]
           },
           {
-            "Id": "e475154d-47c4-4111-a919-d422e49a896e",
+            "Id": "b060397b-1727-4bbc-ae01-24ecc783e60c",
             "Name": "conveyor-bars-stripe-fence",
             "Position": "-256,-320,0.4999772",
             "Tags": "group",
@@ -3383,7 +3383,7 @@
             ]
           },
           {
-            "Id": "e7ad47ec-5dbb-41ed-b167-65bb5f8010b3",
+            "Id": "4e6ae0e5-e527-40eb-ac91-330f803c29a6",
             "Name": "conveyor-bars-stripe",
             "Position": "-256,-512,0.5000003",
             "Tags": "group",
@@ -3412,7 +3412,7 @@
             ]
           },
           {
-            "Id": "4c8ff2ff-f877-4144-b78e-30b5ce7ca0d5",
+            "Id": "1d0272c2-73ee-4328-983d-effda9fd4f07",
             "Name": "conveyor-bars-sides",
             "Position": "-256,-704,0.4999773",
             "Tags": "group",
@@ -3441,7 +3441,7 @@
             ]
           },
           {
-            "Id": "13d5d7ee-ab4d-49b8-b60f-6a4df93828bc",
+            "Id": "fdd37ddf-3ef4-4597-9925-c84ad019c8b1",
             "Name": "conveyor-bars-high",
             "Position": "-256,-896,0.500052",
             "Tags": "group",
@@ -3470,7 +3470,7 @@
             ]
           },
           {
-            "Id": "51dd70ba-7907-4753-8e6c-15cdfd54b209",
+            "Id": "ce1cbf79-720b-4683-b628-68214a554c90",
             "Name": "conveyor-bars-fence",
             "Position": "-256,-1088,0.4999277",
             "Tags": "group",
@@ -3499,7 +3499,7 @@
             ]
           },
           {
-            "Id": "a0f00aa3-b7ad-426f-aa35-94e752e3e5d7",
+            "Id": "2bacebe5-3eb6-4503-8360-e946fb7a5309",
             "Name": "conveyor-bars",
             "Position": "0,-1088,0.4999967",
             "Tags": "group",
@@ -3528,7 +3528,7 @@
             ]
           },
           {
-            "Id": "907219e5-4525-4dea-9c69-7c6f0bb3a1bc",
+            "Id": "750402b7-2571-4d92-a9ba-5c2a5b05530c",
             "Name": "conveyor",
             "Position": "0,-896,0.4999966",
             "Tags": "group",
@@ -3557,7 +3557,7 @@
             ]
           },
           {
-            "Id": "e234d19c-f228-424d-8945-1d1267ba36b3",
+            "Id": "4e85547d-1b5a-4e48-a41c-f2d4a9e1a868",
             "Name": "box-wide",
             "Position": "0,-704,0.4999211",
             "Tags": "group",
@@ -3586,7 +3586,7 @@
             ]
           },
           {
-            "Id": "acc18627-9649-40f7-85db-5fbbe5bc7a68",
+            "Id": "15c36776-1df8-438b-8353-9d8e2cb29827",
             "Name": "box-small",
             "Position": "0,-576,0.4999943",
             "Tags": "group",
@@ -3615,7 +3615,7 @@
             ]
           },
           {
-            "Id": "73f7652b-9c10-4472-a6f0-ccc82ea446d1",
+            "Id": "24d6c24c-d55a-410c-8d6b-3138a261d93d",
             "Name": "box-long",
             "Position": "0,-448,0.4999781",
             "Tags": "group",
@@ -3644,7 +3644,7 @@
             ]
           },
           {
-            "Id": "d0898e89-320d-4b18-b09b-50ad9e2d42fd",
+            "Id": "c6076403-214f-4404-b5c8-03046cdee2dc",
             "Name": "box-large",
             "Position": "0,-256,0.4999794",
             "Tags": "group",
@@ -3673,7 +3673,7 @@
             ]
           },
           {
-            "Id": "155671ac-7c6a-4102-850b-550d269494e3",
+            "Id": "b5d1504a-0517-42fb-a80b-6470c2253149",
             "Name": "arrow-basic",
             "Position": "0,-128,0.4999945",
             "Tags": "group",
@@ -3702,7 +3702,7 @@
             ]
           },
           {
-            "Id": "8cd2671e-749d-442e-bd4a-2ba566073981",
+            "Id": "308b8ba2-4b81-40c5-8dfb-86e1ac2af954",
             "Name": "arrow",
             "Position": "0,0,0",
             "Tags": "group",
@@ -3733,7 +3733,7 @@
         ]
       },
       {
-        "Id": "3a2ea78f-4211-4ab7-a877-24067978ce3b",
+        "Id": "83a12734-b1ea-4cdb-9a20-120c4f414cf9",
         "Name": "TestGroup",
         "Position": "-2069.083,768,60.40664",
         "Rotation": "0,0.707107,0,0.7071065",
@@ -3741,7 +3741,7 @@
         "Enabled": true,
         "Children": [
           {
-            "Id": "2c70a298-ad78-4f17-9499-20aac870855d",
+            "Id": "80b9c019-8f8f-496a-a8e2-fa9b93ca3c9e",
             "Name": "cardboardbox01",
             "Position": "0,0,0",
             "Tags": "group",
@@ -3770,7 +3770,7 @@
             ]
           },
           {
-            "Id": "8988a14f-fc36-48f7-8e24-cc5633eba3a5",
+            "Id": "172ddcbd-ee99-4416-a19c-7e9f9fcebfee",
             "Name": "coin01",
             "Position": "59.90664,-99.36798,20.21245",
             "Rotation": "0,-0.7071071,0,0.7071066",
@@ -3800,7 +3800,7 @@
             ]
           },
           {
-            "Id": "61d0de4f-45f3-48fb-bde5-6eadef651b9e",
+            "Id": "cc99d302-3230-4096-8aa9-b143bd0dd2e1",
             "Name": "chair01",
             "Position": "58.90662,-155.6611,31.69219",
             "Rotation": "0,-0.7071071,0,0.7071066",
@@ -3830,7 +3830,7 @@
             ]
           },
           {
-            "Id": "3d90baa1-4830-41f0-b87e-4c28e9b5c753",
+            "Id": "ef4a914a-1c33-4584-b3f2-8a6be16a64bf",
             "Name": "chair02",
             "Position": "59.90665,2.356079,-40.03609",
             "Rotation": "0,-0.7071071,0,0.7071066",
@@ -3862,7 +3862,7 @@
         ]
       },
       {
-        "Id": "09e2e0ad-d338-4dd6-b71c-968e86a5e087",
+        "Id": "865d34dc-7399-4134-8fe1-f7656ca7660c",
         "Name": "icecreamcone01",
         "Position": "-1536,768,0",
         "Rotation": "0,0.707107,0,0.7071065",
@@ -3891,7 +3891,7 @@
         ]
       },
       {
-        "Id": "4062bb65-7e96-4194-af15-6f27bee69905",
+        "Id": "e6b14e53-ae98-48c0-9088-43546048dfae",
         "Name": "trashcan01",
         "Position": "-1536,1024,0.4999553",
         "Enabled": true,
@@ -3919,7 +3919,7 @@
         ]
       },
       {
-        "Id": "6d67a220-2e66-4b4a-ad44-46ac90bcd83d",
+        "Id": "d4ea931e-18f1-4eb4-add5-5dc7e6944c01",
         "Name": "trashcan02",
         "Position": "-1536,1152,0.4999546",
         "Enabled": true,
@@ -3947,7 +3947,7 @@
         ]
       },
       {
-        "Id": "b11c5492-eaf9-4a8f-82a6-3ae5e54959d9",
+        "Id": "10674341-4d3d-4c73-9d15-528774cd40dc",
         "Name": "wheel01",
         "Position": "-1536,1280,22.49999",
         "Enabled": true,
@@ -3975,2923 +3975,14 @@
         ]
       },
       {
-        "Id": "f898e266-9b1c-4a63-97a4-9da145599be8",
-        "Name": "kennypsx",
-        "Position": "-2021.259,1874.703,606.3667",
-        "Tags": "group",
-        "Enabled": true,
-        "Children": [
-          {
-            "Id": "f17271c1-fb4e-48ce-a013-07afd480243f",
-            "Name": "windowwide_typed",
-            "Position": "-1306.741,301.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowwide_typed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowwide_typed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "b05fa2f0-ad0c-4020-bb5e-a12a9b0e2c2f",
-            "Name": "balcony_typea",
-            "Position": "1189.259,813.2974,-606.3667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/balcony_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/balcony_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "0c0de093-be69-4cbd-b0f0-a7c2f67ac863",
-            "Name": "balconyladder_bottom",
-            "Position": "1189.259,621.2974,-606.3667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/balconyladder_bottom.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/balconyladder_bottom.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "a93f5391-d1b1-4a0a-9a23-49612b341227",
-            "Name": "balconyladder_top",
-            "Position": "1189.259,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/balconyladder_top.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/balconyladder_top.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9326ffb8-f920-4283-b218-cbf0311df7c4",
-            "Name": "detailawning_small",
-            "Position": "1061.259,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailawning_small.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailawning_small.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "6aaeb728-aff5-4317-9982-3cbf52b920a5",
-            "Name": "detailawning_wide",
-            "Position": "1061.259,557.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailawning_wide.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailawning_wide.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "1f3b5edd-e707-4d7f-8ed2-528765a6d58b",
-            "Name": "detailbarrier_typea",
-            "Position": "1061.259,941.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbarrier_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbarrier_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "421a687a-e3c9-4be1-9b90-a5084d48a7d8",
-            "Name": "detailbarrier_typeb",
-            "Position": "1061.259,813.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbarrier_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbarrier_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "fc2504f8-94e9-43ae-bb9c-806d3aad3db1",
-            "Name": "detailbarrierstrong_damaged",
-            "Position": "933.2593,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbarrierstrong_damaged.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbarrierstrong_damaged.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "d345836b-d543-4083-8776-88dc507601ff",
-            "Name": "detailbarrierstrong_typea",
-            "Position": "933.2593,557.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbarrierstrong_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbarrierstrong_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "1994338f-e2b5-49f0-b51e-80806f28d93e",
-            "Name": "detailbarrierstrong_typeb",
-            "Position": "933.2593,685.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbarrierstrong_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbarrierstrong_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "6bc892bb-e399-444e-988e-25b77505e8fd",
-            "Name": "detailbeam",
-            "Position": "933.2593,813.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbeam.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbeam.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "2f92f743-4dbf-4db3-b885-533b5f745983",
-            "Name": "detailbricks_typea",
-            "Position": "933.2593,1005.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbricks_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbricks_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "fe381bab-23e6-42b3-8ff1-85959c9b19bb",
-            "Name": "detailbricks_typeb",
-            "Position": "933.2593,877.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailbricks_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailbricks_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "7621b520-2404-40ef-a026-b1ded7f58c21",
-            "Name": "detailcables_typea",
-            "Position": "869.2593,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailcables_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailcables_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "960f004b-2992-467d-bdea-fcdd31ab9109",
-            "Name": "detailcables_typeb",
-            "Position": "805.2593,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detailcables_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detailcables_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "c81bfcd9-9b2d-4a3f-8235-319d367f6ee1",
-            "Name": "detaildumpster_closed",
-            "Position": "1061.259,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detaildumpster_closed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detaildumpster_closed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "867a0b67-5ac5-4ff3-ba0b-a7e44130dbfa",
-            "Name": "detaildumpster_open",
-            "Position": "933.2593,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detaildumpster_open.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detaildumpster_open.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9d303069-cf6a-4f98-b2c8-d9eeefe5084f",
-            "Name": "detaillight_double",
-            "Position": "1381.259,941.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detaillight_double.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detaillight_double.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "69e5502d-052a-4b4a-8ea5-6542c81be69e",
-            "Name": "detaillight_single",
-            "Position": "1381.259,877.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detaillight_single.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detaillight_single.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "26be64af-0d75-4233-8788-933881c83409",
-            "Name": "detaillight_traffic",
-            "Position": "1381.259,813.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/detaillight_traffic.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/detaillight_traffic.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f99ab549-83d4-40a2-9c0c-2fc023c1b428",
-            "Name": "door_typea",
-            "Position": "1061.259,1133.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/door_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/door_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "cbf85679-7f7b-4ef6-947a-9156cdb028c6",
-            "Name": "door_typeb",
-            "Position": "1061.259,1069.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/door_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/door_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "3569c142-cbe9-4d0e-8450-4d9988675daf",
-            "Name": "grass",
-            "Position": "677.2593,365.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/grass.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/grass.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "ba2f4855-c5e9-4638-9e05-74bdaa395276",
-            "Name": "roadasphalt_center",
-            "Position": "677.2593,557.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_center.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_center.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "0564456c-118b-426b-aeb8-147ecd825108",
-            "Name": "roadasphalt_corner",
-            "Position": "421.2593,301.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_corner.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_corner.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "770ceeec-469a-4a69-8e28-061a553dbbf5",
-            "Name": "roadasphalt_cornerinner",
-            "Position": "229.2593,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_cornerinner.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_cornerinner.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "662db975-9bca-4635-9250-ac3d88ea4663",
-            "Name": "roadasphalt_cornerouter",
-            "Position": "101.2593,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_cornerouter.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_cornerouter.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "c1a82f03-86a3-47d6-ae30-11f3629f8c0d",
-            "Name": "roadasphalt_damaged",
-            "Position": "229.2593,493.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_damaged.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_damaged.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9d206dd7-2726-4a3e-8fe9-5d043368242f",
-            "Name": "roadasphalt_pavement",
-            "Position": "101.2593,493.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_pavement.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_pavement.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "6cc9e721-9974-4629-9741-aa09fb1a659f",
-            "Name": "roadasphalt_side",
-            "Position": "-26.74072,493.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_side.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_side.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "c5459c52-36a7-452a-8a83-75d888f0cd31",
-            "Name": "roadasphalt_straight",
-            "Position": "165.2593,685.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roadasphalt_straight.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roadasphalt_straight.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "41b1450a-df4d-419c-821a-b88ef57d24ba",
-            "Name": "roaddirt_center",
-            "Position": "229.2593,877.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_center.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_center.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "366b9c18-9b78-4326-90f7-1c674af4dfdb",
-            "Name": "roaddirt_corner",
-            "Position": "-26.74072,941.2974,-605.8668",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_corner.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_corner.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "e01a786c-fc53-4f85-b031-a83ab2026d75",
-            "Name": "roaddirt_cornerinner",
-            "Position": "229.2593,1133.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_cornerinner.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_cornerinner.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "5ebad547-7708-4070-b3c1-33c4180a7808",
-            "Name": "roaddirt_cornerouter",
-            "Position": "421.2593,1133.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_cornerouter.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_cornerouter.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "51f01317-eb3e-4ec5-a87b-7e54c6f95fc2",
-            "Name": "roaddirt_damaged",
-            "Position": "421.2593,941.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_damaged.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_damaged.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "3886b89d-bcaa-4ca5-9dc8-3ed9443e2b97",
-            "Name": "roaddirt_pavement",
-            "Position": "421.2593,749.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_pavement.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_pavement.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9cca9124-056f-45e8-ba35-da482fe4d550",
-            "Name": "roaddirt_side",
-            "Position": "357.2593,1325.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_side.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_side.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "891534ac-b982-4397-b119-be2288f401c3",
-            "Name": "roaddirt_straight",
-            "Position": "101.2593,1325.297,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_straight.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_straight.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "ea17304d-b35c-4f1c-a3f9-4b9b1edf47c2",
-            "Name": "roaddirt_tile",
-            "Position": "-90.74072,1261.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roaddirt_tile.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roaddirt_tile.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "3c7f6cc9-bf80-4fcc-ad67-ec4c3ebfcde7",
-            "Name": "roofmetal_poles",
-            "Position": "-282.7407,1069.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roofmetal_poles.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roofmetal_poles.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "dbac252c-9de4-4500-b220-671f7a0ba9ae",
-            "Name": "roofmetal_typea",
-            "Position": "357.2593,1581.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roofmetal_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roofmetal_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "fc0ff7c7-47cf-41f2-97a2-2dc47c33ce5c",
-            "Name": "roofmetal_typeb",
-            "Position": "549.2593,1581.297,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/roofmetal_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/roofmetal_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "5c379b9b-2245-45eb-831c-e3bd19ba2c9a",
-            "Name": "scaffolding_poles",
-            "Position": "613.2593,1389.297,-605.8668",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/scaffolding_poles.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/scaffolding_poles.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "26b96c0e-217f-4e6e-85eb-695ac6951ac5",
-            "Name": "scaffolding_structure",
-            "Position": "101.2593,1581.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/scaffolding_structure.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/scaffolding_structure.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "943ed6c8-0c86-476a-bb1d-5dff4f32aae9",
-            "Name": "tree_large",
-            "Position": "-154.7407,1453.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/tree_large.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/tree_large.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f234a9cb-82b3-41fa-9575-0ddb0598d299",
-            "Name": "tree_shrub",
-            "Position": "-282.7407,1325.297,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/tree_shrub.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/tree_shrub.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "3178d37a-a741-4421-be48-327c248872c8",
-            "Name": "tree_small",
-            "Position": "-346.7407,1261.297,-605.8668",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/tree_small.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/tree_small.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "fd4ac684-dad5-4a67-9837-4c24291c81a6",
-            "Name": "treepine_large",
-            "Position": "-538.7407,1133.297,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/treepine_large.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/treepine_large.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "20ef508a-71b5-4f1f-9bfa-634a7d78b821",
-            "Name": "treepine_small",
-            "Position": "-410.7407,877.2974,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/treepine_small.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/treepine_small.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9b4f304b-dc19-4ceb-81c1-03aea960e251",
-            "Name": "truck_flat",
-            "Position": "-602.7407,1325.297,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/truck_flat.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/truck_flat.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "44234eaf-1362-4a8a-9682-f4e0ff41c50d",
-            "Name": "truck_green",
-            "Position": "-538.7407,1453.297,-605.8668",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/truck_green.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/truck_green.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "acbe58a0-3bbc-46fd-a90e-193f26044532",
-            "Name": "truck_grey",
-            "Position": "-858.7407,1453.297,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/truck_grey.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/truck_grey.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "37db5322-84c7-4475-8a13-0b090bdce9bb",
-            "Name": "wall_typea",
-            "Position": "-218.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wall_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wall_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "52371c52-70db-41bb-93de-241b7f82458e",
-            "Name": "wall_typeb",
-            "Position": "-218.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wall_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wall_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "d86b5918-7d06-4630-bfd3-ab4ec3dd84fe",
-            "Name": "walla",
-            "Position": "-154.7407,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "a30156b8-5584-44d0-b5a3-161eb95443df",
-            "Name": "walla_corner",
-            "Position": "-154.7407,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_corner.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_corner.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "a8a1434b-27d0-4b95-ae89-fb9d7772ca51",
-            "Name": "walla_cornerpainted",
-            "Position": "-154.7407,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_cornerpainted.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_cornerpainted.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f085f357-57c8-4c3d-a22b-03dc53252d43",
-            "Name": "walla_detail",
-            "Position": "-154.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_detail.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_detail.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "4fe50bba-1dad-467d-a1b7-56b77f14de1a",
-            "Name": "walla_detailpainted",
-            "Position": "-218.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_detailpainted.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_detailpainted.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "d8b64ac9-cc72-4813-9fa5-2c50844166b4",
-            "Name": "walla_door",
-            "Position": "-346.7407,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_door.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_door.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "61bf24e9-84e1-4141-9e2c-4ca17caa2874",
-            "Name": "walla_flat",
-            "Position": "-346.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_flat.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_flat.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "353016b3-89b9-4454-ac22-3a0eb18d7d11",
-            "Name": "walla_flatgarage",
-            "Position": "-346.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_flatgarage.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_flatgarage.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "ec0c3dbc-49fe-4160-9458-55fc47057f19",
-            "Name": "walla_flatpainted",
-            "Position": "-410.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_flatpainted.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_flatpainted.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "63985a3a-48a0-4a6c-b9bb-f80a4408f209",
-            "Name": "walla_flatwindow",
-            "Position": "-410.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_flatwindow.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_flatwindow.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "c4f576bc-4a91-49ad-a7d7-34c0558c3bff",
-            "Name": "walla_garage",
-            "Position": "-346.7407,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_garage.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_garage.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "b88d313f-d4d1-4ed2-8fc2-ea4b3ff271cb",
-            "Name": "walla_low",
-            "Position": "-346.7407,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_low.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_low.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "0ef840f7-8aa5-4264-8492-1c1ad16b29a3",
-            "Name": "walla_lowpainted",
-            "Position": "-346.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_lowpainted.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_lowpainted.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "2d084096-1b97-4e4c-b766-d1bf357d3736",
-            "Name": "walla_open",
-            "Position": "-602.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_open.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_open.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "df6bf321-548f-4fe9-a3a9-527cedf258fd",
-            "Name": "walla_painted",
-            "Position": "-602.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_painted.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_painted.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9b01e769-d34e-4fad-9b22-9500527783aa",
-            "Name": "walla_roof",
-            "Position": "-602.7407,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_roof.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_roof.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "7dcd84fe-498c-4d71-8d14-990e6dc417b3",
-            "Name": "walla_roofdetailed",
-            "Position": "-602.7407,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_roofdetailed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_roofdetailed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "7c56fcdc-dca7-450c-b713-301095808ad1",
-            "Name": "walla_roofslant",
-            "Position": "-602.7407,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_roofslant.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_roofslant.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "68127df0-4a07-4fd9-9983-1a7c7e6e09e6",
-            "Name": "walla_roofslantdetailed",
-            "Position": "-602.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_roofslantdetailed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_roofslantdetailed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "b4b9d50b-3f59-4450-a5a3-9d7583664528",
-            "Name": "walla_window",
-            "Position": "-794.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/walla_window.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/walla_window.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "2146f72e-6862-419c-aa12-8493fd1a7f51",
-            "Name": "wallb",
-            "Position": "-794.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "af78370f-6f8b-4191-9508-e60e16c5871a",
-            "Name": "wallb_door",
-            "Position": "-794.7407,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_door.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_door.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "e47e7585-f470-4d32-8f79-044f5c64c8d4",
-            "Name": "wallb_flat",
-            "Position": "-794.7407,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_flat.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_flat.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f6dead37-7d83-4368-b33a-cb229ab10f74",
-            "Name": "wallb_flatgarage",
-            "Position": "-794.7407,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_flatgarage.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_flatgarage.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "b9386927-f4eb-43c4-8952-192dccb10662",
-            "Name": "wallb_flatwindow",
-            "Position": "-794.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_flatwindow.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_flatwindow.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9c048489-111a-4f21-b3c2-8fbc84152a4e",
-            "Name": "wallb_garage",
-            "Position": "-986.7407,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_garage.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_garage.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "851afa16-767e-4e4f-acc8-b105aa05e75a",
-            "Name": "wallb_open",
-            "Position": "-986.7407,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_open.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_open.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f90d2879-a3e1-49f3-a8f7-0ca4f15517e4",
-            "Name": "wallb_roof",
-            "Position": "-986.7407,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_roof.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_roof.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "1d648eb9-da33-4a61-9804-b62ef39db401",
-            "Name": "wallb_roofdetailed",
-            "Position": "-986.7407,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_roofdetailed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_roofdetailed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "a063d2b0-2a50-4e8a-920f-3303d2a4ceb7",
-            "Name": "wallb_roofslant",
-            "Position": "-986.7407,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_roofslant.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_roofslant.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "4d364237-b846-4ee6-8da0-fe5b9257bb74",
-            "Name": "wallb_roofslantdetailed",
-            "Position": "-986.7407,-338.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_roofslantdetailed.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_roofslantdetailed.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "8610f1e0-9afb-4975-8fa9-22854346619b",
-            "Name": "wallb_window",
-            "Position": "-1178.741,621.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallb_window.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallb_window.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "9691d745-bb55-4201-baaf-58e6e114a257",
-            "Name": "wallbroken_typea",
-            "Position": "-1114.741,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallbroken_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallbroken_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "e9e18b67-b1b1-4d36-933e-a7b767080eeb",
-            "Name": "wallbroken_typeb",
-            "Position": "-1178.741,429.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallbroken_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallbroken_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "1b174367-2a3f-4185-9051-f5283fc11d53",
-            "Name": "wallc_flat",
-            "Position": "-1114.741,237.2974,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallc_flat.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallc_flat.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "26151086-2628-42b0-9d87-f8df1bc62af6",
-            "Name": "wallc_flatlow",
-            "Position": "-1178.741,237.2974,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallc_flatlow.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallc_flatlow.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "6afd40e0-7843-4945-9b82-3271cf4c38ba",
-            "Name": "wallfence",
-            "Position": "-1114.741,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallfence.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallfence.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "407456f1-dc34-4091-8ea4-87203120e52e",
-            "Name": "wallsteps_typea",
-            "Position": "-1178.741,45.29736,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallsteps_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallsteps_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "8db7e6ba-5af2-4a7e-9336-cb89d9f36d57",
-            "Name": "wallsteps_typeb",
-            "Position": "-1114.741,-146.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/wallsteps_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/wallsteps_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "b523ef03-c0da-43d9-ae8a-195ae3f05852",
-            "Name": "windowsmall_typea",
-            "Position": "-1178.741,-146.7026,-605.8668",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowsmall_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowsmall_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "e6f96307-40ad-4cdb-b81d-7aa40022b650",
-            "Name": "windowsmall_typeb",
-            "Position": "-1178.741,-210.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowsmall_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowsmall_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "d76def07-9b86-4700-a961-5fd206ce3f92",
-            "Name": "windowwide_typea",
-            "Position": "-1178.741,-274.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowwide_typea.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowwide_typea.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "c8f8cb48-5999-4348-95a9-c5884068dc99",
-            "Name": "windowwide_typeb",
-            "Position": "-1178.741,-402.7026,-605.8667",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowwide_typeb.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowwide_typeb.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          },
-          {
-            "Id": "f44d4f0f-233b-448b-91cc-88ac95802b65",
-            "Name": "windowwide_typec",
-            "Position": "-1306.741,429.2974,-605.8666",
-            "Tags": "group",
-            "Enabled": true,
-            "Components": [
-              {
-                "__version": 0,
-                "__type": "ModelRenderer",
-                "__enabled": true,
-                "BodyGroups": 18446744073709551615,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/ken3/windowwide_typec.vmdl",
-                "RenderType": "On",
-                "Tint": "1,1,1,1"
-              },
-              {
-                "__version": 0,
-                "__type": "ModelCollider",
-                "__enabled": true,
-                "IsTrigger": false,
-                "Model": "models/ken3/windowwide_typec.vmdl",
-                "Static": false,
-                "Surface": null
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "Id": "4f57fd25-ad20-4057-b55d-7d4768277371",
+        "Id": "80a63409-a22c-411b-9e56-6ac79e371238",
         "Name": "OvenRandom",
         "Position": "-1408,896,0.000004400305",
         "Tags": "random",
         "Enabled": true,
         "Children": [
           {
-            "Id": "5859a41b-6d4c-4e6f-8751-997686011e32",
+            "Id": "c1920fa1-6664-465f-a4b8-27982af798e1",
             "Name": "oldoven",
             "Position": "-128,0,-0.000004400305",
             "Tags": "random",
@@ -6920,7 +4011,7 @@
             ]
           },
           {
-            "Id": "ee2ce6c0-2ac4-4ab1-b0f0-9291fdcf9c36",
+            "Id": "1d9f3d1b-9c0e-483b-8b47-376b6bcb40f9",
             "Name": "oldoven2",
             "Position": "-256,0,-0.000004400305",
             "Scale": "1,1,2.329084",
@@ -6950,7 +4041,7 @@
             ]
           },
           {
-            "Id": "f79fdd85-49f7-4262-92c7-e0125f7cfb4a",
+            "Id": "01011985-558e-4ad7-aa9b-1a3e0bf1bc75",
             "Name": "oldoven3",
             "Position": "-384,0,-0.000004400305",
             "Scale": "1,1,0.4040087",
@@ -6980,7 +4071,7 @@
             ]
           },
           {
-            "Id": "ad9c283c-d6ab-4409-99e8-e3128a2adb03",
+            "Id": "a10e131d-88d4-4257-9a9a-7ee0293a9258",
             "Name": "trashcan01 (1)",
             "Position": "-512,0,0.4999316",
             "Tags": "random",
@@ -7009,7 +4100,7 @@
             ]
           },
           {
-            "Id": "0e79af50-12a3-492b-b02d-4673b4d1c5af",
+            "Id": "b41f06f2-cd11-4146-a942-99d44b40854a",
             "Name": "trashcan01 (1)",
             "Position": "-640,0,0.4999316",
             "Scale": "1,1,2.42284",
@@ -7035,6 +4126,233 @@
                 "Model": "models/citizen_props/trashcan01.vmdl",
                 "Static": false,
                 "Surface": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "cd28fd23-982e-483b-879b-71ca5f9e4fbb",
+        "Name": "OvenRandom (1)",
+        "Position": "-1408,1408,0.000004400305",
+        "Tags": "random",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "90e58e8c-b432-4904-92f6-636cf091afef",
+            "Name": "oldoven",
+            "Position": "-128,0,46.33985",
+            "Scale": "5,5,5",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/editor/cone_helper.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/oldoven.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "e508501b-85e7-4d57-bceb-086735be96bf",
+            "Name": "oldoven2",
+            "Position": "-256,0,64",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/dev/gordon_at_desk.vmdl",
+                "RenderType": "On",
+                "Tint": "0.95,0,1,1"
+              }
+            ],
+            "Children": [
+              {
+                "Id": "a6f3c9c1-091d-4192-8d92-4f2344a9c5f8",
+                "Name": "oldoven2",
+                "Position": "-7.996094,0,28.0797",
+                "Tags": "random",
+                "Enabled": true,
+                "Components": [
+                  {
+                    "__version": 0,
+                    "__type": "ModelRenderer",
+                    "__enabled": true,
+                    "BodyGroups": 18446744073709551615,
+                    "MaterialGroup": null,
+                    "MaterialOverride": null,
+                    "Model": "models/dev/gordon_at_desk.vmdl",
+                    "RenderType": "On",
+                    "Tint": "0.95,0,1,1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Id": "3e38a258-8331-4d65-a69f-3e9c5619413d",
+            "Name": "oldoven3",
+            "Position": "-384,0,-0.000004400305",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/editor/playerstart.vmdl",
+                "RenderType": "On",
+                "Tint": "1,0,0,1"
+              }
+            ]
+          },
+          {
+            "Id": "06bf5bdf-e24b-47ee-ae79-9181a97543a1",
+            "Name": "trashcan01 (1)",
+            "Position": "-512,0,0.4999316",
+            "Scale": "5,5,5",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/editor/sky_camera.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__version": 0,
+                "__type": "ModelCollider",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Model": "models/citizen_props/trashcan01.vmdl",
+                "Static": false,
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "59bb8630-3922-480f-a91a-bfff49ecd041",
+            "Name": "trashcan01 (1)",
+            "Position": "-640,0,77.20599",
+            "Scale": "3.139129,3.291399,2.608534",
+            "Tags": "random",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/editor/node_hint.vmdl",
+                "RenderType": "On",
+                "Tint": "0.30256,0.87907,0.4563,1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "260955ba-f8c4-4862-b6b1-c96fc82184e6",
+        "Name": "Object",
+        "Position": "-2560,0,0",
+        "Tags": "decal",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "40b8be80-2d3c-4382-9b3c-d4c85d0fb20c",
+            "Name": "decal",
+            "Position": "0,0.000007766986,19.06818",
+            "Rotation": "-0.00000002016746,0.707107,0.00000002016775,0.7071065",
+            "Tags": "decal",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "DecalRenderer",
+                "__enabled": true,
+                "CutoffAngle": 60,
+                "CutoffAngleSoftness": 5,
+                "Material": "materials/decals/garrysmod.vmat",
+                "Mod2XBlending": false,
+                "Size": "32,32,32",
+                "TintColor": "1,1,1,1",
+                "TriPlanar": false
+              }
+            ]
+          },
+          {
+            "Id": "9d558dec-5c21-4ca5-8e83-71cf972301af",
+            "Name": "decal2",
+            "Position": "69.54883,0.00008646906,8.186063",
+            "Rotation": "-0.00000002016746,0.707107,0.00000002016775,0.7071065",
+            "Tags": "decal",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "DecalRenderer",
+                "__enabled": true,
+                "CutoffAngle": 60,
+                "CutoffAngleSoftness": 5,
+                "Material": "materials/decals/highvoltage.vmat",
+                "Mod2XBlending": false,
+                "Size": "32,32,32",
+                "TintColor": "1,1,1,1",
+                "TriPlanar": false
+              }
+            ]
+          },
+          {
+            "Id": "28a4b82a-030d-4943-b562-643a466b1dbc",
+            "Name": "decal3",
+            "Position": "69.54883,32,8.186063",
+            "Rotation": "-0.00000002016746,0.707107,0.00000002016775,0.7071065",
+            "Tags": "decal",
+            "Enabled": true,
+            "Components": [
+              {
+                "__version": 0,
+                "__type": "DecalRenderer",
+                "__enabled": true,
+                "CutoffAngle": 60,
+                "CutoffAngleSoftness": 5,
+                "Material": "materials/decals/burger.vmat",
+                "Mod2XBlending": false,
+                "Size": "32,32,32",
+                "TintColor": "1,1,1,1",
+                "TriPlanar": false
               }
             ]
           }

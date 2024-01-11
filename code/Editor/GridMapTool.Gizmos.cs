@@ -378,6 +378,7 @@ public partial class GridMapTool
 				GizmoGameObject = new GameObject( true, "GizmoObject" );
 				PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
 				GizmoGameObject.Deserialize( SelectedJsonObject );
+
 				GizmoGameObject.MakeNameUnique();
 				GizmoGameObject.Tags.RemoveAll();
 				GizmoGameObject.Tags.Add( "isgizmoobject" );
@@ -392,6 +393,13 @@ public partial class GridMapTool
 		{
 			GizmoGameObject.Transform.Position = trdecal.HitPosition.SnapToGrid( Gizmo.Settings.GridSpacing ) + trdecal.Normal * 10.0f;
 			GizmoGameObject.Transform.Rotation = Rotation.LookAt( trdecal.Normal ) * rotation;
+
+			var decal = GizmoGameObject.Components.Get<DecalRenderer>( FindMode.EnabledInSelf );
+			if ( decal is not null )
+			{
+				decal.Size = new Vector3( decalX, decalY, decalZ );
+				decal.TriPlanar = DecalTriPlanar;
+			}
 		}
 	}
 
