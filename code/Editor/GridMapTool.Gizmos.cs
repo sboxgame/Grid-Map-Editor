@@ -25,6 +25,8 @@ public partial class GridMapTool
 	{
 		projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
 
+		if ( CurrentPaintMode == PaintMode.Decal ) return;
+
 		using ( Gizmo.Scope( "Ground" ) )
 		{
 			Gizmo.Draw.LineThickness = 2;
@@ -133,7 +135,12 @@ public partial class GridMapTool
 
 		if ( CurrentPaintMode != PaintMode.Place )
 		{
-			EndGameObjectGizmo();
+		//	EndGameObjectGizmo();
+		}
+
+		if(CurrentPaintMode == PaintMode.Decal)
+		{
+			PlaceDecalObjectGizmo();
 		}
 
 		if ( CurrentPaintMode == PaintMode.Remove )
@@ -294,7 +301,6 @@ public partial class GridMapTool
 	
 	void PlaceGameObjectGizmo( SceneTraceResult trace, Ray cursorRay )
 	{
-
 		if ( SelectedJsonObject is not null )
 		{
 			if ( GizmoGameObject is null )
@@ -311,7 +317,6 @@ public partial class GridMapTool
 					GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
 
 					Log.Info( "GizmoGameObject is null" );
-			
 			}
 		}
 		
@@ -352,6 +357,41 @@ public partial class GridMapTool
 		{
 			GizmoGameObject.Destroy();
 			GizmoGameObject = null;
+		}
+	}
+
+	void PlaceDecalObjectGizmo( )
+	{
+		var cursorRay = Gizmo.CurrentRay;
+
+		var trdecal = SceneEditorSession.Active.Scene.Trace
+			.Ray( cursorRay, 5000 )
+				.UseRenderMeshes( true )
+				.UsePhysicsWorld( true )
+				.Run();
+
+		if ( SelectedJsonObject is not null )
+		{
+			if ( GizmoGameObject is null )
+			{
+				//Log.Info( SelectedGameObject.Components.Count );
+				GizmoGameObject = new GameObject( true, "GizmoObject" );
+				PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
+				GizmoGameObject.Deserialize( SelectedJsonObject );
+				GizmoGameObject.MakeNameUnique();
+				GizmoGameObject.Tags.RemoveAll();
+				GizmoGameObject.Tags.Add( "isgizmoobject" );
+				GizmoGameObject.Name = "GizmoObject";
+				GizmoGameObject.Flags |= GameObjectFlags.NotSaved | GameObjectFlags.Hidden;
+
+				Log.Info( "GizmoGameObject is null" );
+			}
+		}
+
+		if ( GizmoGameObject is not null )
+		{
+			GizmoGameObject.Transform.Position = trdecal.HitPosition.SnapToGrid( Gizmo.Settings.GridSpacing ) + trdecal.Normal * 10.0f;
+			GizmoGameObject.Transform.Rotation = Rotation.LookAt( trdecal.Normal ) * rotation;
 		}
 	}
 

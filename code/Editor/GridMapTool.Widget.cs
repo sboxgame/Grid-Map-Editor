@@ -190,9 +190,12 @@ public partial class GridMapTool
 			paintmode.AddOption( "Remove", "delete" );
 			paintmode.AddOption( "Move", "open_with" );
 			paintmode.AddOption( "Copy", "content_copy" );
+			paintmode.AddOption( "Decal", "file_download" );
 			paintmode.OnSelectedChanged += ( s ) =>
 			{
 				CurrentPaintMode = Enum.Parse<PaintMode>( s );
+				UpdateListViewItems();
+				EndGameObjectGizmo();
 			};
 
 			var cs = new ControlSheet();

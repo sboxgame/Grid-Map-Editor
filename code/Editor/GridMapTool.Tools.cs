@@ -67,8 +67,33 @@ public partial class GridMapTool
 
 				go.EditLog( "Grid Placed", go );
 			}
+		}
+	}
 
+	public void HandleDecalPlace()
+	{
+		var cursorRay = Gizmo.CurrentRay;
 
+		var trdecal = SceneEditorSession.Active.Scene.Trace
+			.Ray( cursorRay, 5000 )
+				.UseRenderMeshes( true )
+				.UsePhysicsWorld( true )
+				.Run();
+		if(trdecal.Hit )
+		{
+			if ( SelectedJsonObject is not null )
+			{
+				var go = new GameObject( true, "GridTile" );
+				PrefabUtility.MakeGameObjectsUnique( SelectedJsonObject );
+				go.Deserialize( SelectedJsonObject );
+				go.Parent = CurrentGameObjectCollection;
+				go.Transform.Position = GizmoGameObject.Transform.Position;
+				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+				go.Tags.Remove( "group" );
+				go.Tags.Add( "gridtile" );
+
+				go.EditLog( "Grid Placed", go );
+			}
 		}
 	}
 

@@ -29,6 +29,7 @@ public partial class GridMapTool : EditorTool
 		Move = 2,
 		Copy = 3,
 		Duplicate = 4,
+		Decal = 5,
 	}
 	public PaintMode CurrentPaintMode { get; set; } = PaintMode.Place;
 	public PaintMode LastPaintMode { get; set; } = PaintMode.Place;
@@ -74,6 +75,7 @@ public partial class GridMapTool : EditorTool
 		public Pixmap icon;
 		public List<JsonObject> ranomObjectList;
 		public bool isRandom;
+		public bool isDecal;
 	}
 
 	public override void OnEnabled()
@@ -138,23 +140,29 @@ public partial class GridMapTool : EditorTool
 		// Get the currently selected group from the dropdown
 		var selectedGroup = groupDropDown.CurrentText;
 
-		// Filter the tile list based on the search string and the selected group
+		// Define a lambda function to determine if an item should be included based on the current PaintMode
+		Func<TileList, bool> shouldInclude = ( model ) =>
+		{
+			if ( CurrentPaintMode == PaintMode.Decal )
+				return model.isDecal;
+			else
+				return !model.isDecal;
+		};
+		Log.Info( CurrentPaintMode );
+		// Filter the tile list based on the search string, the selected group, and the PaintMode
 		var filteredTileList = tileList
 			.Where( model =>
 				model.name.ToLower().Contains( SearchString.ToLower() ) &&
-				(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup ) )
-	
+				(string.IsNullOrEmpty( selectedGroup ) || model.group == selectedGroup) &&
+				shouldInclude( model ) )
 			.ToList();
 
 		tilelistView.FocusMode = FocusMode.None;
-
-		// Assuming that tilelistView.SetItems can accept an anonymous object
 		tilelistView.SetItems( filteredTileList.Cast<object>() );
 		tilelistView.Update(); // Refresh ListView
 
 		oldresource = PrefabResourse;
 	}
-
 
 	public override void OnDisabled()
 	{
@@ -366,8 +374,7 @@ public partial class GridMapTool : EditorTool
 					continue;
 				}
 
-				if ( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ) != null  )
-				{
+
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
 						if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
@@ -382,7 +389,20 @@ public partial class GridMapTool : EditorTool
 							} ); 
 							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
 						}
-						else if ( !obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) )
+						else if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "decal" ) && obj.Components.Get<DecalRenderer>( FindMode.EnabledInSelf ) != null )
+						{
+							lastFoundObject = obj;
+							tileList.Add( new TileList()
+							{
+								name = obj.Name,
+								group = obj.Parent.Name,
+								jsonObject = obj.Serialize(),
+								icon = AssetSystem.FindByPath( obj.Components.Get<DecalRenderer>( FindMode.EnabledInSelfAndChildren ).Material.ResourcePath ).GetAssetThumb(),
+								isDecal = true
+							} );
+							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+						}
+						else if ( !obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
 						{
 							lastFoundObject = obj;
 							tileList.Add( new TileList()
@@ -394,7 +414,7 @@ public partial class GridMapTool : EditorTool
 
 							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
 						}
-						else if ( obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) )
+						else if ( obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
 						{
 							lastFoundObject = obj;
 
@@ -419,11 +439,7 @@ public partial class GridMapTool : EditorTool
 							//Log.Info( randList.FirstOrDefault().ToString() );
 						}
 						//await Task.Delay( 10 );
-					}
-					else
-					{
-						//Log.Info( obj.Name );
-					}
+
 				}
 			}
 			GroupList();
@@ -663,6 +679,10 @@ public partial class GridMapTool : EditorTool
 			if ( Gizmo.WasLeftMousePressed && CurrentPaintMode == PaintMode.Place )
 			{
 				HandlePlacement( tr, cursorRay );
+			}
+			else if ( Gizmo.WasLeftMousePressed && CurrentPaintMode == PaintMode.Decal )
+			{
+				HandleDecalPlace();
 			}
 			else if ( Gizmo.WasLeftMousePressed && CurrentPaintMode == PaintMode.Remove )
 			{
