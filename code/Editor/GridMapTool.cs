@@ -420,7 +420,7 @@ public partial class GridMapTool : EditorTool
 
 							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
 						}
-						else if ( obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
+						else if ( obj.Tags.Has( "random" ) && !obj.Tags.Has( "group" ) )
 						{
 							lastFoundObject = obj;
 
@@ -442,7 +442,7 @@ public partial class GridMapTool : EditorTool
 								ranomObjectList = new (randList)
 							});
 
-							//Log.Info( randList.FirstOrDefault().ToString() );
+							Log.Info( randList.FirstOrDefault().ToString() );
 						}
 						//await Task.Delay( 10 );
 
