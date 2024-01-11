@@ -1,4 +1,5 @@
 ﻿using Sandbox.UI;
+using System;
 using System.Drawing;
 using System.Net.WebSockets;
 using static Sandbox.Gizmo;
@@ -462,8 +463,6 @@ public partial class GridMapTool
 			Paint.DrawRect( widget.Rect.Grow( 0 ), 3 );
 		}
 
-
-
 		Paint.ClearPen();
 		Paint.SetBrush( Theme.White.WithAlpha( 0.01f ) );
 		Paint.SetPen( Theme.White.WithAlpha( 0.05f ) );
@@ -485,7 +484,6 @@ public partial class GridMapTool
 		{
 			Paint.Draw( widget.Rect.Shrink(5), brush.icon );
 		}
-
 
 		var rect = widget.Rect;
 
@@ -511,6 +509,86 @@ public partial class GridMapTool
 		Paint.ClearBrush();
 		Paint.SetFont( "Poppins", slider.Value / 8f, 700 );
 		Paint.DrawText( textRect, brush.name );
+
+		var offset = -1;
+
+		var iconscale = slider.Value * 0.25f;
+
+		if ( brush.group is null || brush.group == " " )
+		{
+			Paint.ClearPen();
+			Paint.ClearBrush();
+			Paint.SetBrush( Theme.Green.WithAlpha( 0.5f ) );
+			Paint.ClearPen();
+			Paint.DrawRect( new Rect( widget.Rect.Left, widget.Rect.Top, iconscale, iconscale ), 3 );
+			Paint.SetPen( Theme.White.WithAlpha( 0.5f ) );
+			Paint.DrawIcon( new Rect( widget.Rect.Left, widget.Rect.Top, 1f * iconscale, 1f * iconscale ), "grid_view", 1 * iconscale );
+			offset += 1;
+		}
+
+		if ( brush.group is not null )
+		{
+			string input = brush.group.Length > 0 ? brush.group : "";
+			int index = input.IndexOf( "+" );
+
+			if ( brush.group.Contains( "+" ) )
+			{
+				Paint.ClearPen();
+				Paint.ClearBrush();
+				Paint.SetBrush( Theme.Green.WithAlpha( 0.5f ) );
+				Paint.ClearPen();
+				Paint.DrawRect( new Rect( widget.Rect.Left, widget.Rect.Top, iconscale, iconscale ), 3 );
+				Paint.SetPen( Theme.White.WithAlpha( 0.5f ) );
+				string result = input.Substring( index + 1 );
+				Paint.DrawIcon( new Rect( widget.Rect.Left, widget.Rect.Top, 1f * iconscale, 1f * iconscale ), result, 1 * iconscale );
+				offset += 1;
+			}
+			else
+			{
+				Paint.ClearPen();
+				Paint.ClearBrush();
+				Paint.SetBrush( Theme.Green.WithAlpha( 0.5f ) );
+				Paint.ClearPen();
+				Paint.DrawRect( new Rect( widget.Rect.Left, widget.Rect.Top, iconscale, iconscale ), 3 );
+				Paint.SetPen( Theme.White.WithAlpha( 0.5f ) );
+				Paint.DrawIcon( new Rect( widget.Rect.Left, widget.Rect.Top, 1f * iconscale, 1f * iconscale ), "grid_view", 1 * iconscale );
+				offset += 1;
+			}
+		}
+		if ( brush.isRandom )
+		{
+			offset += 1;
+			Paint.ClearPen();
+			Paint.ClearBrush();
+			Paint.SetBrush( Theme.Red.WithAlpha( 0.5f ) );
+			Paint.ClearPen();
+			Paint.DrawRect( new Rect( widget.Rect.Left + (iconscale * offset ) + (iconscale / 32f), widget.Rect.Top, iconscale, iconscale ), 3 );
+			Paint.SetPen( Theme.White.WithAlpha( 0.5f ) );
+			Paint.DrawIcon( new Rect( widget.Rect.Left + (iconscale * offset) + (iconscale / 32f), widget.Rect.Top, 1f * iconscale, 1f * iconscale ), "shuffle", 1 * iconscale );
+		}
+		if( brush.isDecal )
+		{
+			offset += 1;
+			Paint.ClearPen();
+			Paint.ClearBrush();
+			Paint.SetBrush( Theme.Blue );
+			Paint.DrawRect( new Rect( widget.Rect.Left + (iconscale * offset) + (iconscale / 32f), widget.Rect.Top, iconscale, iconscale ), 3 );
+			Paint.SetPen( Theme.White );
+			Paint.DrawIcon( new Rect( widget.Rect.Left + (iconscale * offset) + (iconscale / 32f), widget.Rect.Top, 1f * iconscale, 1f * iconscale ), "file_download", 1 * iconscale );
+
+		}
+		if( brush.isPrefab )
+		{
+			offset += 1;
+			Paint.ClearPen();
+			Paint.ClearBrush();
+			Paint.SetBrush( Theme.Pink.WithAlpha( 0.5f ) );
+			Paint.ClearPen();
+			Paint.DrawRect( new Rect( widget.Rect.Left + (iconscale * offset) + (iconscale / 32f), widget.Rect.Top, iconscale, iconscale ), 3 );
+			Paint.SetPen( Theme.White.WithAlpha( 0.5f ) );
+			Paint.DrawIcon( new Rect( widget.Rect.Left + (iconscale * offset) + (iconscale / 32f), widget.Rect.Top, 1f * iconscale, 1f * iconscale ), "group_work", 1 * iconscale );
+
+		}
 	}
 }
 

@@ -74,6 +74,7 @@ public partial class GridMapTool : EditorTool
 		public JsonObject jsonObject;
 		public Pixmap icon;
 		public List<JsonObject> ranomObjectList;
+		public bool isPrefab;
 		public bool isRandom;
 		public bool isDecal;
 	}
@@ -379,8 +380,6 @@ public partial class GridMapTool : EditorTool
 					isFirst = false;
 					continue;
 				}
-
-
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
 						if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
@@ -391,9 +390,10 @@ public partial class GridMapTool : EditorTool
 								name = obj.Name,
 								group = obj.Parent.Name,
 								jsonObject = obj.Serialize(),
+								isPrefab = obj.IsPrefabInstance,
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 							} ); 
-							//Log.Info( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model );
+							Log.Info( obj.Name );
 						}
 						else if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "decal" ) && obj.Components.Get<DecalRenderer>( FindMode.EnabledInSelf ) != null )
 						{
@@ -401,8 +401,8 @@ public partial class GridMapTool : EditorTool
 							tileList.Add( new TileList()
 							{
 								name = obj.Name,
-								group = obj.Parent.Name,
 								jsonObject = obj.Serialize(),
+								isPrefab = obj.IsPrefabInstance,
 								icon = AssetSystem.FindByPath( obj.Components.Get<DecalRenderer>( FindMode.EnabledInSelfAndChildren ).Material.ResourcePath ).GetAssetThumb(),
 								isDecal = true
 							} );
@@ -415,6 +415,7 @@ public partial class GridMapTool : EditorTool
 							{
 								name = obj.Name,
 								jsonObject = obj.Serialize(),
+								isPrefab = obj.IsPrefabInstance,
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 							} );
 
@@ -429,7 +430,7 @@ public partial class GridMapTool : EditorTool
 							foreach ( var randobj in obj.Children )
 							{
 								randList.Add( randobj.Serialize() );
-								Log.Info( randobj.Name );
+								//Log.Info( randobj.Name );
 							}
 
 							tileList.Add (new TileList()
@@ -439,10 +440,11 @@ public partial class GridMapTool : EditorTool
 								//jsonObject = obj.Serialize(),
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb(),
 								isRandom = true,
+								isPrefab = obj.IsPrefabInstance,
 								ranomObjectList = new (randList)
 							});
 
-							Log.Info( randList.FirstOrDefault().ToString() );
+							//Log.Info( randList.FirstOrDefault().ToString() );
 						}
 						//await Task.Delay( 10 );
 

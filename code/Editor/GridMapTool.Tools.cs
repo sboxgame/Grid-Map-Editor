@@ -88,7 +88,7 @@ public partial class GridMapTool
 				go.Deserialize( SelectedJsonObject );
 				go.Parent = CurrentGameObjectCollection;
 				go.Transform.Position = GizmoGameObject.Transform.Position;
-				go.Transform.Rotation = Rotation.FromPitch( -90 ) * rotation;
+				go.Transform.Rotation = GizmoGameObject.Transform.Rotation;
 				go.Tags.Remove( "group" );
 				go.Tags.Add( "gridtile" );
 				go.Components.Get<DecalRenderer>().TriPlanar = DecalTriPlanar;
