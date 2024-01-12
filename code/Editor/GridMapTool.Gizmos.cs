@@ -391,7 +391,7 @@ public partial class GridMapTool
 
 		if ( GizmoGameObject is not null )
 		{
-			GizmoGameObject.Transform.Position = trdecal.HitPosition.SnapToGrid( Gizmo.Settings.GridSpacing ) + trdecal.Normal * 10.0f;
+			GizmoGameObject.Transform.Position = trdecal.HitPosition.SnapToGrid( Gizmo.Settings.GridSpacing / 2 ) + trdecal.Normal * 10.0f;
 			GizmoGameObject.Transform.Rotation = Rotation.LookAt( trdecal.Normal ) * rotation;
 
 			var decal = GizmoGameObject.Components.Get<DecalRenderer>( FindMode.EnabledInSelf );
