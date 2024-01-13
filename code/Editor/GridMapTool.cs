@@ -382,7 +382,7 @@ public partial class GridMapTool : EditorTool
 				}
 					if ( !tileList.Any( x => x.name == obj.Name ) && !obj.Tags.Has( "ignore" ) && !obj.IsAncestor( lastFoundObject) )
 					{
-						if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelf ) != null )
+						if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "group" ) && obj.Components.Get<ModelRenderer>( FindMode.EverythingInSelf ) != null )
 						{
 							lastFoundObject = obj;
 							tileList.Add( new TileList()
@@ -393,7 +393,7 @@ public partial class GridMapTool : EditorTool
 								isPrefab = obj.IsPrefabInstance,
 								icon = AssetSystem.FindByPath( obj.Components.Get<ModelRenderer>( FindMode.EnabledInSelfAndChildren ).Model.ResourcePath ).GetAssetThumb()
 							} ); 
-							Log.Info( obj.Name );
+							//Log.Info( obj.Parent.Name );
 						}
 						else if ( !obj.Tags.Has( "random" ) && obj.Tags.Has( "decal" ) && obj.Components.Get<DecalRenderer>( FindMode.EnabledInSelf ) != null )
 						{
@@ -526,6 +526,8 @@ public partial class GridMapTool : EditorTool
 
 		PaintGizmos( tr );
 
+		DecalScale();
+
 		if ( Gizmo.IsShiftPressed && SelectedObject is null )
 		{
 			projectedPoint = ProjectRayOntoGroundPlane( cursorRay.Position, cursorRay.Forward, floors );
@@ -634,7 +636,6 @@ public partial class GridMapTool : EditorTool
 			}
 
 			FloorHeightShortCut();
-			DecalScale();
 
 			if ( SelectedGroupObjects is not null )
 			{

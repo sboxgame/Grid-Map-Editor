@@ -1,5 +1,6 @@
 ﻿using Sandbox;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace Editor;
 
@@ -79,6 +80,7 @@ public partial class GridMapTool
 				.UseRenderMeshes( true )
 				.UsePhysicsWorld( true )
 				.Run();
+
 		if(trdecal.Hit )
 		{
 			if ( SelectedJsonObject is not null )
@@ -91,7 +93,9 @@ public partial class GridMapTool
 				go.Transform.Rotation = GizmoGameObject.Transform.Rotation;
 				go.Tags.Remove( "group" );
 				go.Tags.Add( "gridtile" );
-				go.Components.Get<DecalRenderer>().TriPlanar = DecalTriPlanar;
+				var addition = go.Components.Get<DecalRenderer>();
+				addition.TriPlanar = DecalTriPlanar;
+				addition.Size = new Vector3( decalX, decalY, decalZ );
 
 				go.EditLog( "Grid Placed", go );
 			}
@@ -226,31 +230,40 @@ public partial class GridMapTool
 	{
 		if ( CurrentPaintMode != PaintMode.Decal ) return;
 
-		if ( Application.IsKeyDown( KeyCode.Q ) && !_decalX )
+		if (Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.Q ) && !_decalX )
 		{
-			decalX--;
+			decalX += 2;
 			Log.Info( $"Decal X: {decalX}" );
 		}
-		else if ( Application.IsKeyDown( KeyCode.E ) && !_decalY )
+		else if ( Gizmo.IsAltPressed && Application.IsKeyDown( KeyCode.Q ) && !_decalX )
 		{
-			decalY++;
+			decalX -= 2;
+			Log.Info( $"Decal XWSWWW: {decalX}" );
+		}
+		else if ( Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.W ) && !_decalY )
+		{
+			decalY += 2;
 			Log.Info( $"Decal Y: {decalY}" );
 		}
-		else if ( Application.IsKeyDown( KeyCode.W ) && !_decalZ )
+		else if ( Gizmo.IsAltPressed && Application.IsKeyDown( KeyCode.W ) && !_decalY )
 		{
-			decalZ++;
+			decalY -= 2;
+			Log.Info( $"Decal Y: {decalY}" );
+		}
+		else if ( Gizmo.IsShiftPressed && Application.IsKeyDown( KeyCode.E ) && !_decalZ )
+		{
+			decalZ += 2;
 			Log.Info( $"Decal Z: {decalZ}" );
 		}
-		else if ( Application.IsKeyDown( KeyCode.S ) && !_decalMinZ )
+		else if ( Gizmo.IsAltPressed && Application.IsKeyDown( KeyCode.E ) && !_decalZ )
 		{
-			decalZ++;
+			decalZ -= 2;
 			Log.Info( $"Decal Z: {decalZ}" );
 		}
 
 		_decalX = Application.IsKeyDown( KeyCode.Q );
-		_decalY = Application.IsKeyDown( KeyCode.E );
-		_decalZ = Application.IsKeyDown( KeyCode.W );
-		_decalMinZ = Application.IsKeyDown( KeyCode.S );
+		_decalY = Application.IsKeyDown( KeyCode.W );
+		_decalZ = Application.IsKeyDown( KeyCode.E );
 	}
 	
 	bool _prevlessFloor = false;
