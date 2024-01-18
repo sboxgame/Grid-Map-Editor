@@ -12,15 +12,28 @@ public partial class GridMapTool
 	List<Vertex> gridVertices = new();
 	
 	private SceneModel so;
-	public void Grid( Vector2 size, float spacing = 32.0f, float opacity = 1.0f, float minorLineWidth = 0.01f, float majorLineWidth = 0.02f )
+	public void Grid( Vector2 size, Vector3 vector3, float spacing = 32.0f, float opacity = 1.0f, float minorLineWidth = 0.01f, float majorLineWidth = 0.02f )
 	{
 		if ( so is null )
 		{
 			//This is a hacky to get the grid to work.
-			so = new SceneModel( Scene.SceneWorld, "models/grid/grid.vmdl", new Transform( new Vector3( 0, 0, floors ) ) );
+			so = new SceneModel( Scene.SceneWorld, "models/grid/grid.vmdl", new Transform( new Vector3( 0, 0, 0 ) ) );
 			so.SetMaterialOverride( GridMaterial );
 			so.RenderLayer = SceneRenderLayer.OverlayWithDepth;
 			so.Bounds = new BBox( new Vector3( -size.x / 2, -size.y / 2, 0 ), new Vector3( size.x / 2, size.y / 2, 0 ) );
+			so.Rotation = Rotation.FromAxis( vector3, 90 );
+			switch ( Axis )
+			{
+				case GroundAxis.Z:
+					so.Position = new Vector3( 0, 0, floors );
+					break;
+				case GroundAxis.X:
+					so.Position = new Vector3( floors, 0, 0 );
+					break;
+				case GroundAxis.Y:
+					so.Position = new Vector3( 0, floors, 0 );
+					break;
+			}
 		}
 		so.Attributes.Set( "GridScale", spacing );
 		so.Attributes.Set( "MinorLineWidth", 0.0125f );

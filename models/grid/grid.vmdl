@@ -18,8 +18,8 @@
 						angles = [ 0.0, 0.0, 0.0 ]
 						max_u = 1.0
 						max_v = 1.0
-						width = 10.0
-						height = 10.0
+						width = 16384.0
+						height = 16384.0
 						segments_x = 10
 						segments_y = 10
 					},

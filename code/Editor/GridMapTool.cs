@@ -111,7 +111,7 @@ public partial class GridMapTool : EditorTool
 
 		ToolWindow( so );
 		Gizmo.Settings.ShowGrid = false;
-		Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
+		Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 	}
 
 	private void OnSearchTextChanged( string searchText )
@@ -458,9 +458,11 @@ public partial class GridMapTool : EditorTool
 	}
 
 	bool loadscene;
+
+	Vector3 gridRotation = Vector3.Up;
 	public override void OnUpdate()
 	{
-		Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
+		Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
 		UpdateWidgetValues();
 
@@ -625,14 +627,26 @@ public partial class GridMapTool : EditorTool
 			if ( Application.IsKeyDown( KeyCode.Z ) )
 			{
 				Axis = GroundAxis.Z;
+				gridRotation = Vector3.Up;
+				so.Delete();
+				so = null;
+				Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 			}
 			else if ( Application.IsKeyDown( KeyCode.C ) )
 			{
 				Axis = GroundAxis.X;
+				gridRotation = Vector3.Left;
+				so.Delete();
+				so = null;
+				Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 			}
 			else if ( Application.IsKeyDown( KeyCode.X ) )
 			{
 				Axis = GroundAxis.Y;
+				gridRotation = Vector3.Forward;
+				so.Delete();
+				so = null;
+				Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 			}
 
 			FloorHeightShortCut();

@@ -277,7 +277,7 @@ public partial class GridMapTool
 			DoFloors( -FloorHeight )();
 			so.Delete();
 			so = null;
-			Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
+			Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
 			if ( floorLabel.IsValid() )
 			{
@@ -290,7 +290,7 @@ public partial class GridMapTool
 			DoFloors( FloorHeight )();
 			so.Delete();
 			so = null;
-			Grid( new Vector2( 16384, 16384 ), Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
+			Grid( new Vector2( 16384, 16384 ), gridRotation, Gizmo.Settings.GridSpacing, Gizmo.Settings.GridOpacity );
 
 			if ( floorLabel.IsValid() )
 			{
