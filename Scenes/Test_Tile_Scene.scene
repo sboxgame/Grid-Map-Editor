@@ -10,6 +10,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1.90099,1.98218,2,1",
@@ -24,6 +25,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "SkyBox2D",
           "__enabled": true,
           "SkyMaterial": "materials/sky/sky_002.vmat",
@@ -32,251 +34,192 @@
       ]
     },
     {
-      "Id": "88600736-1268-4539-b6c1-d285f96f1ab2",
-      "Name": "block",
-      "Position": "-256,640,0",
-      "Tags": "gridtile",
+      "Id": "dfdca58b-c20a-4151-afd5-cf5cd2274110",
+      "Name": "Man",
+      "Position": "-28.30168,0,0",
+      "Tags": "collection",
       "Enabled": true,
       "Components": [
         {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/block.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/block.vmdl",
-          "Static": false,
-          "Surface": null
+          "__version": 0,
+          "__type": "ModelMerge",
+          "__enabled": false
         }
-      ]
-    },
-    {
-      "Id": "fd5b716b-7922-4171-a0bf-9baa7e1fb359",
-      "Name": "bump",
-      "Position": "-256,896,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "Components": [
+      ],
+      "Children": [
         {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/bump.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "ad285f85-fd60-429c-8ed7-9d9fc7788aa0",
+          "Name": "block",
+          "Position": "64,0,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         },
         {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/bump.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "3e31c496-70b8-4aec-a31e-3645fbf1e6ac",
-      "Name": "castle",
-      "Position": "-256,1152,0",
-      "Tags": "gridtile",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/castle.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "55027ed1-2396-4073-92ba-7b33f5773b17",
+          "Name": "block",
+          "Position": "192,0,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         },
         {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/castle.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "ec5201e6-a602-4088-b4b6-ce65291ea5c2",
-      "Name": "block (1)",
-      "Position": "128,640,-0.00002157932",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/block.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "cd2d1abc-eaa8-4c2b-924d-0350cb6e1d12",
+          "Name": "block",
+          "Position": "192,128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         },
         {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/block.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "e5356312-ca6d-4c00-af4b-74952a0bce43",
-      "Name": "bump (1)",
-      "Position": "128,896,0",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/bump.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "a10106d7-fc9c-433e-bd15-904deb086738",
+          "Name": "block",
+          "Position": "64,128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         },
         {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/bump.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "96ac9441-55ab-453f-83f5-21fe25957419",
-      "Name": "castle (1)",
-      "Position": "128,1152,0.00002157932",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/castle.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "95ce0311-8532-496d-83da-5f3d435d8592",
+          "Name": "block",
+          "Position": "128,256,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         },
         {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/castle.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "4b79d2bb-e1de-4436-9e90-dc8355f6bcb9",
-      "Name": "block (2)",
-      "Position": "512,640,-0.00002157932",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/block.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/block.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "974c49f7-f069-4d84-90c4-b1c933fa7584",
-      "Name": "bump (2)",
-      "Position": "512,896,0",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/bump.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/bump.vmdl",
-          "Static": false,
-          "Surface": null
-        }
-      ]
-    },
-    {
-      "Id": "b3401767-27dd-4731-ac16-db6607efcc3b",
-      "Name": "castle (2)",
-      "Position": "512,1152,0.00002157932",
-      "Rotation": "0.0000000421471,-0.0002987981,-0.00000000001256595,0.9999999",
-      "Tags": "gridtile,isgizmoobject",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/ken/castle.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "ModelCollider",
-          "__enabled": true,
-          "IsTrigger": false,
-          "Model": "models/ken/castle.vmdl",
-          "Static": false,
-          "Surface": null
+          "Id": "cbaa59a3-20d7-4804-bfe8-abd1f3c375b4",
+          "Name": "block",
+          "Position": "128,-128,0",
+          "Tags": "gridtile,collection",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/ken/block.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__version": 0,
+              "__type": "ModelCollider",
+              "__enabled": true,
+              "IsTrigger": false,
+              "Model": "models/ken/block.vmdl",
+              "Static": false,
+              "Surface": null
+            }
+          ]
         }
       ]
     }
