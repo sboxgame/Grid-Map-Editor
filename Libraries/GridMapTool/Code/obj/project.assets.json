@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Louie\\.nuget\\packages\\": {}
+    "C:\\Users\\LT_8\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj",
+      "projectUniqueName": "G:\\sbox-work\\s&box projects\\grid_map_editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj",
       "projectName": "gridmaptool",
-      "projectPath": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj",
-      "packagesPath": "C:\\Users\\Louie\\.nuget\\packages\\",
-      "outputPath": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Code\\obj\\",
+      "projectPath": "G:\\sbox-work\\s&box projects\\grid_map_editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj",
+      "packagesPath": "C:\\Users\\LT_8\\.nuget\\packages\\",
+      "outputPath": "G:\\sbox-work\\s&box projects\\grid_map_editor\\Libraries\\GridMapTool\\Code\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Louie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LT_8\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -35,11 +35,6 @@
           "targetAlias": "net7.0",
           "projectReferences": {}
         }
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
