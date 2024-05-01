@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Base Editor Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Base Editor Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Base Editor Library.dll": {}
+        }
+      },
+      "gridmaptool/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/gridmaptool.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gridmaptool.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Base Editor Library/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/tools/Code/Base Editor Library.csproj",
+      "msbuildProject": "../../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/tools/Code/Base Editor Library.csproj"
+    },
+    "gridmaptool/1.0.0": {
+      "type": "project",
+      "path": "../Code/gridmaptool.csproj",
+      "msbuildProject": "../Code/gridmaptool.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Base Editor Library >= 1.0.0",
+      "gridmaptool >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Louie\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Editor\\gridmaptool.editor.csproj",
+      "projectName": "gridmaptool.editor",
+      "projectPath": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Editor\\gridmaptool.editor.csproj",
+      "packagesPath": "C:\\Users\\Louie\\.nuget\\packages\\",
+      "outputPath": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Editor\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Louie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\tools\\Code\\Base Editor Library.csproj": {
+              "projectPath": "D:\\Program Files (x86)\\Steam\\steamapps\\common\\sbox\\addons\\tools\\Code\\Base Editor Library.csproj"
+            },
+            "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj": {
+              "projectPath": "D:\\sbox-work\\git\\Grid-Map-Editor\\Libraries\\GridMapTool\\Code\\gridmaptool.csproj"
+            }
+          }
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

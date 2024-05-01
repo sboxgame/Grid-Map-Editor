@@ -1,14 +1,14 @@
 {
-  "Title": "Grid Map Editor",
-  "Type": "game",
-  "Org": "local",
-  "Ident": "grid_map_editor",
+  "Title": "GridMapTool",
+  "Type": "library",
+  "Org": "baks",
+  "Ident": "gridmaptool",
   "Tags": null,
   "Schema": 1,
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {
-    "ProjectTemplate": null
+    "CsProjName": ""
   }
 }
