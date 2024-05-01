@@ -1,0 +1,81 @@
+{
+  "__guid": "2b9e6bbb-063d-4de9-a9dd-814a020051fc",
+  "GameObjects": [
+    {
+      "__guid": "df43e080-53ba-489a-87f7-eb2bbd514605",
+      "Name": "Camera",
+      "Position": "271.9028,41.44094,-119.7777",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "15bb716a-76b9-4e2b-9ee5-cde18d6a0c8b",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "713073b9-1f9e-46ca-8cae-ce17d5364c8a",
+      "Name": "Sun",
+      "Position": "271.9028,41.44094,-119.7777",
+      "Rotation": "0,0.5,0,0.8660254",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "6acd3587-18f5-4086-b973-361e06b0ff92",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "test",
+  "Description": "",
+  "LastSaved": "2024-05-01T13:05:11.5378188\u002B01:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}

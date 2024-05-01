@@ -1,7 +1,14 @@
 {
   "Title": "GridMapTool",
   "Type": "library",
-  "Org": "local",
+  "Org": "baks",
   "Ident": "gridmaptool",
-  "Schema": 1
+  "Tags": null,
+  "Schema": 1,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "CsProjName": ""
+  }
 }

@@ -19,5 +19,7 @@ code/Properties/*
 *.los
 *.vpk
 *.pyc
-/Libraries/GridMapTool/Code/obj
+/Libraries/GridMapTool/Code/obj*
 /Libraries/GridMapTool/Code/obj/Debug
+/Libraries/GridMapTool/Code/obj/*
+/Libraries/GridMapTool/Editor/obj/Debug
