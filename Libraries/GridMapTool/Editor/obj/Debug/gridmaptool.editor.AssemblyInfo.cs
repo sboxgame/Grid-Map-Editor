@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gridmaptool.editor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4568f840b2f0a4c9e0f1dd815a8b18414a7cf85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaea29eb314bc9538f63cbe5caed5f0a746af5b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("gridmaptool.editor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gridmaptool.editor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

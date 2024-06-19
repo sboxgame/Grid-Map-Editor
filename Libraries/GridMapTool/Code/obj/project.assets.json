@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Base Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Base Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Base Library.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Base Library/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../SteamLibrary/steamapps/common/sbox/addons/base/Code/Base Library.csproj",
+      "msbuildProject": "../../../../../../SteamLibrary/steamapps/common/sbox/addons/base/Code/Base Library.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Base Library >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\LT_8\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\Code\\Base Library.csproj": {
+              "projectPath": "G:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\Code\\Base Library.csproj"
+            }
+          }
         }
       }
     },
