@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text.Json.Nodes;
-using static Editor.GridMapTool;
+﻿using System.Text.Json.Nodes;
 
 namespace Editor;
 
@@ -19,7 +17,10 @@ public partial class GridMapTool : EditorTool
 	public PrefabFile oldresource { get; set; }
 	public string SearchString { get; set; } = "";
 	public float floors = 0.0f;
+
+	[ReadOnly]
 	public int floorCount = 0;
+
 	public Rotation rotation = Rotation.From( 90, 0, 0 );
 	float rotationSnap = 90.0f;
 	public enum PaintMode

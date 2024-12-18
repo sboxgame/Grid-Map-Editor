@@ -1,9 +1,4 @@
-﻿using Sandbox.Engine;
-using Editor;
-using Editor.MapEditor;
-using Editor.MapDoc;
-
-namespace Editor;
+﻿namespace Editor;
 
 public partial class GridMapTool
 {

@@ -1,7 +1,4 @@
-﻿
-using System.Diagnostics;
-
-namespace Editor;
+﻿namespace Editor;
 
 public partial class GridMapTool
 {

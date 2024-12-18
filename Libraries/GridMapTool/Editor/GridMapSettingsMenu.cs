@@ -1,12 +1,11 @@
 using Editor;
 
-public static class GridMapSettingsMenu 
+public static class GridMapSettingsMenu
 {
 	[Menu( "Editor", "GridMapTool/Settings" )]
 	public static void OpenMyMenu()
 	{
 		new GridMapSettings();
-
 	}
 }
 
@@ -19,21 +18,17 @@ public class GridMapSettings : BaseWindow
 		Name = "GridMap Settings";
 		Size = new Vector2( 400, 700 );
 
-		defaultHeight = ProjectCookie.Get<float>( "GridHeight", 128 );
-		defaultGridMultiplier = ProjectCookie.Get<float>( "GridMultiplier", 1.0f );
+		GridHeight = ProjectCookie.Get( "GridHeight", 128 );
+		GridMultiplier = ProjectCookie.Get( "GridMultiplier", 1.0f );
 
 		CreateUI();
 		Show();
-
-
 	}
 
 	Widget container;
 
-	float defaultHeight = 128;
-	float newHeight = 128;
-	float defaultGridMultiplier = 1.0f;
-	float newGridMultiplier = 1.0f;
+	float GridHeight { get; set; } = 128;
+	float GridMultiplier { get; set; } = 1.0f;
 
 	public void CreateUI()
 	{
@@ -43,37 +38,30 @@ public class GridMapSettings : BaseWindow
 
 		container = new Widget( this );
 
-		var properties = new PropertySheet( this );
+		var properties = new ControlSheet();
 		var nameLabel = new Label.Subtitle( "Grid Map Settings" );
 		nameLabel.Margin = 16;
 
-		var _defaultheight = properties.AddRow( "Default Height", new LineEdit( "Default Height" ) );
-		_defaultheight.Text = defaultHeight.ToString();
-		_defaultheight.Bind("Value").From( () => newHeight.ToString(), x => { if ( float.TryParse( x, out var f ) ) newHeight = f; } );
+		var so = this.GetSerialized();
 
-		var _defaultGridMultiplier = properties.AddRow( "Default Grid Multiplier", new LineEdit( "Default Grid Multiplier" ) );
-		_defaultGridMultiplier.Text = defaultGridMultiplier.ToString();
-		_defaultGridMultiplier.Bind("Value").From( () => newGridMultiplier.ToString(), x => { if ( float.TryParse( x, out var f ) ) newGridMultiplier = f; } );
-
+		properties.AddRow( so.GetProperty( nameof( GridHeight ) ) );
+		properties.AddRow( so.GetProperty( nameof( GridMultiplier ) ) );
 
 		var saveButton = new Button.Primary( "Save Settings", "add_circle" );
-		saveButton.Clicked = () => SaveSettings();
+		saveButton.Clicked = SaveSettings;
 
 		Layout.Add( nameLabel );
 		Layout.Add( properties );
 		Layout.Add( saveButton );
-		Layout.Add(container);
+		Layout.Add( container );
+
+		Layout.AddStretchCell();
 	}
 
 	public void SaveSettings()
 	{
 		// Save settingsPackage
-		ProjectCookie.Set<float>( "GridHeight", newHeight );
-		ProjectCookie.Set<float>( "GridMultiplier", newGridMultiplier );
+		ProjectCookie.Set( "GridHeight", GridHeight );
+		ProjectCookie.Set( "GridMultiplier", GridMultiplier );
 	}
-}
-
-public class GridMapCookie
-{
-
 }

@@ -1,8 +1,4 @@
-﻿using Sandbox;
-using System.Diagnostics;
-using System.Drawing;
-
-namespace Editor;
+﻿namespace Editor;
 
 public partial class GridMapTool
 {

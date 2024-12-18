@@ -1,8 +1,4 @@
 ﻿using Sandbox.UI;
-using System;
-using System.Drawing;
-using System.Net.WebSockets;
-using static Sandbox.Gizmo;
 
 namespace Editor;
 
@@ -24,7 +20,8 @@ public partial class GridMapTool
 
 	public ComboBox collectionDropDown { get; set; } = new();
 	public ComboBox groupDropDown { get; set; } = new();
-	[Sandbox.Range( 0, 100 )]
+
+	[Range( 0, 100 )]
 	public float thumbnailScale { get; set; }
 
 	public GroundAxis Axis { get; set; } = GroundAxis.Z;
@@ -75,7 +72,6 @@ public partial class GridMapTool
 			grouprow.Add( groupCombo );
 
 			var collectionButton = new Button( "", "add" );
-			collectionButton.ButtonType = "clear";
 			collectionButton.Clicked = () =>
 			{
 				var popup = new NewCollectionObjectWindow();
@@ -218,7 +214,6 @@ public partial class GridMapTool
 			var pop = Layout.Row();
 
 			var popbutton = pop.Add( new Button( "Options...", "more_horiz" ) { Clicked = () => { OpenDropdown( window ); } } );
-			popbutton.ButtonType = "clear";
 			popbutton.OnPaintOverride += () =>
 			{
 				if ( popbutton.IsUnderMouse || optionsOpened )
@@ -290,94 +285,89 @@ public partial class GridMapTool
 		popup.WindowTitle = "Options";
 
 		popup.MinimumWidth = window.Width;
-		popup.Width = 500;
+		popup.FixedWidth = 500;
 		popup.Layout = Layout.Column();
 		popup.Layout.Margin = 16;
-		
-		var ps = new PropertySheet( popup );
-		ps.AddSectionHeader( "Floors" );
-		{
-			floorLabel = ps.AddRow( "Current Floor Level:", new Label( floorCount.ToString() ) );
-		}
-		{
-			heightInput = ps.AddRow( "Floor Height:", new LineEdit("Floor Height") );
-			heightInput.Bind( "Value" ).From( () => FloorHeight.ToString(), x => { if ( float.TryParse( x, out var f ) ) FloorHeight = f.FloorToInt(); } );
-			heightInput.Text = "128";
-		}
-		{
-			var x = ps.AddRow("Floor Level:", new TwoButton() );
-			x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
-			x.button1.Icon = "arrow_upward";
-			x.label1.Text = "Shift + E";
-			x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
-			x.button2.Icon = "arrow_downward";
-			x.label2.Text = "Shift + Q";
-		}
 
-		ps.AddSectionHeader( "Rotation" );
-		{
-			rotationSnapBox = ps.AddRow( "Rotation Snap :", new ComboBox());
-			foreach (var rot in RotationSnaps )
-			{
-				rotationSnapBox.AddItem( rot.ToString(), null, () => rotationSnap = rot, rotationLabel.Text = $"Rotation Snap: {rotationSnap}" );
-			}
-			int defaultAngleSnapIndex = Array.IndexOf( RotationSnaps, 90f );
-			if ( defaultAngleSnapIndex != -1 )
-			{
-				rotationSnapBox.CurrentIndex = defaultAngleSnapIndex;
-				rotationSnap = 90f;
-			}
-			var x = ps.AddRow( "Decrease Rotation Snap:", new Label( "Shift + 4" ) );
-			var z = ps.AddRow( "Increase Rotation Snap:", new Label( "Shift + 5" ) );
-		}
-		{
-			var z = ps.AddRow( "Rotation Z:", new TwoButton() );
-			z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };
-			z.button1.Icon = "arrow_back";
-			z.label1.Text = "Shift + 1";
-			z.button2.Clicked = () => { DoRotation( false, GroundAxis.Z )(); };
-			z.button2.Icon = "arrow_forward";
-			z.label2.Text = "Alt + 1";
+		var so = this.GetSerialized();
+		var ps = new ControlSheet();
 
-			var x = ps.AddRow( "Rotation X:", new TwoButton() );
-			x.button1.Clicked = () => { DoRotation( true, GroundAxis.X )(); };
-			x.button1.Icon = "arrow_back";
-			x.label1.Text = "Shift + 2";
-			x.button2.Clicked = () => { DoRotation( false, GroundAxis.X )(); };
-			x.button2.Icon = "arrow_forward";
-			x.label2.Text = "Alt + 2";
+		ps.AddRow( so.GetProperty( nameof( floorCount ) ) );
+		ps.AddRow( so.GetProperty( nameof( FloorHeight ) ) );
 
-			var y = ps.AddRow( "Rotation Y:", new TwoButton() );
-			y.button1.Clicked = () => { DoRotation( true, GroundAxis.Y )(); };
-			y.button1.Icon = "arrow_back";
-			y.label1.Text = "Shift + 3";
-			y.button2.Clicked = () => { DoRotation( false, GroundAxis.Y )(); };
-			y.button2.Icon = "arrow_forward";
-			y.label2.Text = "Alt + 3";
-		}
-		ps.AddSectionHeader( "Ground Axis" );
-		{
-			var w = ps.AddRow( "X", new Checkbox( "Shift + C" ) );
-			w.Bind( "Value" ).From( () => Axis == GroundAxis.X, x => { if ( x ) Axis = GroundAxis.X; currentaxisLabel.Text = Axis.ToString(); } );
-		}
-		{
-			var w = ps.AddRow( "Y", new Checkbox( "Shift + X" ) );
-			w.Bind( "Value" ).From( () => Axis == GroundAxis.Y, x => { if ( x ) Axis = GroundAxis.Y; currentaxisLabel.Text = Axis.ToString(); } );
-		}
-		{
-			var w = ps.AddRow( "Z", new Checkbox( "Shift + Z" ) );
-			w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
-		}
-		ps.AddSectionHeader( "Grid" );
-		{
-			var w = ps.AddRow( "Snap to Grid", new Checkbox( "Shift + G" ) );
-			w.Bind( "Value" ).From( () => ShouldSnapToGrid, x => { ShouldSnapToGrid = x; } );
-		}
-		ps.AddSectionHeader( "Decal" );
-		{
-			var w = ps.AddRow("Tri Planar", new Checkbox( ) );
-			w.Bind( "Value" ).From( () => DecalTriPlanar, x => { DecalTriPlanar = x; } );
-		}
+		//{
+		//	var x = ps.AddRow("Floor Level:", new TwoButton() );
+		//	x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
+		//	x.button1.Icon = "arrow_upward";
+		//	x.label1.Text = "Shift + E";
+		//	x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
+		//	x.button2.Icon = "arrow_downward";
+		//	x.label2.Text = "Shift + Q";
+		//}
+
+		//{
+		//	rotationSnapBox = ps.AddRow( "Rotation Snap :", new ComboBox());
+		//	foreach (var rot in RotationSnaps )
+		//	{
+		//		rotationSnapBox.AddItem( rot.ToString(), null, () => rotationSnap = rot, rotationLabel.Text = $"Rotation Snap: {rotationSnap}" );
+		//	}
+		//	int defaultAngleSnapIndex = Array.IndexOf( RotationSnaps, 90f );
+		//	if ( defaultAngleSnapIndex != -1 )
+		//	{
+		//		rotationSnapBox.CurrentIndex = defaultAngleSnapIndex;
+		//		rotationSnap = 90f;
+		//	}
+		//	var x = ps.AddRow( "Decrease Rotation Snap:", new Label( "Shift + 4" ) );
+		//	var z = ps.AddRow( "Increase Rotation Snap:", new Label( "Shift + 5" ) );
+		//}
+		//{
+		//	var z = ps.AddRow( "Rotation Z:", new TwoButton() );
+		//	z.button1.Clicked = () => { DoRotation( true, GroundAxis.Z )(); };
+		//	z.button1.Icon = "arrow_back";
+		//	z.label1.Text = "Shift + 1";
+		//	z.button2.Clicked = () => { DoRotation( false, GroundAxis.Z )(); };
+		//	z.button2.Icon = "arrow_forward";
+		//	z.label2.Text = "Alt + 1";
+
+		//	var x = ps.AddRow( "Rotation X:", new TwoButton() );
+		//	x.button1.Clicked = () => { DoRotation( true, GroundAxis.X )(); };
+		//	x.button1.Icon = "arrow_back";
+		//	x.label1.Text = "Shift + 2";
+		//	x.button2.Clicked = () => { DoRotation( false, GroundAxis.X )(); };
+		//	x.button2.Icon = "arrow_forward";
+		//	x.label2.Text = "Alt + 2";
+
+		//	var y = ps.AddRow( "Rotation Y:", new TwoButton() );
+		//	y.button1.Clicked = () => { DoRotation( true, GroundAxis.Y )(); };
+		//	y.button1.Icon = "arrow_back";
+		//	y.label1.Text = "Shift + 3";
+		//	y.button2.Clicked = () => { DoRotation( false, GroundAxis.Y )(); };
+		//	y.button2.Icon = "arrow_forward";
+		//	y.label2.Text = "Alt + 3";
+		//}
+
+		//{
+		//	var w = ps.AddRow( "X", new Checkbox( "Shift + C" ) );
+		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.X, x => { if ( x ) Axis = GroundAxis.X; currentaxisLabel.Text = Axis.ToString(); } );
+		//}
+		//{
+		//	var w = ps.AddRow( "Y", new Checkbox( "Shift + X" ) );
+		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.Y, x => { if ( x ) Axis = GroundAxis.Y; currentaxisLabel.Text = Axis.ToString(); } );
+		//}
+		//{
+		//	var w = ps.AddRow( "Z", new Checkbox( "Shift + Z" ) );
+		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
+		//}
+
+		//{
+		//	var w = ps.AddRow( "Snap to Grid", new Checkbox( "Shift + G" ) );
+		//	w.Bind( "Value" ).From( () => ShouldSnapToGrid, x => { ShouldSnapToGrid = x; } );
+		//}
+
+		//{
+		//	var w = ps.AddRow("Tri Planar", new Checkbox( ) );
+		//	w.Bind( "Value" ).From( () => DecalTriPlanar, x => { DecalTriPlanar = x; } );
+		//}
 
 		popup.Layout.Add( ps );
 		
@@ -628,12 +618,12 @@ public class NewCollectionObjectWindow : BaseWindow
 
 		container = new Widget( this );
 
-		var properties = new PropertySheet( this );
+		var properties = new ControlSheet();
 
 		var nameLabel = new Label.Subtitle( "Add New Collection Object" );
 		nameLabel.Margin = 16;
 
-		var nameEdit = properties.AddLineEdit( "Collection Object Name", "" );
+		var nameEdit = new LineEdit( "Collection Object Name", this );
 		var addbutton = new Button.Primary( "Add Collection", "add_circle" );
 		addbutton.MaximumWidth = 100;
 		addbutton.Clicked = () =>
@@ -660,39 +650,6 @@ public class NewCollectionObjectWindow : BaseWindow
 	public Button buttonIcon;
 }
 
-public class TwoButton : Widget
-{
-	public Button button1;
-	public Button button2;
-
-	public Label label1;
-	public Label label2;
-
-	public TwoButton()
-	{
-		// Create a horizontal layout for the buttons
-		var layout = Layout.Row();
-		layout.Spacing = 4;
-		// Create the fvar irst button
-		button1 = layout.Add( new Button("", this ) );
-		button1.ButtonType = "clear";
-
-		label1 = layout.Add( new Label( "", this ) );
-		label1.Position = new Vector2( 40, 5 );
-		layout.AddSpacingCell( 40 );
-
-		// Create the svar econd button
-		button2 = layout.Add( new Button("", this ) );
-		button2.ButtonType = "clear";
-		button2.Position = new Vector2( 100, 0 );
-		layout.Add( button2 );
-
-		label2 = layout.Add( new Label( "", this ) );
-		label2.Position = new Vector2( 140, 5 );
-
-		MinimumHeight = 23;
-	}
-}
 public class SceneGizmoControl : Widget
 {
 	public Rotation CameraRotation;
