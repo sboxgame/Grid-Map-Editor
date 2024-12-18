@@ -8,7 +8,6 @@ public partial class GridMapTool
 	private Label floorcontrolLabel;
 	private Label rotationLabel;
 	private Label selectedamount;
-	private Label currentaxisLabel;
 
 	private LineEdit heightInput;
 	private WidgetWindow gridwindowWidget;
@@ -295,6 +294,10 @@ public partial class GridMapTool
 		ps.AddRow( so.GetProperty( nameof( floorCount ) ) );
 		ps.AddRow( so.GetProperty( nameof( FloorHeight ) ) );
 
+		ps.AddRow( so.GetProperty( nameof( Axis ) ) );
+		ps.AddRow( so.GetProperty( nameof( ShouldSnapToGrid ) ) );
+		ps.AddRow( so.GetProperty( nameof( DecalTriPlanar ) ) );
+
 		//{
 		//	var x = ps.AddRow("Floor Level:", new TwoButton() );
 		//	x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
@@ -344,29 +347,6 @@ public partial class GridMapTool
 		//	y.button2.Clicked = () => { DoRotation( false, GroundAxis.Y )(); };
 		//	y.button2.Icon = "arrow_forward";
 		//	y.label2.Text = "Alt + 3";
-		//}
-
-		//{
-		//	var w = ps.AddRow( "X", new Checkbox( "Shift + C" ) );
-		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.X, x => { if ( x ) Axis = GroundAxis.X; currentaxisLabel.Text = Axis.ToString(); } );
-		//}
-		//{
-		//	var w = ps.AddRow( "Y", new Checkbox( "Shift + X" ) );
-		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.Y, x => { if ( x ) Axis = GroundAxis.Y; currentaxisLabel.Text = Axis.ToString(); } );
-		//}
-		//{
-		//	var w = ps.AddRow( "Z", new Checkbox( "Shift + Z" ) );
-		//	w.Bind( "Value" ).From( () => Axis == GroundAxis.Z, x => { if ( x ) Axis = GroundAxis.Z; currentaxisLabel.Text = Axis.ToString(); } );
-		//}
-
-		//{
-		//	var w = ps.AddRow( "Snap to Grid", new Checkbox( "Shift + G" ) );
-		//	w.Bind( "Value" ).From( () => ShouldSnapToGrid, x => { ShouldSnapToGrid = x; } );
-		//}
-
-		//{
-		//	var w = ps.AddRow("Tri Planar", new Checkbox( ) );
-		//	w.Bind( "Value" ).From( () => DecalTriPlanar, x => { DecalTriPlanar = x; } );
 		//}
 
 		popup.Layout.Add( ps );
