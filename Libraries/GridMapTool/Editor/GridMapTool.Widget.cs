@@ -270,6 +270,18 @@ public partial class GridMapTool
 	bool optionsOpened = false;
 	private SceneGizmoControl gizmowidg;
 
+	[Button]
+	private void AddFloor()
+	{
+		DoFloors( FloorHeight )();
+	}
+
+	[Button]
+	private void RemoveFloor()
+	{
+		DoFloors( -FloorHeight )();
+	}
+
 	void OpenDropdown( Widget window )
 	{
 		if ( optionsOpened )
@@ -294,19 +306,12 @@ public partial class GridMapTool
 		ps.AddRow( so.GetProperty( nameof( floorCount ) ) );
 		ps.AddRow( so.GetProperty( nameof( FloorHeight ) ) );
 
+		ps.AddRow( so.GetProperty( nameof( AddFloor ) ) );
+		ps.AddRow( so.GetProperty( nameof( RemoveFloor ) ) );
+
 		ps.AddRow( so.GetProperty( nameof( Axis ) ) );
 		ps.AddRow( so.GetProperty( nameof( ShouldSnapToGrid ) ) );
 		ps.AddRow( so.GetProperty( nameof( DecalTriPlanar ) ) );
-
-		//{
-		//	var x = ps.AddRow("Floor Level:", new TwoButton() );
-		//	x.button1.Clicked = () => { DoFloors( FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
-		//	x.button1.Icon = "arrow_upward";
-		//	x.label1.Text = "Shift + E";
-		//	x.button2.Clicked = () => { DoFloors( -FloorHeight )(); floorLabel.Text = $"Floor Level: {floorCount.ToString()}"; };
-		//	x.button2.Icon = "arrow_downward";
-		//	x.label2.Text = "Shift + Q";
-		//}
 
 		//{
 		//	rotationSnapBox = ps.AddRow( "Rotation Snap :", new ComboBox());
